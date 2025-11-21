@@ -156,7 +156,9 @@ text-col: "#404040"
 link-col: "#0072CE" # Columbia blue Dark
 
 # hover-col: "#0085A1"
-hover-col: "#FFFFFF"
+hover-col: "#0072CE"
+
+# hover-col: "#FFFFFF"
 
 # navbar-col: "#EAEAEA"
 # navbar-col: "#B9D9EB" # Columbia blue
