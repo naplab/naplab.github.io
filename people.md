@@ -1,7 +1,5 @@
 ---
 layout: page
-title: Team
-subtitle: Meet the people behind our research
 ---
 
 <style>
@@ -26,7 +24,7 @@ subtitle: Meet the people behind our research
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none !important;
-  background-color: #fff; /* 背景改为纯白，防止图片加载前透出灰色 */
+  background-color: #fff;
   border: 1px solid #eee;
 }
 
@@ -46,15 +44,14 @@ subtitle: Meet the people behind our research
   background-size: cover;
   background-position: center top;
   transition: transform 0.5s ease;
-  /* 确保图片亮度正常，不做任何滤镜处理 */
-  filter: brightness(100%); 
+  filter: brightness(100%);
 }
 
 .member-card:hover .member-bg {
-  transform: scale(1.1); 
+  transform: scale(1.08); /* 稍微缩小放大比例，更自然 */
 }
 
-/* --- 遮罩层与文字动画 (关键修改点) --- */
+/* --- 遮罩层与文字动画 (重点修改区域) --- */
 .member-overlay {
   position: absolute;
   bottom: 0;
@@ -62,33 +59,33 @@ subtitle: Meet the people behind our research
   width: 100%;
   height: 100%;
   
-  /* 【修改点】：默认状态下，渐变黑色只占底部 30%，上面 70% 完全透明，保证头像明亮 */
-  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 30%);
+  /* 默认状态：只有最底部有一点点黑，保证名字可见，上面全透明 */
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 35%);
   
   padding: 20px;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  transition: background 0.4s ease; /* 背景色过渡动画 */
+  transition: background 0.4s ease;
 }
 
-/* 悬停时：背景变深，以便阅读学历文字 */
+/* 【修改点】悬停状态：不再全黑 */
+/* 底部(0%)很黑以显示文字，中间(60%)半透明，顶部(100%)只保留淡淡的阴影(0.2) */
 .member-card:hover .member-overlay {
-  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.8) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 60%, rgba(0,0,0,0.1) 100%);
 }
 
 /* 名字和头衔 */
 .member-header {
   transform: translateY(0);
   transition: transform 0.4s ease;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.8); /* 加强文字阴影，防止背景亮时看不清字 */
+  /* 始终保持文字阴影，这样即使背景不黑，文字也清晰 */
+  text-shadow: 0 2px 5px rgba(0,0,0,0.9);
 }
 
-/* 悬停时名字上移 */
 .member-card:hover .member-header {
-  transform: translateY(-10px);
-  text-shadow: none; /* 背景变黑了，就不需要很重的文字阴影了 */
+  transform: translateY(-5px); /* 上移距离减小，更紧凑 */
 }
 
 .member-name {
@@ -100,7 +97,7 @@ subtitle: Meet the people behind our research
 
 .member-title {
   font-size: 0.9rem;
-  opacity: 0.95; /* 提高一点不透明度 */
+  opacity: 0.95;
   display: block;
   font-style: italic;
   margin-bottom: 5px;
@@ -113,7 +110,9 @@ subtitle: Meet the people behind our research
   overflow: hidden;
   transition: all 0.5s ease;
   font-size: 0.85rem;
-  color: #eee; /* 字体颜色稍微亮一点 */
+  color: #fff; /* 纯白字 */
+  /* 给学历文字也加阴影，这样背景即使比较亮也能看清 */
+  text-shadow: 0 1px 3px rgba(0,0,0,0.9);
 }
 
 .member-details ul {
@@ -131,12 +130,12 @@ subtitle: Meet the people behind our research
 .member-card:hover .member-details {
   max-height: 200px;
   opacity: 1;
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: 1px solid rgba(255,255,255,0.3);
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255,255,255,0.4);
 }
 
-/* --- 其他部分的样式 --- */
+/* --- Collaborators & Alumni --- */
 .collaborator-item {
   margin-bottom: 20px;
   padding-bottom: 10px;
