@@ -213,7 +213,7 @@ layout: page
 
 <hr>
 
-## Collaborators
+<!-- ## Collaborators -->
 <!-- <div class="row">
   <div class="col-12">
     {% for person in site.data.people.collaborators %}
@@ -229,7 +229,7 @@ layout: page
   </div>
 </div> -->
 
-<div class="row">
+<!-- <div class="row">
   {% for person in site.data.people.collaborators %}
     <div class="col-12 col-md-6" style="margin-bottom: 25px; border: none;">
       
@@ -247,7 +247,7 @@ layout: page
 
     </div>
   {% endfor %}
-</div>
+</div> -->
 
 
 <hr>
@@ -262,11 +262,48 @@ layout: page
 </div> -->
 
 
-## Alumni
+<!-- ## Alumni
 <div class="row">
   {% for person in site.data.people.alumni %}
     <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
       <span style="font-size: 1.1rem; font-weight: bold; color: #333; display: block;">
+        {{ person }}
+      </span>
+    </div>
+  {% endfor %}
+</div> -->
+
+
+## Collaborators
+<div class="row">
+  {% for person in site.data.people.collaborators %}
+    <div class="col-12 col-md-6" style="margin-bottom: 25px; border: none;">
+      
+      {% if person.contacts.website %}
+        <a href="{{ person.contacts.website }}" target="_blank" class="collab-name" style="font-size: 1.1rem; font-weight: normal; color: #333; display:block; text-decoration:none;">
+          {{ person.name }}
+        </a>
+      {% else %}
+        <span class="collab-name" style="font-size: 1.1rem; font-weight: normal; color: #333; display:block;">
+          {{ person.name }}
+        </span>
+      {% endif %}
+
+      <div class="collab-affil">
+        {{ person.affiliation }}
+      </div>
+
+    </div>
+  {% endfor %}
+</div>
+
+<hr>
+
+## Alumni
+<div class="row">
+  {% for person in site.data.people.alumni %}
+    <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+      <span style="font-size: 1.1rem; font-weight: normal; color: #333; display: block;">
         {{ person }}
       </span>
     </div>
