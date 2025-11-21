@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Neurotech X Columbia's new website online!
+title: NapLab @ Columbia's new website online!
 subtitle: There's lots to learn!
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]

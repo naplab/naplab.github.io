@@ -2,7 +2,7 @@
 layout: page
 title: Alumni
 permalink: /alumni/
-description: Former members of Neurotech X Columbia.
+description: Former members of NapLab @ Columbia.
 ---
 
 # Alumni

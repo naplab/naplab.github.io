@@ -12,10 +12,10 @@ url: "https://neurotech-x-columbia.github.io"
 baseurl: ""   # 组织/用户主页必须留空；只有“项目页”才写 /repo-name
 
 # Name of website
-title: Neurotech X Columbia
+title: NapLab @ Columbia
 
 # Your name to show in the footer
-author: Neurotech X Columbia
+author: NapLab @ Columbia
 
 ###############################################
 # --- List of links in the navigation bar --- #

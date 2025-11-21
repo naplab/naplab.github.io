@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Engage with Neurotech X Columbia
+title: Engage with NapLab @ Columbia
 subtitle: Columbia's Brain-Computer Interfaces Club!
 permalink: /engage/
 ---

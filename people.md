@@ -2,7 +2,7 @@
 layout: page
 title: People
 permalink: /people/
-description: Meet the Neurotech X Columbia team and alumni.
+description: Meet the NapLab @ Columbia team and alumni.
 ---
 
 # Our Team
