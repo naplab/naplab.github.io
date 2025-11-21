@@ -124,7 +124,7 @@ permalink: /about/
 		}
 	}
 </style>
-
+Welcome to the **Neural Acoustic Processing Laboratory** at Columbia University. Our research is dedicated to understanding and engineering the future of human auditory communication, and it is built on three core pillars:
 <div class="about-page-wrapper">
 	<p class="lead">Welcome to the <strong class="lab-name">Neural Acoustic Processing Laboratory</strong> at Columbia University. Our research is dedicated to understanding and engineering the future of human auditory communication, and it is built on three core pillars:</p>
 
