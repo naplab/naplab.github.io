@@ -250,8 +250,6 @@ layout: page
 </div> -->
 
 
-<hr>
-
 <!-- ## Alumni
 <div class="row">
   {% for person in site.data.people.alumni %}
