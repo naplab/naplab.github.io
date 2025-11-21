@@ -2,11 +2,10 @@
 layout: page
 permalink: /publication/
 ---
+
+For latest publications, please check [Google Scholar](https://scholar.google.com/citations?hl=en&user=DKhMx5gAAAAJ&view_op=list_works&sortby=pubdate).
+
 ## Feature Publications
-
-For all publications, please check [Google Scholar](https://scholar.google.com/citations?hl=en&user=DKhMx5gAAAAJ&view_op=list_works&sortby=pubdate).
-
-
 {% assign grouped_pubs = site.data.pub | group_by: "year" | sort: "name" | reverse %}
 
 {% for group in grouped_pubs %}
