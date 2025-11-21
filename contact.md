@@ -15,7 +15,6 @@ Our lab is located at the new Manhattanville Campus of Columbia University.
 <br><br>
 
 ### Address
-
 **Jerome L. Greene Science Center**  
 **L3-028**  
 3229 Broadway  
