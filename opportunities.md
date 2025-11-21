@@ -13,7 +13,7 @@ For **Ph.D. positions**, please apply to the  [Electrical Engineering Ph.D. prog
 
 <div class="row">
   <div class="col-md-6 col-12 mb-4 text-center">
-    <a href="https://zuckermaninstitute.columbia.edu/place" target="_blank">
+    <a href="https://zuckermaninstitute.columbia.edu/jerome-l-greene-science-center" target="_blank">
       <img src="/assets/img/opportunities/science-center.jpg" class="img-fluid rounded" alt="Jerome L. Greene Science Center">
       <p class="mt-2"><strong>The Jerome L. Greene Science Center</strong></p>
     </a>
