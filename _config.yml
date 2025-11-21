@@ -12,10 +12,10 @@ url: "https://naplab.github.io"
 baseurl: ""   # 组织/用户主页必须留空；只有“项目页”才写 /repo-name
 
 # Name of website
-title: NapLab @ Columbia
+title: NapLab | Mesgarani
 
 # Your name to show in the footer
-author: NapLab @ Columbia
+author: NapLab | Mesgarani
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -163,6 +163,10 @@ footer-col: "#B9D9EB" # Columbia blue
 footer-text-col: "#777777"
 footer-link-col: "#404040"
 footer-hover-col: "#0085A1"
+
+
+
+
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
