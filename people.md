@@ -252,11 +252,23 @@ layout: page
 
 <hr>
 
-## Alumni
+<!-- ## Alumni
 <div class="row">
   {% for person in site.data.people.alumni %}
     <div class="col-6 col-md-4">
       <div class="alumni-list-item">• {{ person }}</div>
+    </div>
+  {% endfor %}
+</div> -->
+
+
+## Alumni
+<div class="row">
+  {% for person in site.data.people.alumni %}
+    <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+      <span style="font-size: 1.1rem; font-weight: bold; color: #333; display: block;">
+        {{ person }}
+      </span>
     </div>
   {% endfor %}
 </div>
