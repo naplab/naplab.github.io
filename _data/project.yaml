@@ -1,0 +1,91 @@
+- name: "Brain2Speech: Decoding Brain Signals into Speech"
+  description: >
+    This project focuses on non-invasive brain-to-speech decoding from MEG signals, mapping neural activity directly to auditory speech units using the [LibriBrain dataset](https://neural-processing-lab.github.io/2025-libribrain-competition/). Our goal is to advance MEG-based speech decoding and identify the temporal and spatial patterns in the brain that support recovering speech elements.
+  lead: Yizi Zhang
+  status: Active
+  keywords: ['BCI', 'MEG', 'Speech Processing']
+
+- name: "Benchmarking Audio-Text LLMs for Brain Encoding"
+  description: >
+    This project aims to investigate audio-text large language models (Audio-Text LLMs) as potential improvements over existing models such as Whisper for encoding brain responses. The team will benchmark and compare encoding models across multiple data modalities to evaluate their effectiveness and uncover cross-modal representations relevant to neural encoding.
+  lead: Richard Antonello
+  status: Active
+  keywords: ['Brain Encoding', 'Multimodal Learning', 'Audio-Text LLMs', 'NeuroAI']
+
+- name: "Audio-Visual Brain Encoding: How the Brain Reads Lips?"
+  description: >
+    This project investigates how lip movements contribute to brain activity during natural speech comprehension. We extract lip movement features using computer vision models and audio features using speech models, then build multimodal encoding models to examine whether visual articulatory information provides unique predictive power beyond auditory and linguistic cues. Specifically, we aim to understand how visual speech modulates and interacts with neural processes underlying speech perception and comprehension. This is an ongoing project. Students with computer vision experience are especially encouraged to join!
+  lead: Linyang He
+  status: Active
+  keywords: ['Brain Encoding', 'ECoG', 'Speech Processing', 'NeuroAI']
+
+- name: "SymPath: A Brain-Aware Emotional Audio Companion"
+  description: >
+    This project aims to create an emotion-adaptive conversational system that bridges brain–computer interfaces and audio foundation models. We first develop an EEG-based emotion recognition framework to infer users’ affective states from neural activity. Then, we train a speech-based dialogue model capable of adjusting its responses—both in tone and linguistic style—according to detected emotions. By integrating these two systems, we introduce a neuro-adaptive audio chatbot that responds empathetically and modulates its voice in real time based on how the user feels.
+  lead: Sukru Samet Dindar
+  status: Active
+  keywords: ['BCI', 'EEG', 'Emotion Detection', 'Conversational AI']
+
+- name: "BrainSight: Image-to-Brain Visual Encoding"
+  description: >
+    This project aims to understand how the human brain encodes visual information by building models that predict brain activity (e.g., fMRI, EEG signals) from naturalistic images. By linking state-of-the-art computer vision models with neural data, we seek to uncover which image features best explain activity in different brain regions and how artificial systems align or diverge from human visual processing. 
+  lead: Pinyuan Feng
+  status: Active
+  keywords: ['Brain Encoding', 'Computational Vision', 'GenAI']
+
+- name: "AI-Generated Music for Cognitive Enhancement"
+  description: >
+    This project explores how AI-generated music can positively influence brain functions such as focus, relaxation, and memory. We will experiment with generative models to create adaptive soundscapes and evaluate their impact through cognitive tasks or user studies.
+  lead: Rushin Bhatt
+  status: Active
+  keywords: ['AI Music', 'Cognitive Science', 'Brain Function', 'Deep Learning', 'Generative AI']
+
+- name: "AI Detection of Early Parkinson’s Disease from Speech Biomarkers"
+  description: >
+    This project develops an AI-based speech analysis system for the early detection of Parkinson’s disease using publicly available voice datasets such as PC-GITA and the UCI Parkinson’s Telemonitoring dataset. Parkinson’s disease causes subtle vocal changes that often appear before noticeable motor symptoms. By extracting acoustic biomarkers (e.g., jitter, shimmer, harmonic-to-noise ratio) and deep audio features from short speech recordings, the system will train machine-learning models to distinguish Parkinson’s patients from healthy individuals. The model’s predictions will be evaluated for accuracy and interpretability, aiming to identify reliable voice-based markers that could support low-cost, non-invasive screening and remote monitoring.
+  lead: Sree Kuntamukkala
+  status: Active
+  keywords: ['Speech Biomarkers', 'Acoustic Analysis', 'AI in Healthcare', 'Parkinson’s Disease']
+
+- name: "Identifying Brain Regions Selectively Predicted by Vision Language Models"
+  description: >
+    This project investigates how the human brain integrates visual and linguistic information. Previous studies have modeled brain activity using language or vision models separately, but few have explored their joint representations. We aim to determine whether modern vision language models, which achieve deep semantic alignment rather than simple feature concatenation, better predict neural activity. The project focuses on identifying brain regions whose responses can be explained only by multimodal representations, not by unimodal or concatenated embeddings. By comparing encoding and decoding performance across model types, we seek to uncover where and how the brain supports multimodal semantic integration.
+  lead: Linyang He
+  status: Active
+  keywords: ['Brain Encoding', 'Vision-Language Models', 'NeuroAI']  
+
+- name: "Multimodal modeling of audiovisual processing"
+  description: >
+    This project aims to use a combined EEG-fMRI dataset to both investigate how videos are processed in the brain, as well as to develop better EEG decoding models. First, taking a multimodal approach may help uncover new patterns in how information is represented and manipulated in various brain regions through leveraging the temporal resolution of EEG and the spatial resolution of fMRI. Second, simultaneously recorded fMRI data may be able to guide new decoding approaches for EEG, opening the door to more useful non-invasive BCIs. 
+  lead: Charan Santhirasegaran
+  status: Active
+  keywords: ['EEG', 'fMRI', 'Brain Decoding']
+
+- name: "A Novel Targeted Linguistic Embedding for Encoding Analysis"
+  description: >
+    This project aims to develop a targeted linguistic embedding that isolates representations of specific linguistic phenomena. The goal is to create embeddings that selectively capture information relevant to a chosen linguistic feature while suppressing unrelated dimensions. These embeddings will then be used in neural encoding analysis to investigate how distinct linguistic features are represented in the human brain.
+  lead: Linyang He
+  status: Active
+  keywords: ['Representation Learning', 'NLP', 'Brain Encoding', 'NeuroAI']
+
+- name: "Generative Decoders of Visual Cortical Representations"
+  description: >
+    This project investigates how neural signals can be transformed back into visual images using deep learning. Leveraging the THINGS Ventral Stream Spiking Dataset [(TVSD)](https://doi.gin.g-node.org/10.12751/g-node.hc7zlv/) — which records single-neuron activity from macaque visual areas V1, V4, and IT — the team developed a generative decoding pipeline that maps brain activity to perceived images. By integrating AlexNet, VDVAE, and Versatile Diffusion, the project revealed strong parallels between mid-level visual features in artificial networks and biological vision, advancing our understanding of how the brain encodes and reconstructs the visual world.
+  lead: Michael Zhou
+  status: Completed
+  keywords: ['BCI', 'Diffusion Models', 'Single Neuron']
+
+- name: "Multiphase-EEG: SSVEP Speller"
+  description: >
+    This project develops an SSVEP-based speller system. The goal is to use brain wave data collected from an OpenBCI headset to control an online keyboard interface. The system includes data acquisition, visual stimulus presentation, and signal decoding pipelines for steady-state visually evoked potentials (SSVEP), enabling users to type characters using only their brain activity.
+  lead: Matheu Campbell
+  status: Completed
+  keywords: ['BCI', 'EEG', 'SSVEP', 'Speller']
+
+- name: "Drone: EEG-Controlled Flight"
+  description: >
+    Develop a program that can interpret brain signals from an EEG headset and convert them into control instructions for a drone in real time. The system integrates data collection, signal processing, and control interfaces to enable closed-loop brain-to-drone communication.
+  lead: Matheu Campbell
+  status: Completed
+  keywords: ['BCI', 'EEG', 'Drone Control']
+

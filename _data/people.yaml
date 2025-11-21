@@ -1,0 +1,227 @@
+# _data/people.yml
+- name: Linyang He
+  status: current
+  affiliation: SEAS & Zuckerman Institute
+  role: President
+  avatar: /assets/img/people/linyang.jpg   # 放图到此路径
+  email: linyang.he@columbia.edu
+  # github: linyanghe
+  # linkedin: linyanghe
+  website: https://linyanghe.github.io
+  group: eboard
+
+- name: Yizi Zhang
+  status: current
+  affiliation: GSAS & Zuckerman Institute
+  role: VP Research
+  avatar: /assets/img/people/yizi.jpg
+  email: yz4123@columbia.edu
+  # github: yizizhang
+  # linkedin: yizi-zhang
+  website: https://www.linkedin.com/in/yizizhang
+  group: eboard
+
+- name: Marine Kaufmann
+  status: current
+  affiliation: SEAS
+  role: VP Operations
+  avatar: /assets/img/people/marine.webp   # 放图到此路径
+  email: ik2583@tc.columbia.edu
+  # github: linyanghe
+  # linkedin: linyanghe
+  website: http://www.marinekauf.com/
+  group: eboard
+
+- name: Isha Kaushik
+  status: current
+  affiliation: TC
+  role: VP Outreach
+  avatar: /assets/img/people/isha.jpg   # 放图到此路径
+  email: ik2583@tc.columbia.edu
+  # github: linyanghe
+  # linkedin: linyanghe
+  website: https://sites.google.com/view/ishakaushik/home
+  group: eboard
+
+- name: Tianjian Zhang
+  status: current
+  affiliation: SEAS
+  avatar: /assets/img/people/tianjian.png
+  role: VP Events
+  email: 
+  website: https://www.linkedin.com/in/tjzhang5741/
+  group: eboard
+
+- name: Ayon Roy
+  status: current
+  affiliation: SEAS
+  avatar: /assets/img/people/ayon.png
+  role: VP Finance
+  email: ar4982@columbia.edu
+  website: https://www.linkedin.com/in/ayon-roy/
+  group: eboard
+
+- name: Richard Antonello 
+  status: current
+  affiliation: Zuckerman Institute
+  avatar: /assets/img/people/rj.jpg
+  role: Project Lead
+  email: rja2163@columbia.edu
+  website: https://scholar.google.com/citations?user=EtEVFLoAAAAJ&hl=en
+  group: project_lead
+
+- name: Sukru Samet Dindar
+  status: current
+  affiliation: SEAS & Zuckerman Institute
+  avatar: /assets/img/people/samet.jpg
+  role: Project Lead
+  email: sd3705@columbia.edu
+  website: https://www.linkedin.com/in/sukru-samet-dindar/
+  group: project_lead
+
+- name: Riki Shimizu  
+  status: current
+  affiliation: SEAS & Zuckerman Institute
+  avatar: /assets/img/people/riki.png
+  role: Project Lead
+  email: 
+  website: https://www.linkedin.com/in/riki-shimizu-85ba1019b
+  group: project_lead
+
+- name: Pinyuan Feng
+  status: current
+  affiliation: GSAS & Zuckerman Institute
+  avatar: /assets/img/people/pinyuan.jpg
+  role: Project Lead
+  email: pf2477@columbia.edu
+  website: https://psychology.columbia.edu/content/pinyuan-feng
+  group: project_lead
+
+- name: Sree Kuntamukkala
+  status: current
+  affiliation: SEAS
+  avatar: /assets/img/people/sree.jpg
+  role: Project Lead
+  email: sk5505@columbia.edu
+  website: https://www.linkedin.com/in/sree-kuntamukkala/
+  group: project_lead
+
+- name: Rushin Bhatt
+  status: current
+  affiliation: SEAS
+  avatar: /assets/img/people/rushin.jpg
+  role: Project Lead
+  email: rsb2213@columbia.edu
+  website: https://www.linkedin.com/in/rushin-bhatt/
+  group: project_lead
+
+- name: Charan Santhirasegaran
+  status: current
+  affiliation: SEAS
+  avatar: /assets/img/people/charan.jpg
+  role: Project Lead
+  email: cs4347@columbia.edu
+  website: https://www.linkedin.com/in/charan-segaran/
+  group: project_lead
+
+- name: Nima Mesgarani
+  status: current
+  affiliation: SEAS & Zuckerman Institute
+  role: Advisor
+  avatar: /assets/img/people/nima.jpg
+  email: nima@ee.columbia.edu
+  website: https://nima.ee.columbia.edu/
+  group: advisor 
+
+- name: Liam Paninski
+  status: current
+  affiliation: Zuckerman Institute
+  role: Advisor
+  avatar: /assets/img/people/liam.jpg
+  email: liam@stat.columbia.edu
+  website: https://sites.stat.columbia.edu/liam/
+  group: advisor 
+
+- name: Michael Zhou
+  status: alumni
+  affiliation: SEAS
+  role: President
+  avatar: /assets/img/people/michael.jpg
+  website: https://www.linkedin.com/in/michael-zhou-90475b32/
+
+- name: Gabriel Gonzalez
+  status: alumni
+  affiliation: SEAS
+  role: President
+  avatar: /assets/img/people/gabriel.jpg
+  website: https://www.linkedin.com/in/gabriel-gonzalez-56b93b198/
+
+- name: Judah Engel
+  status: alumni
+  affiliation: CC
+  role: President
+  avatar: /assets/img/people/judah.jpg
+  website: https://www.linkedin.com/in/judah-engel-a173b31b8/
+
+- name: Nicolas Ouporov
+  status: alumni
+  affiliation: CC
+  role: VP Operations
+  avatar: /assets/img/people/nicolai.jpg
+  website: https://www.nicolas.info/
+
+- name: Isabella Souza
+  status: alumni
+  affiliation: CC
+  role: VP Outreach
+  avatar: /assets/img/people/isabella.jpg
+  website: https://www.linkedin.com/in/isabella-souza-493777169/
+
+- name: Giuliana Bilbao
+  status: alumni
+  affiliation: SEAS
+  role: Project Lead
+  avatar: /assets/img/people/giuliana.jpg
+  website: https://www.linkedin.com/in/giuliana-bilbao/
+
+- name: James Bole Pan
+  status: alumni
+  affiliation: CC
+  role: Project Lead
+  avatar: /assets/img/people/james_pan.jpeg
+  website: https://james-bole-pan.github.io/
+
+- name: Aida Razavilar
+  status: alumni
+  affiliation: CC
+  role: VP Research
+  avatar: /assets/img/people/aida.jpg
+  website: https://www.linkedin.com/in/aida-razavilar-59847b123/ 
+
+- name: Greg Ou
+  status: alumni
+  affiliation: SEAS
+  role: Developer
+  avatar: /assets/img/people/greg.jpg
+  website: https://www.linkedin.com/in/greg-ou-69baa5189/
+
+- name: Matheu Campbell
+  status: alumni
+  affiliation: SEAS
+  role: Research Lead
+  avatar: /assets/img/people/matheu.jpg
+  website: https://www.linkedin.com/in/matheu-campbell-02a350246/
+
+- name: Yuchen Teng
+  status: alumni
+  affiliation: SEAS
+  role: Treasurer
+  avatar: /assets/img/people/yuchen.jpg
+  website: https://www.linkedin.com/in/yuchenteng0513/
+
+- name: Ashley Pasion
+  status: alumni
+  affiliation: Barnard
+  role: VP Outreach
+  avatar: /assets/img/people/ashley.jpg
+  website: https://www.linkedin.com/in/ashley-pasion-43a819229/
