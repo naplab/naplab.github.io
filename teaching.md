@@ -1,8 +1,6 @@
 ---
 layout: page
 ---
-	
-Courses:
 
 - ​EEBME 9070: Advance Topics: Bio-Inspired Computation
 ​ 
