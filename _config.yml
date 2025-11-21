@@ -164,7 +164,9 @@ navbar-col: "#4D89BD"  # Columbia Blue 3
 # navbar-col: "#191919"  #black
 # navbar-text-col: "#404040"
 navbar-text-col: "#FFFFFF"
-navbar-border-col: "#DDDDDD"
+# navbar-border-col: "#DDDDDD"
+navbar-border-col: "#4D89BD"
+
 
 
 # footer-col: "#EAEAEA"
