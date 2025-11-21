@@ -33,19 +33,12 @@ description: Former members of NapLab @ Columbia.
 .person .affiliation { color:#555; font-size:0.9rem; margin:0 0 8px; font-style: italic; }
 .person .links a { margin: 0 6px; }
 </style>
+{% assign alumni_list = site.data.people.alumni | default: empty %}
 
 <div class="people-grid">
-  {% assign alumni = site.data.people | where: "status", "alumni" %}
-  {% for p in alumni %}
+  {% for name in alumni_list %}
     <div class="person">
-      <img src="{{ p.avatar | relative_url }}" alt="{{ p.name }}">
-      <div class="name">{{ p.name }}</div>
-      <div class="role">{{ p.role }}</div>
-      {% if p.affiliation %}<div class="affiliation"><em>{{ p.affiliation }}</em></div>{% endif %}
-      <div class="links">
-        {% if p.website %}<a href="{{ p.website }}" target="_blank" rel="noopener">Website</a>{% endif %}
-        {% if p.email %}<a href="mailto:{{ p.email }}">Email</a>{% endif %}
-      </div>
+      <div class="name">{{ name }}</div>
     </div>
   {% endfor %}
 </div>
