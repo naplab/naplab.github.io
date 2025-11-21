@@ -2,7 +2,6 @@
 layout: page
 permalink: /publication/
 ---
-
 ## Feature Publications
 
 For all publications, please check [Google Scholar](https://scholar.google.com/citations?hl=en&user=DKhMx5gAAAAJ&view_op=list_works&sortby=pubdate).
@@ -26,7 +25,7 @@ For all publications, please check [Google Scholar](https://scholar.google.com/c
         
         <div class="pub-journal" style="font-style: italic; color: #555;">
           {{ pub.journal }}
-          {% if pub.volume %}, Vol. {{ pub.volume }}{% endif %}
+          {% if pub.volume%}, Vol. {{ pub.volume }}{% endif %}
           {% if pub.pages %}, pp. {{ pub.pages }}{% endif %}
         </div>
 

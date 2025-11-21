@@ -69,13 +69,52 @@ def parse_bibtex(file_path):
 
 def clean_authors(author_str):
     """
-    Converts BibTeX format 'Author One and Author Two' to 'Author One, Author Two'
+    Parses BibTeX author format and converts to 'F Lastname' format.
+    Example: 'Norman-Haignere, Sam V' -> 'S Norman-Haignere'
+    Example: 'Mischler, Gavin' -> 'G Mischler'
     """
     if not author_str:
         return ""
-    # Replace ' and ' with comma
-    cleaned = re.sub(r'\s+and\s+', ', ', author_str)
-    return cleaned
+    
+    # Normalize spaces
+    author_str = re.sub(r'\s+', ' ', author_str.strip())
+    
+    # Split by ' and ' (case insensitive)
+    raw_authors = re.split(r'\s+and\s+', author_str, flags=re.IGNORECASE)
+    
+    formatted_authors = []
+    
+    for auth in raw_authors:
+        auth = auth.strip()
+        if not auth:
+            continue
+            
+        # Check format: "Lastname, Firstname" (BibTeX standard)
+        if ',' in auth:
+            parts = auth.split(',', 1)
+            last_name = parts[0].strip()
+            first_part = parts[1].strip()
+            
+            # Get the first initial of the first name
+            # We take the first character of the first word in the first name section
+            initial = first_part[0] if first_part else ""
+            
+            formatted_authors.append(f"{initial} {last_name}")
+            
+        # Fallback for "Firstname Lastname" (Less common in strict BibTeX but possible)
+        else:
+            parts = auth.split()
+            if len(parts) > 1:
+                last_name = parts[-1]
+                first_name = parts[0]
+                initial = first_name[0]
+                formatted_authors.append(f"{initial} {last_name}")
+            else:
+                # Single name edge case
+                formatted_authors.append(auth)
+                
+    # Join with commas
+    return ", ".join(formatted_authors)
 
 def save_to_yaml(entries, output_path):
     """
@@ -110,7 +149,9 @@ def escape_yaml_string(text):
     """
     if not text:
         return ""
-    return text.replace('"', '\\"')
+    # Escape double quotes
+    text = text.replace('"', '\\"')
+    return text
 
 if __name__ == "__main__":
     print("Running bib2yaml converter...")
