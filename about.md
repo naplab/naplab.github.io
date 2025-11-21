@@ -122,7 +122,7 @@ permalink: /about/
 </style>
 
 <div class="about-page-wrapper">
-    <p class="lead">Welcome to the **Neural Acoustic Processing Laboratory** at Columbia University. Our research is dedicated to understanding and engineering the future of human auditory communication, and it is built on three core pillars:</p>
+    <p class="lead">Welcome to the <strong>Neural Acoustic Processing Laboratory</strong> at Columbia University. Our research is dedicated to understanding and engineering the future of human auditory communication, and it is built on three core pillars:</p>
 
     <section class="research-cards">
         <article class="research-card" tabindex="0">
