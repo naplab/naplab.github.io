@@ -3,7 +3,7 @@ layout: page
 ---
 
 <style>
-/* Basic layout */
+/* --- 基础布局 --- */
 .people-grid {
   display: flex;
   flex-wrap: wrap;
@@ -14,11 +14,11 @@ layout: page
   box-sizing: border-box;
 }
 
-/* Core styles for dynamic cards */
+/* --- 动态卡片核心样式 --- */
 .member-card {
   position: relative;
   display: block;
-  height: 400px;
+  height: 400px; 
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -34,7 +34,7 @@ layout: page
   z-index: 10;
 }
 
-/* Background image */
+/* 背景图 */
 .member-bg {
   position: absolute;
   top: 0;
@@ -48,20 +48,20 @@ layout: page
 }
 
 .member-card:hover .member-bg {
-  transform: scale(1.08); /* Slightly reduced scale factor for more natural motion */
+  transform: scale(1.08); /* 稍微缩小放大比例，更自然 */
 }
 
-/* Overlay and text animation (key edited section) */
+/* --- 遮罩层与文字动画 (重点修改区域) --- */
 .member-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-
-  /* Default state: strong black at the bottom for text readability, top is fully transparent */
-  background: linear-gradient(to top, rgba(0,0,0,0.8) 0 percent, rgba(0,0,0,0) 35 percent);
-
+  
+  /* 默认状态：只有最底部有一点点黑，保证名字可见，上面全透明 */
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 35%);
+  
   padding: 20px;
   color: #fff;
   display: flex;
@@ -70,22 +70,22 @@ layout: page
   transition: background 0.4s ease;
 }
 
-/* Hover state: no longer fully black */
-/* Bottom is dark for text visibility, middle is semi transparent, top keeps a very light shadow */
+/* 【修改点】悬停状态：不再全黑 */
+/* 底部(0%)很黑以显示文字，中间(60%)半透明，顶部(100%)只保留淡淡的阴影(0.2) */
 .member-card:hover .member-overlay {
-  background: linear-gradient(to top, rgba(0,0,0,0.95) 0 percent, rgba(0,0,0,0.6) 60 percent, rgba(0,0,0,0.1) 100 percent);
+  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 60%, rgba(0,0,0,0.1) 100%);
 }
 
-/* Name and title */
+/* 名字和头衔 */
 .member-header {
   transform: translateY(0);
   transition: transform 0.4s ease;
-  /* Always keep text shadow so text stays readable even when background becomes lighter */
+  /* 始终保持文字阴影，这样即使背景不黑，文字也清晰 */
   text-shadow: 0 2px 5px rgba(0,0,0,0.9);
 }
 
 .member-card:hover .member-header {
-  transform: translateY(-5px); /* Smaller upward motion for tighter spacing */
+  transform: translateY(-5px); /* 上移距离减小，更紧凑 */
 }
 
 .member-name {
@@ -103,15 +103,15 @@ layout: page
   margin-bottom: 5px;
 }
 
-/* Academic details */
+/* --- 学历详细信息 --- */
 .member-details {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
   transition: all 0.5s ease;
   font-size: 0.85rem;
-  color: #fff; /* White text */
-  /* Text shadow for readability against light backgrounds */
+  color: #fff; /* 纯白字 */
+  /* 给学历文字也加阴影，这样背景即使比较亮也能看清 */
   text-shadow: 0 1px 3px rgba(0,0,0,0.9);
 }
 
@@ -126,7 +126,7 @@ layout: page
   line-height: 1.3;
 }
 
-/* Show details on hover */
+/* 悬停显示学历 */
 .member-card:hover .member-details {
   max-height: 200px;
   opacity: 1;
@@ -135,7 +135,7 @@ layout: page
   border-top: 1px solid rgba(255,255,255,0.4);
 }
 
-/* Collaborators and Alumni */
+/* --- Collaborators & Alumni --- */
 .collaborator-item {
   margin-bottom: 20px;
   padding-bottom: 10px;
@@ -212,6 +212,7 @@ layout: page
 </div>
 
 <hr>
+
 
 ## Collaborators
 <div class="row">
