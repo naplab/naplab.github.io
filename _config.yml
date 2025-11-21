@@ -22,12 +22,15 @@ author: NapLab @ Columbia
 ###############################################
 
 navbar-links:
-  About: "about"
+  # About: "about"
   People: "people"
-  Project: "project"
+  # Project: "project"
   Publication: "publication"
-  Events: "events"
-  Engage: "engage"
+  Teaching: "teaching"
+  Opportunities: "opportunities"
+  Contact: "contact"
+  # Events: "events"
+  # Engage: "engage"
   # Resources:
     # - Beautiful Jekyll: "https://beautifuljekyll.com"
     # - Learn markdown: "https://www.markdowntutorial.com/"
