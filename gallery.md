@@ -1,19 +1,19 @@
 ---
 layout: page
-title: "Gallery"
+title: ""
 permalink: /gallery/
 ---
 
 <style>
-/* Grid layout similar to people.md */
+/* Grid layout similar to people.md but with larger cards */
 .gallery-grid {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -15px;
+  margin: 0 -10px;
 }
 
 .gallery-col {
-  padding: 15px;
+  padding: 10px;
   box-sizing: border-box;
 }
 
@@ -26,15 +26,15 @@ permalink: /gallery/
   overflow: hidden;
   background-color: #fff;
   border: 1px solid #eee;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
 /* Hover lift effect */
 .gallery-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+  transform: translateY(-6px);
+  box-shadow: 0 18px 28px rgba(0,0,0,0.22);
   z-index: 10;
 }
 
@@ -52,7 +52,7 @@ permalink: /gallery/
   transform: scale(1.06);
 }
 
-/* Overlay that holds text */
+/* Overlay that holds highlight text */
 .gallery-overlay {
   position: absolute;
   inset: 0;
@@ -61,7 +61,7 @@ permalink: /gallery/
   justify-content: flex-end;
   padding: 18px;
   color: #fff;
-  background: linear-gradient(to top, rgba(0,0,0,0.65) 0, rgba(0,0,0,0.05) 45, rgba(0,0,0,0) 100);
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.15) 45%, rgba(0,0,0,0) 100%);
   opacity: 0;
   transition: opacity 0.35s ease, background 0.35s ease;
 }
@@ -69,20 +69,10 @@ permalink: /gallery/
 /* Overlay becomes darker and visible on hover */
 .gallery-card:hover .gallery-overlay {
   opacity: 1;
-  background: linear-gradient(to top, rgba(0,0,0,0.9) 0, rgba(0,0,0,0.4) 55, rgba(0,0,0,0.05) 100);
+  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.5) 55%, rgba(0,0,0,0.1) 100%);
 }
 
-/* Year label */
-.gallery-year {
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-bottom: 4px;
-  opacity: 0.9;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.9);
-}
-
-/* Highlight text */
+/* Highlight text only */
 .gallery-highlight {
   font-size: 1rem;
   font-weight: 600;
@@ -91,31 +81,8 @@ permalink: /gallery/
 }
 </style>
 
-## Gallery
-
-{% assign grouped_gallery = site.data.gallery | group_by: "year" | sort: "name" | reverse %}
-
-{% for group in grouped_gallery %}
-### {{ group.name }}
+{% assign sorted_gallery = site.data.gallery | sort: "year" | reverse %}
 
 <div class="row gallery-grid">
-  {% for item in group.items %}
-    <div class="col-12 col-sm-6 col-md-3 gallery-col">
-
-      <!-- Gallery card -->
-      <div class="gallery-card">
-        <!-- Background image -->
-        <div class="gallery-bg" style="background-image: url('{{ item.file }}');"></div>
-
-        <!-- Overlay with year and highlight text -->
-        <div class="gallery-overlay">
-          <div class="gallery-year">{{ item.year }}</div>
-          <div class="gallery-highlight">{{ item.highlight }}</div>
-        </div>
-      </div>
-
-    </div>
-  {% endfor %}
-</div>
-
-{% endfor %}
+  {% for item in sorted_gallery %}
+    <di
