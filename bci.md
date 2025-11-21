@@ -79,28 +79,46 @@ Khalighinejad, Bahar; Long, Laura; Mesgarani, Nima, **Designing a Hands-On Brain
    [labinstruction2.pdf](/assets/files/labinstruction2.pdf)
    
 3. **Neurofeedback**  
-   [labinstruction3.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction3.pdf)
+   <!-- [labinstruction3.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction3.pdf) -->
+   [labinstruction3.pdf](/assets/files/labinstruction3.pdf)
+
 
 4. **Auditory oddball paradigm**  
-   [labinstruction4.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction4.pdf)
+   <!-- [labinstruction4.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction4.pdf) -->
+   [labinstruction4.pdf](/assets/files/labinstruction4.pdf)
+
 
 5. **P300 speller**  
-   [labinstruction5.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction5.pdf)
+   <!-- [labinstruction5.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction5.pdf) -->
+   [labinstruction5.pdf](/assets/files/labinstruction5.pdf)
+
 
 6. **Auditory steady state response**  
-   [labinstruction6.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction6.pdf)
+   <!-- [labinstruction6.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction6.pdf) -->
+   [labinstruction6.pdf](/assets/files/labinstruction6.pdf)
+
 
 7. **Attentional modulation of ASSR**  
-   [labinstruction7.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction7.pdf)
+   <!-- [labinstruction7.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction7.pdf) -->
+   [labinstruction7.pdf](/assets/files/labinstruction7.pdf)
+
 
 8. **Steady state visually evoked responses**  
-   [labinstruction8.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction8.pdf)
+   <!-- [labinstruction8.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction8.pdf) -->
+   [labinstruction8.pdf](/assets/files/labinstruction8.pdf)
+
 
 9. **Decoding imagined movement**  
-   [labinstruction9.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction9.pdf)
+   <!-- [labinstruction9.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction9.pdf) -->
+   [labinstruction9.pdf](/assets/files/labinstruction9.pdf)
+
 
 10. **Project 1**  
-    [miniproject1.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/miniproject1.pdf)
+    <!-- [miniproject1.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/miniproject1.pdf) -->
+    [miniproject1.pdf](/assets/files/miniproject1.pdf)
+
 
 11. **Project 2**  
-    [miniproject2.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/miniproject2.pdf)
+    <!-- [miniproject2.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/miniproject2.pdf) -->
+    [miniproject2.pdf](/assets/files/miniproject2.pdf)
+
