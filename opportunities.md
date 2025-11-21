@@ -1,6 +1,5 @@
 ---
 layout: page
-title: ""
 permalink: /opportunities/
 ---
 Our lab at Columbia University is part of the [Zuckerman Mind Brain Behavior Institute](https://zuckermaninstitute.columbia.edu/), [Electrical Engineering Department](https://www.ee.columbia.edu/), and the [Center for Neural Engineering](https://cnec.columbia.edu/).

@@ -1,6 +1,5 @@
 ---
 layout: page
-title: ""
 permalink: /contact/
 ---
 <div style="text-align: center;" markdown="1">
