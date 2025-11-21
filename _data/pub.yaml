@@ -18,6 +18,14 @@
   link: ""
   pdf: ""
 
+- title: "Dual-path mamba: Short and long-term bidirectional selective structured state space models for speech separation"
+  authors: "X Jiang, C Han, N Mesgarani"
+  journal: "ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
+  year: 2025
+  pages: "1--5"
+  link: ""
+  pdf: ""
+
 - title: "Contextual feature extraction hierarchies converge in large language models and the brain"
   authors: "G Mischler, Y Li, S Bickel, A Mehta, N Mesgarani"
   journal: "Nature Machine Intelligence"
