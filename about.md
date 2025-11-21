@@ -2,6 +2,7 @@
 layout: page
 title: NapLab | Mesgarani
 subtitle: 
+full-width: true
 ---
 
 Welcome to the Neural Acoustic Processing Laboratory at Columbia University. Our research is dedicated to understanding and engineering the future of human auditory communication, and it is built on three core pillars:
