@@ -1,4 +1,8 @@
 ---
-layout: redirect
-redirect: /about/
----
+layout: default
+
+<meta http-equiv="refresh" content="0; url={{ '/about/' | relative_url }}">
+<div style="text-align:center; margin-top: 2rem;">
+  If you are not redirected automatically, please visit
+  <a href="{{ '/about/' | relative_url }}">the About page</a>.
+</div>
