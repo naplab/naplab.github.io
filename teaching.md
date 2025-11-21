@@ -1,6 +1,12 @@
 ---
 layout: page
-title: NapLab @ Columbia
-subtitle: Columbia's Brain-Computer Interfaces Club!
 ---
-Coming soon!
+	
+Courses:
+- ​EEBME 9070: Advance Topics: Bio-Inspired Computation
+​ 
+- ELEN 6820: Speech and Audio Signal Processing
+​
+- ECBME 4090: Brain Computer Interfaces Laboratory
+​
+- EEBME 9070: Advance Topics: Neural Processing of Acoustic Signals
