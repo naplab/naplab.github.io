@@ -16,11 +16,10 @@ For all publications, check [Google Scholar](https://scholar.google.com/citation
       {{ pub.authors }}
     </div>
     <div class="pub-journal" style="font-style: italic; color: #555; font-size: 0.9em;">
-      {{ pub.journal| replace: 'Nature  ', 'Nature ' | strip }}
-      {% if pub.year %} ({{ pub.year}}){% endif %}
-      {% if pub.volume %}, Vol. {{ pub.volume}}{% endif %}
-      {% if pub.pages %}, pp. {{ pub.pages }}{% endif %}
+      {{ pub.journal }}
+      {% if pub.year %} ({{ pub.year }}){% endif %}{% if pub.volume %}, Vol. {{ pub.volume }}{% endif %}{% if pub.pages %}, pp. {{ pub.pages }}{% endif %}
     </div>
+
 
     {% if pub.pdf != "" or pub.link != "" %}
     <div class="pub-links" style="margin-top: 4px; font-size: 0.85em;">
