@@ -228,21 +228,25 @@ layout: page
     {% endfor %}
   </div>
 </div> -->
-<div class="collaborators-section">
-  <div class="row">
-    <div class="col-12">
-      {% for person in site.data.people.collaborators %}
-        <div class="collaborator-item">
-          {% if person.contacts.website %}
-            <a href="{{ person.contacts.website }}" target="_blank" class="collab-name">{{ person.name }}</a>
-          {% else %}
-            <span class="collab-name">{{ person.name }}</span>
-          {% endif %}
-          <div class="collab-affil">{{ person.affiliation }}</div>
-        </div>
-      {% endfor %}
+
+<div class="row">
+  {% for person in site.data.people.collaborators %}
+    <div class="col-12 col-md-6" style="margin-bottom: 25px; border: none;">
+      
+      {% if person.contacts.website %}
+        <a href="{{ person.contacts.website }}" target="_blank" class="collab-name" style="display:block; text-decoration:none;">
+          {{ person.name }}
+        </a>
+      {% else %}
+        <span class="collab-name" style="display:block;">{{ person.name }}</span>
+      {% endif %}
+
+      <div class="collab-affil">
+        {{ person.affiliation }}
+      </div>
+
     </div>
-  </div>
+  {% endfor %}
 </div>
 
 
