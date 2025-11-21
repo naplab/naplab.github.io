@@ -1,11 +1,9 @@
 ---
 layout: page
-title: Team
-subtitle: Meet the people behind our research
 ---
 
 <style>
-/* 卡片基础容器 */
+/* --- Part 1: 顶部卡片样式 (仅用于 Faculty 和 Lab Members) --- */
 .people-grid {
   display: flex;
   flex-wrap: wrap;
@@ -17,11 +15,10 @@ subtitle: Meet the people behind our research
   box-sizing: border-box;
 }
 
-/* 动态卡片样式 */
 .member-card {
   position: relative;
   display: block;
-  height: 350px; /* 卡片高度，可根据需要调整 */
+  height: 350px; /* 卡片高度 */
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -36,7 +33,6 @@ subtitle: Meet the people behind our research
   box-shadow: 0 10px 15px rgba(0,0,0,0.2);
 }
 
-/* 背景图片层 */
 .member-bg {
   position: absolute;
   top: 0;
@@ -52,7 +48,6 @@ subtitle: Meet the people behind our research
   transform: scale(1.05);
 }
 
-/* 文字遮罩层 (用于有背景图的卡片) */
 .member-overlay {
   position: absolute;
   bottom: 0;
@@ -64,22 +59,6 @@ subtitle: Meet the people behind our research
   text-shadow: 0 1px 2px rgba(0,0,0,0.8);
 }
 
-/* 无背景图的卡片样式 (Collaborators & Alumni) */
-.member-card.simple-card {
-  height: auto;
-  min-height: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-  background-color: #fff; /* 或者使用 #f4f4f4 */
-}
-
-.member-card.simple-card .member-info-simple {
-  color: #333;
-}
-
-/* 字体样式调整 */
 .member-name {
   font-size: 1.2rem;
   font-weight: bold;
@@ -94,13 +73,34 @@ subtitle: Meet the people behind our research
   font-style: italic;
 }
 
-.member-affil {
-  font-size: 0.8rem;
-  opacity: 0.8;
-  margin-top: 5px;
-  display: block;
+/* --- Part 2: 底部文本样式 (用于 Collaborators 和 Alumni) --- */
+.collaborator-item {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee; /* 可选：每人之间加一条极淡的分隔线 */
 }
 
+.collaborator-item:last-child {
+  border-bottom: none;
+}
+
+.collab-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.collab-affil {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 2px;
+}
+
+.alumni-list-item {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
 </style>
 
 ## Principal Investigator
@@ -149,30 +149,32 @@ subtitle: Meet the people behind our research
 
 ## Collaborators
 <div class="row">
-{% for person in site.data.people.collaborators %}
-  {% assign link = person.contacts.website | default: "#" %}
-  
-  <div class="col-12 col-md-6 col-lg-4 people-col">
-    <a href="{{ link }}" class="member-card simple-card">
-      <div class="member-info-simple">
-        <span class="member-name">{{ person.name }}</span>
-        <span class="member-affil">{{ person.affiliation }}</span>
+  <div class="col-12">
+    {% for person in site.data.people.collaborators %}
+      <div class="collaborator-item">
+        {% if person.contacts.website %}
+          <a href="{{ person.contacts.website }}" target="_blank" class="collab-name">{{ person.name }}</a>
+        {% else %}
+          <span class="collab-name">{{ person.name }}</span>
+        {% endif %}
+        
+        <div class="collab-affil">
+          {{ person.affiliation }}
+        </div>
       </div>
-    </a>
+    {% endfor %}
   </div>
-{% endfor %}
 </div>
 
 <hr>
 
 ## Alumni
 <div class="row">
-{% for person in site.data.people.alumni %} <div class="col-6 col-md-4 col-lg-3 people-col">
-    <div class="member-card simple-card" style="min-height: 80px; align-items: center;">
-      <div class="member-info-simple text-center">
-        <span class="member-name" style="font-size: 1rem;">{{ person }}</span>
+  {% for person in site.data.people.alumni %}
+    <div class="col-6 col-md-4">
+      <div class="alumni-list-item">
+        • {{ person }}
       </div>
     </div>
-  </div>
-{% endfor %}
+  {% endfor %}
 </div>
