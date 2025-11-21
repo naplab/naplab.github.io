@@ -72,7 +72,6 @@ Khalighinejad, Bahar; Long, Laura; Mesgarani, Nima, **Designing a Hands-On Brain
    <!-- [labinstruction1.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction1.pdf) -->
    [labinstruction1.pdf](/assets/files/labinstruction1.pdf)
 
-
 2. **Biological artifacts in EEG**  
    <!-- [labinstruction2.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction2.pdf) -->
    [labinstruction2.pdf](/assets/files/labinstruction2.pdf)

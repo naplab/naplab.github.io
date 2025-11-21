@@ -16,8 +16,8 @@ For all publications, check [Google Scholar](https://scholar.google.com/citation
       {{ pub.authors }}
     </div>
     <div class="pub-journal" style="font-style: italic; color: #555; font-size: 0.9em;">
-      {{ pub.journal | replace: 'Nature  ', 'Nature ' | strip }}
-      {% if pub.year %} ({{ pub.year }}){% endif %}
+      {{ pub.journal| replace: 'Nature  ', 'Nature ' | strip }}
+      {% if pub.year %} ({{ pub.year}}){% endif %}
       {% if pub.volume %}, Vol. {{ pub.volume }}{% endif %}
       {% if pub.pages %}, pp. {{ pub.pages }}{% endif %}
     </div>
