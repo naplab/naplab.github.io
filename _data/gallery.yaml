@@ -1,35 +1,37 @@
-- year: 2025
-  file: /assets/img/gallery/cooper.jpg
-  highlight: "Paw-formance review in progress."
-
-- year: 2025
-  file: /assets/img/gallery/xilin_bestpaper.png
-  highlight: "Xilin and Vishal won Best Paper Award @WASPAA 2025! 🏆"
-
-- year: 2025
-  file: /assets/img/gallery/coghear.JPG
-  highlight: "Rainbow in Maryland @CogHear 2025🌈"
-
-- year: 2025
-  file: /assets/img/gallery/coffee.jpg
-  highlight: "Coffee break brainstorming session"
-
-- year: 2025
-  file: /assets/img/gallery/potluck.jpg
-  highlight: "Potluck ... in Ghibli style!"
+- year: 2023
+  file: /assets/img/gallery/morningside.jpg
+  highlight: "Fun night at Morningside Campus."
 
 - year: 2024
-  file: /assets/img/gallery/vishal.jpg
-  highlight: "Vishal and Cong won the 3rd place at BCI award!"
+  file: /assets/img/gallery/holiday.jpg
+  highlight: "Year end holiday party in ZI!"
 
 - year: 2024
   file: /assets/img/gallery/group.jpg
   highlight: "We love Thai food!"
 
 - year: 2024
-  file: /assets/img/gallery/holiday.jpg
-  highlight: "Year end holiday party in ZI!"
+  file: /assets/img/gallery/vishal.jpg
+  highlight: "Vishal and Cong won the 3rd place at BCI award!"
 
-- year: 2023
-  file: /assets/img/gallery/morningside.jpg
-  highlight: "Fun night at Morningside Campus."
+- year: 2025
+  file: /assets/img/gallery/potluck.jpg
+  highlight: "Potluck ... in Ghibli style!"
+
+- year: 2025
+  file: /assets/img/gallery/coffee.jpg
+  highlight: "Coffee break brainstorming session"
+
+- year: 2025
+  file: /assets/img/gallery/coghear.JPG
+  highlight: "Rainbow in Maryland @CogHear 2025🌈"
+
+- year: 2025
+  file: /assets/img/gallery/xilin_bestpaper.png
+  highlight: "Xilin and Vishal won Best Paper Award @WASPAA 2025! 🏆"
+
+- year: 2025
+  file: /assets/img/gallery/cooper.jpg
+  highlight: "Paw-formance review in progress."
+
+
