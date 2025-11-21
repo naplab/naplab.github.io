@@ -3,7 +3,7 @@ layout: page
 ---
 
 <style>
-/* --- 基础布局 --- */
+/* Basic layout */
 .people-grid {
   display: flex;
   flex-wrap: wrap;
@@ -14,11 +14,11 @@ layout: page
   box-sizing: border-box;
 }
 
-/* --- 动态卡片核心样式 --- */
+/* Core styles for dynamic cards */
 .member-card {
   position: relative;
   display: block;
-  height: 400px; 
+  height: 400px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -34,7 +34,7 @@ layout: page
   z-index: 10;
 }
 
-/* 背景图 */
+/* Background image */
 .member-bg {
   position: absolute;
   top: 0;
@@ -48,20 +48,20 @@ layout: page
 }
 
 .member-card:hover .member-bg {
-  transform: scale(1.08); /* 稍微缩小放大比例，更自然 */
+  transform: scale(1.08); /* Slightly reduced scale factor for more natural motion */
 }
 
-/* --- 遮罩层与文字动画 (重点修改区域) --- */
+/* Overlay and text animation (key edited section) */
 .member-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  
-  /* 默认状态：只有最底部有一点点黑，保证名字可见，上面全透明 */
-  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 35%);
-  
+
+  /* Default state: strong black at the bottom for text readability, top is fully transparent */
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0 percent, rgba(0,0,0,0) 35 percent);
+
   padding: 20px;
   color: #fff;
   display: flex;
@@ -70,22 +70,22 @@ layout: page
   transition: background 0.4s ease;
 }
 
-/* 【修改点】悬停状态：不再全黑 */
-/* 底部(0%)很黑以显示文字，中间(60%)半透明，顶部(100%)只保留淡淡的阴影(0.2) */
+/* Hover state: no longer fully black */
+/* Bottom is dark for text visibility, middle is semi transparent, top keeps a very light shadow */
 .member-card:hover .member-overlay {
-  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 60%, rgba(0,0,0,0.1) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.95) 0 percent, rgba(0,0,0,0.6) 60 percent, rgba(0,0,0,0.1) 100 percent);
 }
 
-/* 名字和头衔 */
+/* Name and title */
 .member-header {
   transform: translateY(0);
   transition: transform 0.4s ease;
-  /* 始终保持文字阴影，这样即使背景不黑，文字也清晰 */
+  /* Always keep text shadow so text stays readable even when background becomes lighter */
   text-shadow: 0 2px 5px rgba(0,0,0,0.9);
 }
 
 .member-card:hover .member-header {
-  transform: translateY(-5px); /* 上移距离减小，更紧凑 */
+  transform: translateY(-5px); /* Smaller upward motion for tighter spacing */
 }
 
 .member-name {
@@ -103,15 +103,15 @@ layout: page
   margin-bottom: 5px;
 }
 
-/* --- 学历详细信息 --- */
+/* Academic details */
 .member-details {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
   transition: all 0.5s ease;
   font-size: 0.85rem;
-  color: #fff; /* 纯白字 */
-  /* 给学历文字也加阴影，这样背景即使比较亮也能看清 */
+  color: #fff; /* White text */
+  /* Text shadow for readability against light backgrounds */
   text-shadow: 0 1px 3px rgba(0,0,0,0.9);
 }
 
@@ -126,7 +126,7 @@ layout: page
   line-height: 1.3;
 }
 
-/* 悬停显示学历 */
+/* Show details on hover */
 .member-card:hover .member-details {
   max-height: 200px;
   opacity: 1;
@@ -135,7 +135,7 @@ layout: page
   border-top: 1px solid rgba(255,255,255,0.4);
 }
 
-/* --- Collaborators & Alumni --- */
+/* Collaborators and Alumni */
 .collaborator-item {
   margin-bottom: 20px;
   padding-bottom: 10px;
@@ -212,65 +212,6 @@ layout: page
 </div>
 
 <hr>
-
-<!-- ## Collaborators -->
-<!-- <div class="row">
-  <div class="col-12">
-    {% for person in site.data.people.collaborators %}
-      <div class="collaborator-item">
-        {% if person.contacts.website %}
-          <a href="{{ person.contacts.website }}" target="_blank" class="collab-name">{{ person.name }}</a>
-        {% else %}
-          <span class="collab-name">{{ person.name }}</span>
-        {% endif %}
-        <div class="collab-affil">{{ person.affiliation }}</div>
-      </div>
-    {% endfor %}
-  </div>
-</div> -->
-
-<!-- <div class="row">
-  {% for person in site.data.people.collaborators %}
-    <div class="col-12 col-md-6" style="margin-bottom: 25px; border: none;">
-      
-      {% if person.contacts.website %}
-        <a href="{{ person.contacts.website }}" target="_blank" class="collab-name" style="display:block; text-decoration:none;">
-          {{ person.name }}
-        </a>
-      {% else %}
-        <span class="collab-name" style="display:block;">{{ person.name }}</span>
-      {% endif %}
-
-      <div class="collab-affil">
-        {{ person.affiliation }}
-      </div>
-
-    </div>
-  {% endfor %}
-</div> -->
-
-
-<!-- ## Alumni
-<div class="row">
-  {% for person in site.data.people.alumni %}
-    <div class="col-6 col-md-4">
-      <div class="alumni-list-item">• {{ person }}</div>
-    </div>
-  {% endfor %}
-</div> -->
-
-
-<!-- ## Alumni
-<div class="row">
-  {% for person in site.data.people.alumni %}
-    <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
-      <span style="font-size: 1.1rem; font-weight: bold; color: #333; display: block;">
-        {{ person }}
-      </span>
-    </div>
-  {% endfor %}
-</div> -->
-
 
 ## Collaborators
 <div class="row">
