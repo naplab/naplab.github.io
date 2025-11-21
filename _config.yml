@@ -155,18 +155,17 @@ link-col: "#1D4F91" # Columbia blue
 hover-col: "#0085A1"
 # navbar-col: "#EAEAEA"
 # navbar-col: "#B9D9EB" # Columbia blue
-navbar-col: "#0072CE" # Columbia blue Dark
-#navbar-col: "#FFFFFF" #
-# navbar-text-col: "#404040"
-navbar-text-col: "#FFFFFF"
-
+# navbar-col: "#0072CE" # Columbia blue Dark
+navbar-col: "#FFFFFF" #
+navbar-text-col: "#404040"
+# navbar-text-col: "#FFFFFF"
 navbar-border-col: "#DDDDDD"
 
 
 # footer-col: "#EAEAEA"
 # footer-col: "#B9D9EB" # Columbia blue
-# footer-col: "#FFFFFF" #
-footer-col: "#0072CE" #
+footer-col: "#FFFFFF" #
+# footer-col: "#0072CE" # Columbia blue Dark
 footer-text-col: "#777777"
 footer-link-col: "#404040"
 footer-hover-col: "#0085A1"
