@@ -3,9 +3,7 @@ layout: page
 title: ""
 permalink: /contact/
 ---
-
 <div style="text-align: center;" markdown="1">
-
 Our lab is located at the new Manhattanville Campus of Columbia University.
 
 <br>

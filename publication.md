@@ -3,7 +3,6 @@ layout: page
 title: ""
 permalink: /publication/
 ---
-
 For all publications, please check [Google Scholar](https://scholar.google.com/citations?hl=en&user=DKhMx5gAAAAJ&view_op=list_works&sortby=pubdate). Recent feature publications are listed below.
 
 {% assign sorted_pubs = site.data.pub | sort: "year" | reverse %}

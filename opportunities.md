@@ -3,7 +3,6 @@ layout: page
 title: ""
 permalink: /opportunities/
 ---
-
 Our lab at Columbia University is part of the [Zuckerman Mind Brain Behavior Institute](https://zuckermaninstitute.columbia.edu/), [Electrical Engineering Department](https://www.ee.columbia.edu/), and the [Center for Neural Engineering](https://cnec.columbia.edu/).
 
 Our group includes electrical and biomedical engineers and neuroscientists. Applicants interested in research opportunities can contact **Prof. Nima Mesgarani** for more information on how to join.
