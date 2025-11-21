@@ -1,40 +1,47 @@
 ---
 layout: page
-title: Publications
-permalink: /publications/
+permalink: /publication/
 ---
 
 ## Feature Publications
 
 For all publications, please check [Google Scholar](https://scholar.google.com/citations?hl=en&user=DKhMx5gAAAAJ&view_op=list_works&sortby=pubdate).
 
-{% assign pubs = site.data.pub | sort: "year" | reverse %}
-{% assign current_year = "" %}
 
-{% for p in pubs %}
-  {% if p.year != current_year %}
-### {{ p.year }}
-  {% assign current_year = p.year %}
-  {% endif %}
+{% assign grouped_pubs = site.data.pub | group_by: "year" | sort: "name" | reverse %}
 
-{% comment %}
-将 authors 字符串转为数组，并把 "名字 姓" 转成 "首字母 姓"
-{% endcomment %}
+{% for group in grouped_pubs %}
+  <h2 id="y{{ group.name }}">{{ group.name }}</h2>
+  
+  <ul class="pub-list" style="list-style-type: none; padding-left: 0;">
+    {% for pub in group.items %}
+      <li style="margin-bottom: 20px;">
+        <div class="pub-title" style="font-weight: bold; font-size: 1.1em;">
+          {{ pub.title }}
+        </div>
+        
+        <div class="pub-authors">
+          {{ pub.authors }}
+        </div>
+        
+        <div class="pub-journal" style="font-style: italic; color: #555;">
+          {{ pub.journal }}
+          {% if pub.volume %}, Vol. {{ pub.volume }}{% endif %}
+          {% if pub.pages %}, pp. {{ pub.pages }}{% endif %}
+        </div>
 
-{% assign authors_raw = p.authors | split: "," %}
-{% assign authors_clean = "" | split: "|" %}
-
-{% for a in authors_raw %}
-  {% assign name = a | strip %}
-  {% assign parts = name | split: " " %}
-  {% assign last = parts | last %}
-  {% assign first = parts | first %}
-  {% assign initial = first | slice: 0,1 %}
-  {% assign formatted = initial | append: " " | append: last %}
-  {% assign authors_clean = authors_clean | push: formatted %}
-{% endfor %}
-
-- {{ authors_clean | join: ", " }}. ({{ p.year }}). **{{ p.title }}**.  
-  *{{ p.journal }}{% if p.volume %}, {{ p.volume }}{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}*.  
-  {% if p.link %}[Link]({{ p.link }}){% endif %}{% if p.pdf %}{% if p.link %} · {% endif %}[PDF]({{ p.pdf }}){% endif %}
+        {% if pub.pdf != "" or pub.link != "" %}
+          <div class="pub-links" style="margin-top: 5px;">
+            {% if pub.pdf and pub.pdf != "" %}
+              <a href="{{ pub.pdf }}" target="_blank" style="margin-right: 10px;">[PDF]</a>
+            {% endif %}
+            {% if pub.link and pub.link != "" %}
+              <a href="{{ pub.link }}" target="_blank">[Link]</a>
+            {% endif %}
+          </div>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+  <hr>
 {% endfor %}
