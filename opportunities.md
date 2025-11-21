@@ -14,9 +14,9 @@ permalink: /opportunities/
 
 Our lab at Columbia University is part of the [Zuckerman Mind Brain Behavior Institute](https://zuckermaninstitute.columbia.edu/), [Electrical Engineering Department](https://www.ee.columbia.edu/), and the [Center for Neural Engineering](https://cnec.columbia.edu/).
 
-Our group includes electrical and biomedical engineers and neuroscientists. Applicants interested in research opportunities can contact **Prof. Mesgarani** for more information on how to join.
+Our group includes electrical and biomedical engineers and neuroscientists. Applicants interested in research opportunities can contact Prof. Mesgarani for more information on how to join.
 
-For **Ph.D. positions**, please apply to the [Electrical Engineering Ph.D. program](https://www.ee.columbia.edu/) (application deadline: December 15) and mention **Prof. Mesgarani** in your application.
+For **Ph.D. positions**, please apply to the [Electrical Engineering Ph.D. program](https://www.ee.columbia.edu/) (application deadline: December 15) and mention Prof. Mesgarani in your application.
 
 ---
 
