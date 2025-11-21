@@ -1,5 +1,7 @@
 ---
 layout: page
+title: Team
+subtitle: Meet the people behind our research
 ---
 
 <style>
@@ -18,13 +20,13 @@ layout: page
 .member-card {
   position: relative;
   display: block;
-  height: 400px; /* 稍微加高一点，给学历留空间 */
+  height: 400px; 
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none !important;
-  background-color: #f8f9fa;
+  background-color: #fff; /* 背景改为纯白，防止图片加载前透出灰色 */
   border: 1px solid #eee;
 }
 
@@ -44,43 +46,49 @@ layout: page
   background-size: cover;
   background-position: center top;
   transition: transform 0.5s ease;
+  /* 确保图片亮度正常，不做任何滤镜处理 */
+  filter: brightness(100%); 
 }
 
 .member-card:hover .member-bg {
-  transform: scale(1.1); /* 悬停时背景图轻微放大 */
+  transform: scale(1.1); 
 }
 
-/* --- 遮罩层与文字动画 (关键部分) --- */
+/* --- 遮罩层与文字动画 (关键修改点) --- */
 .member-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* 遮罩层占满全屏，但通过背景渐变控制显示区域 */
-  /* 默认：只有底部是黑色的 */
-  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0) 100%);
+  height: 100%;
+  
+  /* 【修改点】：默认状态下，渐变黑色只占底部 30%，上面 70% 完全透明，保证头像明亮 */
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 30%);
+  
   padding: 20px;
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* 文字靠下对齐 */
-  transition: background 0.4s ease;
+  justify-content: flex-end;
+  transition: background 0.4s ease; /* 背景色过渡动画 */
 }
 
-/* 悬停时：遮罩层变成全黑半透明，以便阅读文字 */
+/* 悬停时：背景变深，以便阅读学历文字 */
 .member-card:hover .member-overlay {
-  background: rgba(0, 0, 0, 0.85);
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.8) 100%);
 }
 
 /* 名字和头衔 */
 .member-header {
   transform: translateY(0);
   transition: transform 0.4s ease;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8); /* 加强文字阴影，防止背景亮时看不清字 */
 }
 
-/* 为了给学历腾出空间，悬停时名字稍微上移 */
+/* 悬停时名字上移 */
 .member-card:hover .member-header {
   transform: translateY(-10px);
+  text-shadow: none; /* 背景变黑了，就不需要很重的文字阴影了 */
 }
 
 .member-name {
@@ -92,20 +100,20 @@ layout: page
 
 .member-title {
   font-size: 0.9rem;
-  opacity: 0.9;
+  opacity: 0.95; /* 提高一点不透明度 */
   display: block;
   font-style: italic;
   margin-bottom: 5px;
 }
 
-/* --- 学历详细信息 (默认隐藏) --- */
+/* --- 学历详细信息 --- */
 .member-details {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
   transition: all 0.5s ease;
   font-size: 0.85rem;
-  color: #ddd;
+  color: #eee; /* 字体颜色稍微亮一点 */
 }
 
 .member-details ul {
@@ -119,13 +127,13 @@ layout: page
   line-height: 1.3;
 }
 
-/* 悬停时：显示学历 */
+/* 悬停显示学历 */
 .member-card:hover .member-details {
-  max-height: 200px; /* 足够显示大多数人的学历 */
+  max-height: 200px;
   opacity: 1;
-  margin-top: 10px; /* 与名字拉开距离 */
+  margin-top: 10px;
   padding-top: 10px;
-  border-top: 1px solid rgba(255,255,255,0.3); /* 加一条分割线 */
+  border-top: 1px solid rgba(255,255,255,0.3);
 }
 
 /* --- 其他部分的样式 --- */
