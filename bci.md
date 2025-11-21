@@ -70,11 +70,14 @@ Khalighinejad, Bahar; Long, Laura; Mesgarani, Nima, **Designing a Hands-On Brain
 ## Course materials
 
 1. **Introduction to EEG**  
-   [labinstruction1.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction1.pdf)
+   <!-- [labinstruction1.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction1.pdf) -->
+   [labinstruction1.pdf](/assets/img/files/labinstruction1.pdf)
+
 
 2. **Biological artifacts in EEG**  
-   [labinstruction2.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction2.pdf)
-
+   <!-- [labinstruction2.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction2.pdf) -->
+   [labinstruction2.pdf](/assets/img/files/labinstruction2.pdf)
+   
 3. **Neurofeedback**  
    [labinstruction3.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction3.pdf)
 
