@@ -19,7 +19,7 @@ lab_members:
     title: Postdoctoral Researcher
     avatar: /assets/img/people/rj.jpg
     contacts:
-      email: rja2163@columbia.edu
+      email: ""
     degrees:
       - Ph.D. University of Texas, Austin
       - B.Sc. Caltech
@@ -28,6 +28,7 @@ lab_members:
     avatar: /assets/img/people/kiki.jpg
     contacts:
       email: ""
+      website: https://www.ru.nl/en/people/heijden-k-van-der
     degrees:
       - Ph.D. Maastricht University, Netherlands
   - name: Vishal Choudhari
@@ -35,6 +36,7 @@ lab_members:
     avatar: /assets/img/people/vishal.jpg
     contacts:
       email: ""
+      website: https://www.vishalchoudhari.com/
     degrees:
       - B.Sc. Indian Institute of Technology
   - name: Gavin Mischler
@@ -42,7 +44,7 @@ lab_members:
     avatar: /assets/img/people/gavin.jpg
     contacts:
       email: ""
-      website: https://gavmischler.com
+      website: https://gavinmischler.github.io/
     degrees:
       - M.Sc. Electrical Engineering, Columbia University
       - B.Sc. Biomedical Engineering, Johns Hopkins University
@@ -59,6 +61,7 @@ lab_members:
     avatar: /assets/img/people/xilin.jpg
     contacts:
       email: ""
+      website: https://www.linkedin.com/in/xj0/
     degrees:
       - M.Sc. Electrical Engineering, Columbia University
       - B.Sc. Computer Engineering, University of Illinois Urbana Champaign
@@ -85,6 +88,7 @@ lab_members:
     avatar: /assets/img/people/arsalan.jpg
     contacts:
       email: ""
+      website: https://www.linkedin.com/in/arsalan-firoozi-6474927b/
     degrees:
       - B.Sc. Electrical Engineering, Sharif University of Technology
   - name: Riki Shimizu
