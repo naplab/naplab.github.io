@@ -21,6 +21,10 @@ permalink: /about/
 		color: #31445e;
 	}
 
+	.about-page-wrapper .lab-name {
+		font-weight: 700;
+	}
+
 	.research-cards {
 		display: grid;
 		grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -122,7 +126,7 @@ permalink: /about/
 </style>
 
 <div class="about-page-wrapper">
-    <p class="lead">Welcome to the <strong>Neural Acoustic Processing Laboratory</strong> at Columbia University. Our research is dedicated to understanding and engineering the future of human auditory communication, and it is built on three core pillars:</p>
+	<p class="lead">Welcome to the <strong class="lab-name">Neural Acoustic Processing Laboratory</strong> at Columbia University. Our research is dedicated to understanding and engineering the future of human auditory communication, and it is built on three core pillars:</p>
 
     <section class="research-cards">
         <article class="research-card" tabindex="0">
