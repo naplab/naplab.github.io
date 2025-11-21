@@ -1,6 +1,5 @@
 ---
 layout: page
-title: ""
 permalink: /bci/
 ---
 # Hands-on Brain-Computer Interfaces (BCI) Laboratory
