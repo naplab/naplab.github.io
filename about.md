@@ -1,6 +1,6 @@
 ---
 layout: page
-title: NAPLab | Mesgarani
+title: Neural Acoustic Processing Lab
 permalink: /about/
 ---
 
