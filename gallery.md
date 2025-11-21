@@ -85,4 +85,19 @@ permalink: /gallery/
 
 <div class="row gallery-grid">
   {% for item in sorted_gallery %}
-    <di
+    <div class="col-12 col-sm-6 col-md-4 gallery-col">
+
+      <!-- Gallery card -->
+      <div class="gallery-card">
+        <!-- Background image -->
+        <div class="gallery-bg" style="background-image: url('{{ item.file }}');"></div>
+
+        <!-- Overlay with highlight text only -->
+        <div class="gallery-overlay">
+          <div class="gallery-highlight">{{ item.highlight }}</div>
+        </div>
+      </div>
+
+    </div>
+  {% endfor %}
+</div>
