@@ -152,7 +152,9 @@ navbar-var-length: false
 page-col: "#FFFFFF"
 text-col: "#404040"
 # link-col: "#008AFF"
-link-col: "#1D4F91" # Columbia blue
+# link-col: "#1D4F91" # Columbia blue
+link-col: "#0072CE" # Columbia blue
+
 hover-col: "#0085A1"
 # navbar-col: "#EAEAEA"
 # navbar-col: "#B9D9EB" # Columbia blue
