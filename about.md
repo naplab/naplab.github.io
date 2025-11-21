@@ -1,6 +1,6 @@
 ---
 layout: page
-title: NapLab @ Columbia
+title: NapLab | Mesgarani
 subtitle: 
 ---
 
