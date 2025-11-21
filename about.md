@@ -1,7 +1,7 @@
 ---
 layout: page
-title: NapLab | Mesgarani
-subtitle: 
+title: NAPLab | Mesgarani
+permalink: /about/
 ---
 
 <style>

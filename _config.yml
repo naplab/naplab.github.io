@@ -22,7 +22,7 @@ author: Mesgarani Lab
 ###############################################
 
 navbar-links:
-  # About: "about"
+  About: "about"
   People: "people"
   # Project: "project"
   Publication: "publication"
