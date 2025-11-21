@@ -1,6 +1,7 @@
 ---
 layout: page
 ---
+Course:
 - ​EEBME 9070: Advance Topics: Bio-Inspired Computation
 ​ 
 - ELEN 6820: Speech and Audio Signal Processing
