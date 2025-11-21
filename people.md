@@ -1,6 +1,5 @@
 ---
 layout: page
-title: People
 permalink: /people/
 description: Meet the NapLab @ Columbia team and alumni.
 full-width: true
