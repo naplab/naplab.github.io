@@ -29,7 +29,7 @@ For more information on this course, please contact the instructor.
 
 Course materials may be used for educational purposes only. Please cite:
 
-Khalighinejad, Bahar; Long, Laura; Mesgarani, Nima, **Designing a Hands-On Brain Computer Interface Laboratory Course**, _International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)_, Orlando, Florida, 2016. [Download PDF](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/finalbci.pdf)
+Khalighinejad, Bahar; Long, Laura; Mesgarani, Nima, **Designing a Hands-On Brain Computer Interface Laboratory Course**, _International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)_, Orlando, Florida, 2016. [Download PDF](/assets/files/finalbci.pdf)
 
 ## Course learning objectives
 
