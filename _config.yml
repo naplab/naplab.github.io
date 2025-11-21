@@ -12,10 +12,10 @@ url: "https://naplab.github.io"
 baseurl: ""   # 组织/用户主页必须留空；只有“项目页”才写 /repo-name
 
 # Name of website
-title: NapLab | Mesgarani
+title: Mesgarani Lab
 
 # Your name to show in the footer
-author: NapLab | Mesgarani
+author: Mesgarani Lab
 
 ###############################################
 # --- List of links in the navigation bar --- #
