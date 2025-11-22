@@ -21,8 +21,8 @@ lab_members:
     contacts:
       email: ""
     degrees:
-      - Ph.D. University of Texas, Austin
-      - B.Sc. Caltech
+      - Ph.D. Computer Science, University of Texas, Austin
+      - B.Sc. Computer Science, California Institute of Technology
   - name: Kiki Anouk van der Heijden
     title: Research Fellow
     avatar: /assets/img/people/kiki.jpg
