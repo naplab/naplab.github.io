@@ -1,6 +1,5 @@
 ---
 layout: page
-title: Mesgarani Lab
 permalink: /about/
 ---
 
