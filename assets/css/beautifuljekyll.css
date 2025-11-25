@@ -345,6 +345,27 @@ img {
   color: var(--hover-col);
 }
 
+.navbar-custom .navbar-brand-avatar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-custom .navbar-brand-avatar-img {
+  width: 2.75rem;
+  height: 2.75rem;
+  object-fit: contain;
+  {% unless site.round-avatar == false %}
+  border-radius: 50%;
+  {% endunless %}
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.3);
+}
+
+.navbar-custom .navbar-brand-text {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
 .navbar-custom .avatar-container {
   position: absolute;
   left: 50%;

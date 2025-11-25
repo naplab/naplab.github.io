@@ -1,7 +1,15 @@
 <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom {% if page.nav-short %}top-nav-short-permanent{% else %}top-nav-regular{% endif %}">
 
+  {%- assign show_avatar_brand = site.avatar and page.show-avatar != false and site.avatar_in_brand -%}
   {%- if site.title-img -%}
     <a class="navbar-brand navbar-brand-logo" href="{{ '/' | absolute_url }}"><img alt="{{ site.title }} Logo" src="{{ site.title-img | relative_url}}"/></a>
+  {%- elsif show_avatar_brand -%}
+    <a class="navbar-brand navbar-brand-avatar" href="{{ '/' | absolute_url }}">
+      <img alt="{{ site.title }} Logo" class="navbar-brand-avatar-img" src="{{ site.avatar | relative_url }}" />
+      {%- if site.title -%}
+        <span class="navbar-brand-text">{{ site.title }}</span>
+      {%- endif -%}
+    </a>
   {%- elsif site.title -%}
     <a class="navbar-brand" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
   {%- endif -%}
@@ -47,7 +55,8 @@
     {% endfor %}
   {% endif %}
 
-  {% if site.avatar and page.show-avatar != false %}
+  {% assign show_nav_avatar = site.avatar and page.show-avatar != false and site.avatar_in_brand != true %}
+  {% if show_nav_avatar %}
     <div class="avatar-container">
       <div class="avatar-img-border">
         <a href="{{ '/' | absolute_url }}">
