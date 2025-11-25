@@ -45,8 +45,6 @@
   {% endif %}
 
   <meta name="description" content="{{ description }}">
-  {% assign robots_meta = page.robots | default: site.robots | default: "noindex, nofollow" %}
-  <meta name="robots" content="{{ robots_meta }}">
 
   {% if site.mobile-theme-col %}
   <meta name="theme-color" content="{{ site.mobile-theme-col }}">
