@@ -358,7 +358,8 @@ img {
   {% unless site.round-avatar == false %}
   border-radius: 50%;
   {% endunless %}
-  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.3);
+  box-shadow: none;
+  background: transparent;
 }
 
 .navbar-custom .navbar-brand-text {
@@ -366,6 +367,11 @@ img {
   font-size: 1.1rem;
 }
 
+{% if site.avatar_in_brand %}
+.navbar-custom .avatar-container {
+  display: none !important;
+}
+{% else %}
 .navbar-custom .avatar-container {
   position: absolute;
   left: 50%;
@@ -424,6 +430,7 @@ img {
     width: 100%;
   }
 }
+{% endif %}
 
 /* --- Footer --- */
 
