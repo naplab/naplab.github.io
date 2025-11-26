@@ -240,8 +240,8 @@ img {
 
 @media (min-width: 1200px) {
   .navbar-custom {
-    padding-top: 1.00rem;
-    padding-bottom: 1.00rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .navbar-custom .navbar-brand-logo {
