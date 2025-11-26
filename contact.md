@@ -10,7 +10,7 @@ Our lab is located at the new Manhattanville Campus of Columbia University.
 <img src="/assets/img/contact/manhattanville-building.jpg" 
   alt="Manhattanville Campus" 
   class="img-fluid rounded" 
-  style="width: 100%; max-width: 700px; height: auto;">
+  style="width: 90%; max-width: 700px; height: auto;">
 
 <br><br>
 
