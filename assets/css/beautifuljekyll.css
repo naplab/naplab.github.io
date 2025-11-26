@@ -240,8 +240,8 @@ img {
 
 @media (min-width: 1200px) {
   .navbar-custom {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+    padding-top: 1.00rem;
+    padding-bottom: 1.00rem;
   }
 
   .navbar-custom .navbar-brand-logo {
@@ -352,8 +352,8 @@ img {
 }
 
 .navbar-custom .navbar-brand-avatar-img {
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 3.00rem;
+  height: 3.00rem;
   object-fit: contain;
   {% unless site.round-avatar == false %}
   border-radius: 50%;
