@@ -352,8 +352,8 @@ img {
 }
 
 .navbar-custom .navbar-brand-avatar-img {
-  width: 3.00rem;
-  height: 3.00rem;
+  width: 2.75rem;
+  height: 2.75rem;
   object-fit: contain;
   {% unless site.round-avatar == false %}
   border-radius: 50%;
