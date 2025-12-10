@@ -7,7 +7,6 @@
   year: 2025
   pages: "1--10"
   link: ""
-  pdf: ""
   img: ""
   tldr: ""
 
@@ -18,7 +17,6 @@
   volume: "16"
   pages: "8874"
   link: ""
-  pdf: ""
   img: ""
   tldr: ""
 
@@ -28,7 +26,6 @@
   year: 2025
   pages: "1--5"
   link: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888514"
-  pdf: ""
   img: ""
   tldr: ""
 
@@ -39,7 +36,6 @@
   volume: "6"
   pages: "1467--1477"
   link: ""
-  pdf: ""
   img: ""
   tldr: ""
 
@@ -50,7 +46,6 @@
 #   volume: "626"
 #   pages: "593--602"
 #   link: ""
-#   pdf: ""
 
 - title: "Styletts 2: Towards human-level text-to-speech through style diffusion and adversarial training with large speech language models"
   authors: "Y Li, C Han, V Raghavan, G Mischler, N Mesgarani"
@@ -59,7 +54,6 @@
   volume: "36"
   pages: "19594--19621"
   link: ""
-  pdf: ""
   img: ""
   tldr: ""
 
@@ -70,7 +64,6 @@
   volume: "7"
   pages: "740--753"
   link: ""
-  pdf: ""
   img: ""
   tldr: ""
 
@@ -81,7 +74,6 @@
   volume: "6"
   pages: "455--469"
   link: ""
-  pdf: ""
   img: ""
   tldr: ""
 
@@ -92,7 +84,6 @@
 #   volume: "27"
 #   pages: "1256--1266"
 #   link: ""
-#   pdf: ""
 
 # - title: "Adaptation of the human auditory cortex to changing background noise"
 #   authors: "B Khalighinejad, J Herrero, A Mehta, N Mesgarani"
@@ -101,7 +92,6 @@
 #   volume: "10"
 #   pages: "2509"
 #   link: ""
-#   pdf: ""
 
 # - title: "Towards reconstructing intelligible speech from the human auditory cortex"
 #   authors: "H Akbari, B Khalighinejad, J Herrero, A Mehta, N Mesgarani"
@@ -110,7 +100,6 @@
 #   volume: "9"
 #   pages: "874"
 #   link: ""
-#   pdf: ""
 
 # - title: "Phonetic feature encoding in human superior temporal gyrus"
 #   authors: "N Mesgarani, C Cheung, K Johnson, E Chang"
@@ -119,7 +108,6 @@
 #   volume: "343"
 #   pages: "1006--1010"
 #   link: ""
-#   pdf: ""
 
 # - title: "Functional organization of human sensorimotor cortex for speech articulation"
 #   authors: "K Bouchard, N Mesgarani, K Johnson, E Chang"
@@ -128,7 +116,6 @@
 #   volume: "495"
 #   pages: "327--332"
 #   link: ""
-#   pdf: ""
 
 # - title: "Selective cortical representation of attended speaker in multi-talker speech perception"
 #   authors: "N Mesgarani, E Chang"
@@ -137,5 +124,4 @@
 #   volume: "485"
 #   pages: "233--236"
 #   link: ""
-#   pdf: ""
 

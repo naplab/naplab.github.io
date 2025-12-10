@@ -139,9 +139,6 @@ permalink: /publication/
   <section class="pub-cards">
     {% for pub in sorted_pubs %}
       {% assign href = pub.link %}
-      {% if href == "" and pub.pdf and pub.pdf != "" %}
-        {% assign href = pub.pdf %}
-      {% endif %}
 
       <article class="pub-card{% if href and href != "" %} has-link{% endif %}">
         {% if href and href != "" %}
