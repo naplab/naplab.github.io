@@ -16,11 +16,10 @@ permalink: /gallery/
   box-sizing: border-box;
 }
 
-/* Square card container */
+/* Card container that keeps image aspect ratio */
 .gallery-card {
   position: relative;
   width: 100%;
-  padding-top: 100%; /* Forces the card to be a perfect square */
   border-radius: 8px;
   overflow: hidden;
   background-color: #fff;
@@ -37,12 +36,12 @@ permalink: /gallery/
   z-index: 10;
 }
 
-/* Background image */
+/* Background image using an actual <img> to preserve aspect ratio */
 .gallery-bg {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center center;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   transition: transform 0.5s ease;
 }
 
@@ -54,7 +53,10 @@ permalink: /gallery/
 /* Overlay that holds highlight text */
 .gallery-overlay {
   position: absolute;
-  inset: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -90,8 +92,8 @@ permalink: /gallery/
 
       <!-- Gallery card -->
       <div class="gallery-card">
-        <!-- Background image -->
-        <div class="gallery-bg" style="background-image: url('{{ item.file }}');"></div>
+        <!-- Image keeps original aspect ratio -->
+        <img class="gallery-bg" src="{{ item.file }}" alt="{{ item.highlight }}">
 
         <!-- Overlay with highlight text only -->
         <div class="gallery-overlay">
