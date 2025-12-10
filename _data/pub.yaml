@@ -27,10 +27,10 @@
   journal: "ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
   year: 2025
   pages: "1--5"
-  link: ""
+  link: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888514"
   pdf: ""
-  img: ""
-  tldr: ""
+  img: "/assets/img/pub/icassp_2025.png"
+  tldr: "Dual-path Mamba replaces Transformers with efficient selective state space models to capture short and long-term speech dependencies. It outperforms state-of-the-art baselines (like Sepformer) on the WSJ0-2mix benchmark while using significantly fewer parameters."
 
 - title: "Contextual feature extraction hierarchies converge in large language models and the brain"
   authors: "G Mischler, Y Li, S Bickel, A Mehta, N Mesgarani"
