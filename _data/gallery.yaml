@@ -11,10 +11,6 @@
   highlight: ""
 
 - year: 2022
-  file: /assets/img/gallery/game.jpeg
-  highlight: ""
-
-- year: 2022
   file: /assets/img/gallery/hat_1.jpeg
   highlight: ""
 
@@ -77,6 +73,10 @@
 - year: 2024
   file: /assets/img/gallery/vishal.jpg
   highlight: "Vishal and Cong won the 3rd place at BCI award!"
+
+- year: 2025
+  file: /assets/img/gallery/game.jpeg
+  highlight: "Board game night!"
 
 - year: 2025
   file: /assets/img/gallery/potluck.jpg
