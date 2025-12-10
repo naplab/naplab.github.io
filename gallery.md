@@ -4,16 +4,29 @@ permalink: /gallery/
 ---
 
 <style>
-/* Grid layout similar to people.md but with larger cards */
+/* Masonry (瀑布流) layout using CSS columns */
 .gallery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -10px;
+  column-count: 1;
+  column-gap: 20px;
+}
+
+@media (min-width: 576px) {
+  .gallery-grid {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .gallery-grid {
+    column-count: 3;
+  }
 }
 
 .gallery-col {
-  padding: 10px;
-  box-sizing: border-box;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  margin-bottom: 20px;
 }
 
 /* Card container that keeps image aspect ratio */
@@ -84,11 +97,9 @@ permalink: /gallery/
 
 {% assign sorted_gallery = site.data.gallery | sort: "year" | reverse %}
 
-<div class="row gallery-grid">
+<div class="gallery-grid">
   {% for item in sorted_gallery %}
-    <div class="col-12 col-sm-6 col-md-4 gallery-col">
-    <!-- <div class="col-12 col-sm-6 col-md-6 gallery-col"> -->
-
+    <div class="gallery-col">
 
       <!-- Gallery card -->
       <div class="gallery-card">
