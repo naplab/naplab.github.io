@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /publication/
+permalink: /publication_old/
 ---
 For all publications, check [Google Scholar](https://scholar.google.com/citations?hl=en&user=DKhMx5gAAAAJ&view_op=list_works&sortby=pubdate). Recent feature publications are listed below.
 
