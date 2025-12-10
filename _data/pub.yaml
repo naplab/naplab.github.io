@@ -29,7 +29,7 @@
   pages: "1--5"
   link: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888514"
   pdf: ""
-  img: "/assets/img/pub/icassp_2025.png"
+  img: ""
   tldr: "Dual-path Mamba replaces Transformers with efficient selective state space models to capture short and long-term speech dependencies. It outperforms state-of-the-art baselines (like Sepformer) on the WSJ0-2mix benchmark while using significantly fewer parameters."
 
 - title: "Contextual feature extraction hierarchies converge in large language models and the brain"
