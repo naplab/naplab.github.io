@@ -32,29 +32,38 @@ permalink: /publication/
   box-shadow: 0 14px 26px rgba(17, 52, 94, 0.08);
   position: relative;
   overflow: hidden;
-  cursor: pointer;
+  cursor: default;
   transition: transform 160ms ease, box-shadow 200ms ease, background-color 160ms ease;
-  text-decoration: none;
 }
 
-.pub-card:hover,
-.pub-card:focus-visible {
+.pub-card.has-link {
+  cursor: pointer;
+}
+
+.pub-card.has-link:hover,
+.pub-card.has-link:focus-within {
   transform: translateY(-3px);
   box-shadow: 0 20px 34px rgba(17, 52, 94, 0.14);
-  text-decoration: none;
 }
 
-.pub-card:link,
-.pub-card:visited,
-.pub-card:hover,
-.pub-card:focus-visible {
-  color: inherit;
+.pub-card-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+}
+
+.pub-card-link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(23, 76, 140, 0.45);
 }
 
 .pub-card-inner {
   display: flex;
   gap: 16px;
   align-items: flex-start;
+  position: relative;
+  z-index: 2;
 }
 
 .pub-card-thumb {
@@ -110,15 +119,6 @@ permalink: /publication/
   margin-top: 4px;
 }
 
-.pub-card-links {
-  font-size: 0.82rem;
-  margin-top: 4px;
-}
-
-.pub-card-links a {
-  margin-right: 12px;
-}
-
 @media (max-width: 600px) {
   .pub-card-inner {
     flex-direction: row;
@@ -147,11 +147,10 @@ permalink: /publication/
         {% assign href = pub.pdf %}
       {% endif %}
 
-      {% if href and href != "" %}
-        <a class="pub-card" href="{{ href }}" target="_blank">
-      {% else %}
-        <div class="pub-card">
-      {% endif %}
+      <article class="pub-card{% if href and href != "" %} has-link{% endif %}">
+        {% if href and href != "" %}
+          <a class="pub-card-link" href="{{ href }}" target="_blank" aria-label="Open {{ pub.title }}"></a>
+        {% endif %}
 
         <div class="pub-card-inner">
           <div class="pub-card-thumb">
@@ -173,23 +172,9 @@ permalink: /publication/
             {% if pub.tldr and pub.tldr != "" %}
               <div class="pub-card-tldr">{{ pub.tldr }}</div>
             {% endif %}
-
-            <div class="pub-card-links">
-              {% if pub.pdf and pub.pdf != "" %}
-                <a href="{{ pub.pdf }}" target="_blank">PDF</a>
-              {% endif %}
-              {% if pub.link and pub.link != "" %}
-                <a href="{{ pub.link }}" target="_blank">Project / Journal</a>
-              {% endif %}
-            </div>
           </div>
         </div>
-
-      {% if href and href != "" %}
-        </a>
-      {% else %}
-        </div>
-      {% endif %}
+      </article>
     {% endfor %}
   </section>
 </div>
