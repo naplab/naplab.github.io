@@ -42,24 +42,10 @@ permalink: /publication/
   box-shadow: 0 20px 34px rgba(17, 52, 94, 0.14);
 }
 
-.pub-card-link {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  border-radius: inherit;
-}
-
-.pub-card-link:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(23, 76, 140, 0.45);
-}
-
 .pub-card-inner {
   display: flex;
   gap: 16px;
   align-items: flex-start;
-  position: relative;
-  z-index: 2;
 }
 
 .pub-card-thumb {
@@ -140,10 +126,10 @@ permalink: /publication/
     {% for pub in sorted_pubs %}
       {% assign href = pub.link %}
 
-      <article class="pub-card{% if href and href != "" %} has-link{% endif %}">
+      <article class="pub-card{% if href and href != "" %} has-link{% endif %}"
         {% if href and href != "" %}
-          <a class="pub-card-link" href="{{ href }}" target="_blank" aria-label="Open {{ pub.title }}"></a>
-        {% endif %}
+          data-link="{{ href }}" tabindex="0"
+        {% endif %}>
 
         <div class="pub-card-inner">
           <div class="pub-card-thumb">
@@ -171,3 +157,35 @@ permalink: /publication/
     {% endfor %}
   </section>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var linkedCards = document.querySelectorAll('.pub-card[data-link]');
+
+    linkedCards.forEach(function (card) {
+      var url = card.getAttribute('data-link');
+      if (!url) {
+        return;
+      }
+
+      var openLink = function () {
+        window.open(url, '_blank');
+      };
+
+      card.addEventListener('click', function (event) {
+        var selection = window.getSelection();
+        if (selection && selection.toString().length > 0) {
+          return;
+        }
+        openLink();
+      });
+
+      card.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          openLink();
+        }
+      });
+    });
+  });
+</script>
