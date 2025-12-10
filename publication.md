@@ -16,12 +16,6 @@ permalink: /publication/
   margin-bottom: 1.8rem;
 }
 
-.pub-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
 .pub-card {
   background: #ffffff;
   color: #1e2d44;
@@ -34,6 +28,11 @@ permalink: /publication/
   cursor: pointer;
   transition: transform 160ms ease, box-shadow 200ms ease, background-color 160ms ease;
   text-decoration: none;
+}
+
+.pub-cards > a.pub-card,
+.pub-cards > div.pub-card {
+  display: block;
 }
 
 .pub-card:hover,
