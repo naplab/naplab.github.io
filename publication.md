@@ -32,16 +32,12 @@ permalink: /publication/
   box-shadow: 0 14px 26px rgba(17, 52, 94, 0.08);
   position: relative;
   overflow: hidden;
-  cursor: default;
+  cursor: pointer;
   transition: transform 160ms ease, box-shadow 200ms ease, background-color 160ms ease;
 }
 
-.pub-card.has-link {
-  cursor: pointer;
-}
-
-.pub-card.has-link:hover,
-.pub-card.has-link:focus-within {
+.pub-card:hover,
+.pub-card:focus-within {
   transform: translateY(-3px);
   box-shadow: 0 20px 34px rgba(17, 52, 94, 0.14);
 }
