@@ -8,6 +8,8 @@
   pages: "1--10"
   link: ""
   pdf: ""
+  img: ""
+  tldr: ""
 
 - title: "The impact of musical expertise on disentangled and contextual neural encoding of music revealed by generative music models"
   authors: "G Mischler, Y Li, S Bickel, A Mehta, N Mesgarani"
@@ -17,6 +19,8 @@
   pages: "8874"
   link: ""
   pdf: ""
+  img: ""
+  tldr: ""
 
 - title: "Dual-path mamba: Short and long-term bidirectional selective structured state space models for speech separation"
   authors: "X Jiang, C Han, N Mesgarani"
@@ -25,6 +29,8 @@
   pages: "1--5"
   link: ""
   pdf: ""
+  img: ""
+  tldr: ""
 
 - title: "Contextual feature extraction hierarchies converge in large language models and the brain"
   authors: "G Mischler, Y Li, S Bickel, A Mehta, N Mesgarani"
@@ -34,6 +40,8 @@
   pages: "1467--1477"
   link: ""
   pdf: ""
+  img: ""
+  tldr: ""
 
 # - title: "Large-scale single-neuron speech sound encoding across the depth of human cortex"
 #   authors: "M Leonard, L Gwilliams, K Sellers, J Chung, D Xu, G Mischler, N Mesgarani, M Welkenhuysen, B Dutta, E Chang"
@@ -52,6 +60,8 @@
   pages: "19594--19621"
   link: ""
   pdf: ""
+  img: ""
+  tldr: ""
 
 - title: "Joint, distributed and hierarchically organized encoding of linguistic features in the human auditory cortex"
   authors: "M Keshishian, S Akkol, J Herrero, S Bickel, A Mehta, N Mesgarani"
@@ -61,6 +71,8 @@
   pages: "740--753"
   link: ""
   pdf: ""
+  img: ""
+  tldr: ""
 
 - title: "Multiscale temporal integration organizes hierarchical computation in human auditory cortex"
   authors: "S Norman-Haignere, L Long, O Devinsky, W Doyle, I Irobunda, E Merricks, N Feldstein, G McKhann, C Schevon, A Flinker, others"
@@ -70,6 +82,8 @@
   pages: "455--469"
   link: ""
   pdf: ""
+  img: ""
+  tldr: ""
 
 # - title: "Conv-tasnet: Surpassing ideal time--frequency magnitude masking for speech separation"
 #   authors: "Y Luo, N Mesgarani"
