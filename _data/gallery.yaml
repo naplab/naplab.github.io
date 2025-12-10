@@ -47,10 +47,6 @@
   highlight: ""
 
 - year: 2022
-  file: /assets/img/gallery/bci_course.jpeg
-  highlight: ""
-
-- year: 2022
   file: /assets/img/gallery/graduation_3.png
   highlight: ""
 
@@ -61,6 +57,10 @@
 - year: 2022
   file: /assets/img/gallery/dinner_3.jpeg
   highlight: ""
+
+- year: 2024
+  file: /assets/img/gallery/bci_course.jpeg
+  highlight: "BCI course at Mudd"
 
 - year: 2024
   file: /assets/img/gallery/holiday.jpg
