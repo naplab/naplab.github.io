@@ -16,7 +16,14 @@ permalink: /publication/
   margin-bottom: 1.8rem;
 }
 
+.pub-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
 .pub-card {
+  display: block;
   background: #ffffff;
   color: #1e2d44;
   border-radius: 16px;
@@ -30,16 +37,18 @@ permalink: /publication/
   text-decoration: none;
 }
 
-.pub-cards > a.pub-card,
-.pub-cards > div.pub-card {
-  display: block;
-}
-
 .pub-card:hover,
 .pub-card:focus-visible {
   transform: translateY(-3px);
   box-shadow: 0 20px 34px rgba(17, 52, 94, 0.14);
   text-decoration: none;
+}
+
+.pub-card:link,
+.pub-card:visited,
+.pub-card:hover,
+.pub-card:focus-visible {
+  color: inherit;
 }
 
 .pub-card-inner {
