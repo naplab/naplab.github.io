@@ -3,10 +3,6 @@
   highlight: ""
 
 - year: 2022
-  file: /assets/img/gallery/graduation_1.jpeg
-  highlight: ""
-
-- year: 2022
   file: /assets/img/gallery/hat_2.jpeg
   highlight: ""
 
@@ -57,6 +53,10 @@
 - year: 2022
   file: /assets/img/gallery/dinner_3.jpeg
   highlight: ""
+
+- year: 2023
+  file: /assets/img/gallery/graduation_1.jpeg
+  highlight: "Menoua graduated. 🎓"
 
 - year: 2024
   file: /assets/img/gallery/bci_course.jpeg
