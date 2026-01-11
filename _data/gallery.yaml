@@ -6,6 +6,10 @@
   file: /assets/img/gallery/hat_2.jpeg
   highlight: "Yi and Nima @ ICASSP2018 in Calgary"
 
+- year: 2020
+  file: /assets/img/gallery/dog_2.jpeg
+  highlight: ""
+
 - year: 2024
   file: /assets/img/gallery/hat_1.jpeg
   highlight: "IHCON conference @ Lake Tahoe"
@@ -34,13 +38,29 @@
   file: /assets/img/gallery/present.jpeg
   highlight: "Bahar presenting her first poster."
 
+- year: 2021
+  file: /assets/img/gallery/yi_best_paper.jpeg
+  highlight: "Yi won Best Paper Award @ICASSP 2021! 🏆"
+
 - year: 2022
   file: /assets/img/gallery/lunch_1.jpeg
+  highlight: ""
+
+- year: 2022
+  file: /assets/img/gallery/paris.jpeg
+  highlight: ""
+
+- year: 2022
+  file: /assets/img/gallery/columbia_campus.jpeg
   highlight: ""
 
 - year: 2023
   file: /assets/img/gallery/dogs.png
   highlight: ""
+
+- year: 2020
+  file: /assets/img/gallery/zhuo.jpeg
+  highlight: "Champagne time in Paris!"
 
 - year: 2022
   file: /assets/img/gallery/graduation_3.png
@@ -75,12 +95,20 @@
   highlight: "Vishal and Cong won the 3rd place at BCI award!"
 
 - year: 2025
+  file: /assets/img/gallery/yinghao_graduate.jpeg
+  highlight: "Yinghao graduated! 🎓"
+
+- year: 2025
   file: /assets/img/gallery/game.jpeg
   highlight: "Board game night!"
 
 - year: 2025
   file: /assets/img/gallery/potluck.jpg
   highlight: "Potluck ... in Ghibli style!"
+
+- year: 2025
+  file: /assets/img/gallery/gavin_presenting.jpeg
+  highlight: "Gavin presenting at ARO"
 
 - year: 2025
   file: /assets/img/gallery/coghear.JPG
@@ -97,5 +125,14 @@
 - year: 2025
   file: /assets/img/gallery/cooper.jpg
   highlight: "Paw-formance review in progress."
+
+- year: 2025
+  file: /assets/img/gallery/linyang_emnlp.png
+  highlight: "Linyang and Xilin won the EMNLP SAC highlight award! 🏆"
+
+- year: 2025
+  file: /assets/img/gallery/ZI_yearend2025.jpg
+  highlight: "Year-end party 2025 at ZI!"
+
 
 
