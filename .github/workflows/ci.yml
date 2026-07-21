@@ -51,13 +51,21 @@ jobs:
         with:
           node-version: "22"
           cache: npm
-          cache-dependency-path: new_website/package-lock.json
+          cache-dependency-path: |
+            new_website/package-lock.json
+            new_website2/package-lock.json
 
       - name: Install new website dependencies
         run: npm ci --prefix new_website
 
       - name: Build new Vite website
         run: npm run build --prefix new_website
+
+      - name: Install academic website dependencies
+        run: npm ci --prefix new_website2
+
+      - name: Build academic Vite website
+        run: npm run build --prefix new_website2
 
       - name: Add new website to Pages artifact
         run: |
@@ -69,16 +77,25 @@ jobs:
             cp CNAME _site/CNAME
           fi
 
+      - name: Add academic website to Pages artifact
+        run: |
+          set -euo pipefail
+          rm -rf _site/new_website2
+          mkdir -p _site/new_website2
+          cp -a new_website2/dist/. _site/new_website2/
+
       - name: Verify Pages artifact
         run: |
           set -euo pipefail
           test -f _site/index.html
-          test -f _site/new_website/index.html
-          for page in research people publications teaching opportunities gallery contact; do
-            test -f "_site/new_website/$page/index.html"
+          for site in new_website new_website2; do
+            test -f "_site/$site/index.html"
+            for page in research people publications teaching opportunities gallery contact; do
+              test -f "_site/$site/$page/index.html"
+            done
+            test -n "$(find "_site/$site/assets" -type f -name '*.js' -print -quit)"
+            test -n "$(find "_site/$site/assets" -type f -name '*.css' -print -quit)"
           done
-          test -n "$(find _site/new_website/assets -type f -name '*.js' -print -quit)"
-          test -n "$(find _site/new_website/assets -type f -name '*.css' -print -quit)"
 
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
