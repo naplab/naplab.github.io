@@ -128,6 +128,11 @@ const pageHero = ({ eyebrow, title, copy, tone = "blue", image, alt = "" }) => `
     </div>
   </section>`;
 
+const temporarilyHiddenPageHero = (options) => {
+  // return pageHero(options);
+  return "";
+};
+
 const researchCards = () => `
   <div class="research-grid">
     <article class="research-card research-card--cyan reveal">
@@ -243,7 +248,7 @@ const renderHome = () => {
 };
 
 const renderResearch = () => `
-  ${pageHero({
+  ${temporarilyHiddenPageHero({
     eyebrow: "Research",
     title: "How does the brain <em>find meaning</em> in sound?",
     copy: "We combine neuroscience, engineering, and artificial intelligence to study communication in the complex listening environments of everyday life.",
@@ -333,7 +338,7 @@ const renderPeople = () => {
   const faculty = people.faculty[0];
   const facultyLink = faculty ? personHref(faculty) : "";
   return `
-    ${pageHero({
+    ${temporarilyHiddenPageHero({
       eyebrow: "People",
       title: "Curiosity is a <em>team sport.</em>",
       copy: "Engineers, neuroscientists, and computational researchers working together to understand hearing and communication.",
@@ -381,7 +386,7 @@ const renderPublications = () => {
     .join("");
 
   return `
-    ${pageHero({
+    ${temporarilyHiddenPageHero({
       eyebrow: "Publications",
       title: "Ideas made <em>testable.</em>",
       copy: `${publications.length} featured publications spanning neural computation, speech technology, and auditory brain–computer interfaces.`,
@@ -408,7 +413,7 @@ const courseMaterials = [
 ];
 
 const renderTeaching = () => `
-  ${pageHero({
+  ${temporarilyHiddenPageHero({
     eyebrow: "Teaching",
     title: "Learn by <em>listening, building, testing.</em>",
     copy: "Courses connect the foundations of auditory neuroscience with hands-on signal processing, brain–computer interfaces, and modern machine learning.",
@@ -444,7 +449,7 @@ const renderTeaching = () => `
   </div></section>`;
 
 const renderOpportunities = () => `
-  ${pageHero({
+  ${temporarilyHiddenPageHero({
     eyebrow: "Opportunities",
     title: "Bring your questions. <em>Join the work.</em>",
     copy: "We welcome researchers who want to work across disciplines and build a deeper understanding of human auditory communication.",
@@ -468,7 +473,7 @@ const renderOpportunities = () => `
 const renderGallery = () => {
   const years = [...new Set(gallery.map((item) => item.year))];
   return `
-    ${pageHero({
+    ${temporarilyHiddenPageHero({
       eyebrow: "Gallery",
       title: "Science is also a <em>shared life.</em>",
       copy: "Conferences, courses, celebrations, awards, dogs, dinners—and the people behind the work.",
