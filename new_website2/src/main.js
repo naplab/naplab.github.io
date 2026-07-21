@@ -141,7 +141,7 @@ const renderHome = () => {
     <section class="home-intro">
       <div class="shell"><div class="reading-column">
         <h1>Understanding how the brain makes sense of sound.</h1>
-        <p class="lead">NAPLab brings together auditory neuroscience, electrical engineering, and artificial intelligence to study human communication and develop better speech and hearing technologies.</p>
+        <p class="lead">NAPLab brings together auditory neuroscience, signal processing, and artificial intelligence to study human communication and develop better speech and hearing technologies.</p>
       </div></div>
     </section>
 
@@ -363,14 +363,12 @@ const renderOpportunities = () => {
       ${pageIntro("Opportunities", temporarilyHiddenPageLead("We welcome researchers who want to work across neuroscience, engineering, and artificial intelligence."))}
       <section class="section reading-column">
         <h2 class="section-heading">PhD study</h2>
-        <p>Prospective doctoral students should apply through Columbia University’s Electrical Engineering PhD program and describe their interest in NAPLab and Professor Mesgarani’s research in the application.</p>
+        <p>Prospective doctoral students should apply through Columbia University’s Electrical Engineering PhD program and mention Prof. Mesgarani in the application.</p>
+        <p>The application deadline is December 15.</p>
         <p>${externalLink("Columbia Electrical Engineering graduate admissions", "https://www.ee.columbia.edu/graduate-admissions")}</p>
 
-        <h2 class="section-heading">Current Columbia students</h2>
-        <p>Students interested in research should send a concise description of their interests, relevant experience, and the questions they hope to study. Please include a curriculum vitae or résumé.</p>
-
         <h2 class="section-heading">Postdoctoral and research positions</h2>
-        <p>Availability varies by project and funding. Researchers with experience in auditory neuroscience, neural signal processing, speech and audio, or machine learning are encouraged to get in touch.</p>
+        <p>Researchers with experience in auditory neuroscience, neural signal processing, speech and audio, or machine learning are encouraged to get in touch.</p>
         <p>${mailLink(`Email ${faculty?.name || "Professor Mesgarani"}`, email)}</p>
       </section>
     </div>`;
