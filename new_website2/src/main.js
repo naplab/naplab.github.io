@@ -111,6 +111,11 @@ const temporarilyHiddenPageLead = (copy) => {
   return "";
 };
 
+const temporarilyHiddenSection = (markup) => {
+  // return markup;
+  return "";
+};
+
 const publicationMeta = (item) => {
   const details = [];
   if (item.journal) details.push(String(item.journal));
@@ -358,6 +363,10 @@ const renderTeaching = () => `
 const renderOpportunities = () => {
   const faculty = people.faculty[0];
   const email = faculty?.contacts?.email || "nima@ee.columbia.edu";
+  const postdoctoralSection = `
+    <h2 class="section-heading">Postdoctoral and research positions</h2>
+    <p>Researchers with experience in auditory neuroscience, neural signal processing, speech and audio, or machine learning are encouraged to get in touch.</p>
+    <p>${mailLink(`Email ${faculty?.name || "Professor Mesgarani"}`, email)}</p>`;
   return `
     <div class="shell">
       ${pageIntro("Opportunities", temporarilyHiddenPageLead("We welcome researchers who want to work across neuroscience, engineering, and artificial intelligence."))}
@@ -367,9 +376,7 @@ const renderOpportunities = () => {
         <p>The application deadline is December 15.</p>
         <p>${externalLink("Columbia Electrical Engineering graduate admissions", "https://www.ee.columbia.edu/graduate-admissions")}</p>
 
-        <h2 class="section-heading">Postdoctoral and research positions</h2>
-        <p>Researchers with experience in auditory neuroscience, neural signal processing, speech and audio, or machine learning are encouraged to get in touch.</p>
-        <p>${mailLink(`Email ${faculty?.name || "Professor Mesgarani"}`, email)}</p>
+        ${temporarilyHiddenSection(postdoctoralSection)}
       </section>
     </div>`;
 };
