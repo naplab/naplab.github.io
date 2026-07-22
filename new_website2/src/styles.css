@@ -198,9 +198,13 @@ dl:last-child {
 }
 
 .brand-name {
-  font-size: 1.14rem;
+  font-size: 1.48rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
+}
+
+.brand-accent {
+  color: #1d4f91;
 }
 
 .brand-subtitle {
@@ -325,12 +329,60 @@ h2.section-heading {
 }
 
 .home-intro {
+  position: relative;
+  overflow: hidden;
   padding-block: clamp(4rem, 8vw, 7rem);
   border-bottom: 1px solid var(--rule);
+  background: var(--paper);
+  isolation: isolate;
+}
+
+.home-intro::after {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.74) 48%,
+    rgba(255, 255, 255, 0.24) 100%
+  );
+  content: "";
+  pointer-events: none;
+}
+
+.home-intro-art {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.home-intro-art img {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 52%;
+  filter: none;
+}
+
+.home-intro .shell {
+  position: relative;
+  z-index: 1;
 }
 
 .home-intro h1 {
   max-width: 19ch;
+  color: var(--ink);
+}
+
+.home-intro .lead {
+  color: var(--ink);
 }
 
 .home-columns {
@@ -984,6 +1036,10 @@ img.gallery-item {
   .faculty-profile,
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .home-intro::after {
+    background: rgba(255, 255, 255, 0.65);
   }
 
   .research-figure {

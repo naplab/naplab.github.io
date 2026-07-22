@@ -73,8 +73,8 @@ const renderHeader = () => `
   <header class="site-header">
     <div class="shell header-inner">
       <a class="brand" href="${routeUrl()}">
-        <span class="brand-name">NAPLab</span>
-        <span class="brand-subtitle">Neural Acoustic Processing Lab<br />Columbia University</span>
+        <span class="brand-name"><span class="brand-accent">NAP</span>Lab</span>
+        <span class="brand-subtitle">Columbia University</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
         <span>Menu</span>
@@ -144,9 +144,12 @@ const renderHome = () => {
   const recent = publications.slice(0, 4);
   return `
     <section class="home-intro">
+      <div class="home-intro-art" aria-hidden="true">
+        <img src="${assetUrl("/assets/img/contact/manhattanville-building.jpg")}" alt="" decoding="async" fetchpriority="high" />
+      </div>
       <div class="shell"><div class="reading-column">
         <h1>Understanding how the brain makes sense of sound.</h1>
-        <p class="lead">NAPLab brings together auditory neuroscience, signal processing, and artificial intelligence to study human communication and develop better speech and hearing technologies.</p>
+        <p class="lead">Welcome to the Neural Acoustic Processing Lab (NAPLab), where we bring together auditory neuroscience, signal processing, and artificial intelligence to study human communication and develop better speech and hearing technologies.</p>
       </div></div>
     </section>
 
