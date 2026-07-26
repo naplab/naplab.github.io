@@ -51,15 +51,7 @@ jobs:
         with:
           node-version: "22"
           cache: npm
-          cache-dependency-path: |
-            new_website/package-lock.json
-            new_website2/package-lock.json
-
-      - name: Install new website dependencies
-        run: npm ci --prefix new_website
-
-      - name: Build new Vite website
-        run: npm run build --prefix new_website
+          cache-dependency-path: new_website2/package-lock.json
 
       - name: Install academic website dependencies
         run: npm ci --prefix new_website2
@@ -67,35 +59,27 @@ jobs:
       - name: Build academic Vite website
         run: npm run build --prefix new_website2
 
-      - name: Add new website to Pages artifact
-        run: |
-          set -euo pipefail
-          rm -rf _site/new_website
-          mkdir -p _site/new_website
-          cp -a new_website/dist/. _site/new_website/
-          if [ -f CNAME ]; then
-            cp CNAME _site/CNAME
-          fi
-
       - name: Add academic website to Pages artifact
         run: |
           set -euo pipefail
           rm -rf _site/new_website2
           mkdir -p _site/new_website2
           cp -a new_website2/dist/. _site/new_website2/
+          if [ -f CNAME ]; then
+            cp CNAME _site/CNAME
+          fi
 
       - name: Verify Pages artifact
         run: |
           set -euo pipefail
           test -f _site/index.html
-          for site in new_website new_website2; do
-            test -f "_site/$site/index.html"
-            for page in research people publications teaching opportunities gallery contact; do
-              test -f "_site/$site/$page/index.html"
-            done
-            test -n "$(find "_site/$site/assets" -type f -name '*.js' -print -quit)"
-            test -n "$(find "_site/$site/assets" -type f -name '*.css' -print -quit)"
+          site=new_website2
+          test -f "_site/$site/index.html"
+          for page in research people publications teaching opportunities gallery contact; do
+            test -f "_site/$site/$page/index.html"
           done
+          test -n "$(find "_site/$site/assets" -type f -name '*.js' -print -quit)"
+          test -n "$(find "_site/$site/assets" -type f -name '*.css' -print -quit)"
 
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
