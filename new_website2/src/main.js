@@ -385,11 +385,6 @@ const renderTeaching = () => `
       <h2 class="section-heading">Courses</h2>
       <ul class="course-list">${courses.map(renderCourseItem).join("")}</ul>
     </section>
-    <section class="section reading-column">
-      <h2 class="section-heading"><a href="${routeUrl("teaching/bci-lab/")}">Brain–Computer Interfaces Laboratory</a></h2>
-      <p>ECBME 4090 provides hands-on experience with neural interface technologies, including scalp EEG recording, experimental design, real-time analysis of brain responses, and decoding perception and intention.</p>
-      <p><a class="text-link" href="${routeUrl("teaching/bci-lab/")}">View course details and materials</a></p>
-    </section>
   </div>`;
 
 const renderBciLab = () => `

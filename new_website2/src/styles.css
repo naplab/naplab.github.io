@@ -833,15 +833,13 @@ body[data-page="people"] .directory-grid > * {
   min-width: 0;
 }
 
-.course-item strong a,
-.section-heading a {
+.course-item strong a {
   color: inherit;
   text-decoration-color: var(--rule-strong);
   text-underline-offset: 0.2em;
 }
 
-.course-item strong a:hover,
-.section-heading a:hover {
+.course-item strong a:hover {
   text-decoration-color: currentColor;
 }
 
