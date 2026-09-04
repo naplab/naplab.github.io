@@ -380,6 +380,10 @@ h2.section-heading {
   filter: none;
 }
 
+.home-intro--home .home-intro-art img {
+  transform: scaleX(-1);
+}
+
 .home-intro .shell {
   position: relative;
   z-index: 1;
