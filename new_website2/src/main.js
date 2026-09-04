@@ -74,8 +74,11 @@ const renderHeader = () => `
   <header class="site-header">
     <div class="shell header-inner">
       <a class="brand" href="${routeUrl()}">
-        <span class="brand-name"><span class="brand-accent">NAP</span>Lab</span>
-        <span class="brand-subtitle">Columbia University</span>
+        <img class="brand-logo" src="${assetUrl("/assets/img/naplab_logo_small.png")}" alt="" aria-hidden="true" />
+        <span class="brand-copy">
+          <span class="brand-name"><span class="brand-accent">NAP</span>Lab</span>
+          <span class="brand-subtitle">Columbia University</span>
+        </span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
         <span>Menu</span>
