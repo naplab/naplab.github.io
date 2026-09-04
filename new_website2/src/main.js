@@ -191,16 +191,16 @@ const renderHome = () => {
 const researchAreas = [
   {
     title: "Auditory cognition and cortical computation",
-    copy: "We investigate how auditory cortex represents speech, language, and music, and how those representations support robust perception in noisy and changing environments.",
+    copy: "We investigate how the auditory cortex encodes speech, language, and music, and how these neural representations support robust perception in noisy and dynamic environments.",
     topics: ["Speech and language encoding", "Naturalistic listening", "Music perception", "Temporal integration in cortex"],
     image: "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/8ff0/10417567/f4babd58d918/nihms-1919650-f0001.jpg",
     alt: "Electrode coverage and neural encoding analysis from an auditory cortex study",
-    caption: "Hierarchical linguistic encoding in auditory cortex, Nature Human Behaviour (2023).",
+    caption: "Hierarchical linguistic encoding in the human auditory cortex, Nature Human Behaviour (2023).",
     link: "https://www.nature.com/articles/s41562-023-01520-0",
   },
   {
     title: "Auditory brain–computer interfaces",
-    copy: "We build systems that infer which speaker a listener is attending to and use neural signals to guide selective hearing and assistive audio technology in real time.",
+    copy: "We develop systems that decode which speaker a listener is attending to and use neural signals to control selective amplification in real time, laying the groundwork for assistive listening technologies.",
     topics: ["Auditory attention decoding", "Real-time neural signal processing", "Neuro-steered hearing devices", "Human-centered evaluation"],
     image: "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41593-026-02281-5/MediaObjects/41593_2026_2281_Fig1_HTML.png",
     alt: "Experimental paradigm for a real-time brain-controlled selective hearing system",
@@ -210,11 +210,11 @@ const researchAreas = [
   },
   {
     title: "Artificial intelligence for speech and audio",
-    copy: "We develop generative and separation models for speech and audio, and use deep networks as testable computational models of biological hearing.",
-    topics: ["Speech separation and enhancement", "Generative speech and audio", "Brain–model correspondence", "Interpretable representations"],
+    copy: "We develop generative and source-separation models for speech and audio, and use deep neural networks as testable computational models of biological hearing.",
+    topics: ["Speech separation and enhancement", "Generative speech and audio", "Brain–model alignment", "Interpretable representations"],
     image: "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/98ea/11759097/ae19efc287c9/nihms-2009026-f0002.jpg",
-    alt: "Training and inference architecture for a generative speech system",
-    caption: "StyleTTS 2 generative speech architecture, NeurIPS (2023).",
+    alt: "Training and inference architecture for a text-to-speech system",
+    caption: "StyleTTS 2 text-to-speech architecture, NeurIPS (2023).",
     link: "https://proceedings.neurips.cc/paper_files/paper/2023/hash/3eaad2a0b62b5ed7a2e66c2188bb1449-Abstract-Conference.html",
   },
 ];
