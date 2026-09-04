@@ -258,6 +258,15 @@ const renderPerson = (person) => {
   </article>`;
 };
 
+const renderAlumnus = (alumnus) => {
+  if (typeof alumnus === "string") return `<li>${escapeHtml(alumnus)}</li>`;
+  const website = personWebsite(alumnus);
+  const name = website
+    ? `<a href="${escapeHtml(website)}" target="_blank" rel="noopener noreferrer">${escapeHtml(alumnus.name)}</a>`
+    : escapeHtml(alumnus.name);
+  return `<li><strong>${name}</strong>${alumnus.current_affiliation ? `<span>${escapeHtml(alumnus.current_affiliation)}</span>` : ""}</li>`;
+};
+
 const renderPeople = () => {
   const faculty = people.faculty[0];
   const facultyWebsite = personWebsite(faculty);
@@ -299,7 +308,7 @@ const renderPeople = () => {
         </div>
         <div>
           <h2 class="section-heading">Alumni</h2>
-          <ul class="plain-list plain-list--compact">${people.alumni.map((name) => `<li>${escapeHtml(name)}</li>`).join("")}</ul>
+          <ul class="plain-list plain-list--compact">${people.alumni.map(renderAlumnus).join("")}</ul>
         </div>
       </section>
     </div>`;

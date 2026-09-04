@@ -32,23 +32,6 @@ lab_members:
       website: https://www.ru.nl/en/people/heijden-k-van-der
     degrees:
       - Ph.D. Maastricht University, Netherlands
-  - name: Vishal Choudhari
-    title: Ph.D. Student
-    avatar: /assets/img/people/vishal.jpg
-    contacts:
-      email: ""
-      website: https://www.vishalchoudhari.com/
-    degrees:
-      - B.Sc. Indian Institute of Technology
-  - name: Gavin Mischler
-    title: Ph.D. Student
-    avatar: /assets/img/people/gavin.jpg
-    contacts:
-      email: ""
-      website: https://gavinmischler.github.io/
-    degrees:
-      - M.Sc. Electrical Engineering, Columbia University
-      - B.Sc. Biomedical Engineering, Johns Hopkins University
   - name: Xiaomin He
     title: Ph.D. Student
     avatar: /assets/img/people/xiaomin.jpg
@@ -108,6 +91,11 @@ lab_members:
     degrees:
       - M.Sc. Electrical Engineering, Columbia University
       - B.Sc. Electrical Engineering, Xi'an Jiaotong University
+  - name: Weiyu Chen
+    title: Ph.D. Student
+    avatar: /assets/img/people/weiyu.jpg
+    contacts:
+      email: ""
 
 collaborators:
   - name: Ashesh Mehta
@@ -132,15 +120,42 @@ collaborators:
       website: https://med.nyu.edu/faculty/adeen-flinker
 
 alumni:
-  - Sam Norman-Haignere
-  - James O'Sullivan
-  - Yinghao Li
-  - Vinay Raghavan
-  - Prachi Patel
-  - Cong Han
-  - Menoua Keshishian
-  - Zhuo Chen
-  - Yi Luo
-  - Laura Long
-  - Bahar Khalighinejad
+  - name: Sam Norman-Haignere
+    current_affiliation: University of Rochester
+  - name: James O'Sullivan
+    current_affiliation: Roche
+    profile_url: https://ch.linkedin.com/in/jmsosullivan
+  - name: Yinghao Li
+    current_affiliation: Meta Superintelligence Labs
+    profile_url: https://www.linkedin.com/in/yinghao-li-08930a183
+  - name: Vinay Raghavan
+    current_affiliation: The City College of New York
+    profile_url: https://www.linkedin.com/in/vinaysraghavan
+  - name: Prachi Patel
+    current_affiliation: Microsoft
+    profile_url: https://www.linkedin.com/in/prachipatel4593
+  - name: Cong Han
+    current_affiliation: Google DeepMind
+    profile_url: https://www.linkedin.com/in/cong-han
+  - name: Menoua Keshishian
+    current_affiliation: Neuralink
+    profile_url: https://www.linkedin.com/in/menoua
+  - name: Zhuo Chen
+    current_affiliation: ByteDance
+    profile_url: https://www.ee.columbia.edu/~zhuo/
+  - name: Yi Luo
+    current_affiliation: ByteDance Seed
+    profile_url: https://cn.linkedin.com/in/yi-luo-yl3364
+  - name: Laura Long
+    current_affiliation: "Most recently: National Institutes of Health"
+    profile_url: https://www.linkedin.com/in/laura-long-6a3a7a54
+  - name: Bahar Khalighinejad
+    current_affiliation: Hudson River Trading
+    profile_url: https://www.linkedin.com/in/bahar-khalighinejad-40212ba9
+  - name: Gavin Mischler
+    current_affiliation: Harvard Medical School
+    profile_url: https://gavinmischler.github.io/
+  - name: Vishal Choudhari
+    current_affiliation: Hearvana.ai
+    profile_url: https://www.vishalchoudhari.com/
 

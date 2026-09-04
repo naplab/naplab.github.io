@@ -244,8 +244,13 @@ layout: page
   {% for person in site.data.people.alumni %}
     <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
       <span style="font-size: 1.1rem; font-weight: normal; color: #333; display: block;">
-        {{ person }}
+        {% if person.name %}{{ person.name }}{% else %}{{ person }}{% endif %}
       </span>
+      {% if person.current_affiliation %}
+        <span style="font-size: 0.9rem; color: #777; display: block;">
+          {{ person.current_affiliation }}
+        </span>
+      {% endif %}
     </div>
   {% endfor %}
 </div>
