@@ -360,7 +360,8 @@ h2.section-heading {
   );
 }
 
-.home-intro--home {
+.home-intro--home,
+.home-intro--contact {
   display: grid;
   min-height: clamp(32rem, 50vw, 50rem);
   align-items: center;

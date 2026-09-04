@@ -422,7 +422,7 @@ const renderContact = () => {
   const faculty = people.faculty[0];
   const email = faculty?.contacts?.email || "nima@ee.columbia.edu";
   return `
-    <section class="home-intro">
+    <section class="home-intro home-intro--contact">
       <div class="home-intro-art" aria-hidden="true">
         <img src="${assetUrl("/assets/img/contact/manhattanville-building.jpg")}" alt="" decoding="async" fetchpriority="high" />
       </div>
