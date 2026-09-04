@@ -858,26 +858,6 @@ body[data-page="people"] .directory-grid > * {
   object-fit: cover;
 }
 
-.course-objectives-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2.5rem clamp(2rem, 5vw, 4rem);
-}
-
-.course-objectives-grid article {
-  min-width: 0;
-  padding-top: 1rem;
-  border-top: 1px solid var(--rule);
-}
-
-.course-objectives-grid h3 {
-  margin-top: 0;
-}
-
-.course-objectives-grid ul {
-  margin-bottom: 0;
-}
-
 .course-back-link {
   margin-top: 2rem;
 }
@@ -1200,7 +1180,6 @@ img.gallery-item {
   .people-grid,
   .directory-grid,
   .info-grid,
-  .course-objectives-grid,
   .gallery-grid,
   .course-item {
     grid-template-columns: 1fr;

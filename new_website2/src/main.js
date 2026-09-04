@@ -364,13 +364,6 @@ const courseMaterials = [
   ["Project 2", "miniproject2.pdf"],
 ];
 
-const bciLearningObjectives = [
-  ["Experimental design", ["Experiment design and optimization", "Data collection and quality control", "Hypothesis testing"]],
-  ["Neuroscience concepts", ["Neural mechanisms of EEG", "Biological artifacts", "Event-related potentials, including MMN and P300", "Neurofeedback", "ASSR and SSVEP", "Imagined movement"]],
-  ["Data analysis", ["Epoching and noise reduction", "Frequency-domain processing and FIR filtering", "CSP spatial filters", "LDA classification", "Cross-session and cross-subject evaluation"]],
-  ["Technical skills", ["Hardware setup and debugging", "MATLAB and Simulink", "EEG recording and analysis software", "EEGLAB"]],
-];
-
 const bciPhotos = [
   "photo-nov-24-11-11-16-am.jpg",
   "photo-nov-24-11-13-00-am.jpg",
@@ -408,26 +401,6 @@ const renderBciLab = () => `
           .map(
             (file, index) =>
               `<img src="${assetUrl(`/assets/img/bci/${file}`)}" alt="Students working in the Brain–Computer Interfaces Laboratory${index ? `, view ${index + 1}` : ""}" loading="lazy" />`,
-          )
-          .join("")}
-      </div>
-    </section>
-    <section class="section reading-column">
-      <h2 class="section-heading">Course overview</h2>
-      <p>Offered by the Departments of Electrical Engineering, Computer Science, and Biomedical Engineering, this laboratory course provides hands-on experience with basic neural interface technologies. Students record scalp EEG, design experiments, monitor and analyze brain responses in real time, and decode intention and perception from responses to visual and auditory stimuli.</p>
-      <p>Course materials may be used for educational purposes. Please cite Bahar Khalighinejad, Laura Long, and Nima Mesgarani, “Designing a Hands-On Brain Computer Interface Laboratory Course,” <em>38th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)</em>, 2016.</p>
-      <p>${resourceLink("Read the course paper", assetUrl("/assets/files/finalbci.pdf"))}</p>
-    </section>
-    <section class="section">
-      <h2 class="section-heading">Learning objectives</h2>
-      <div class="course-objectives-grid">
-        ${bciLearningObjectives
-          .map(
-            ([heading, items]) => `
-              <article>
-                <h3>${escapeHtml(heading)}</h3>
-                <ul>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
-              </article>`,
           )
           .join("")}
       </div>
