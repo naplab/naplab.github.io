@@ -125,6 +125,12 @@ alumni:
   - name: James O'Sullivan
     current_affiliation: Roche
     profile_url: https://ch.linkedin.com/in/jmsosullivan
+  - name: Gavin Mischler
+    current_affiliation: Harvard Medical School
+    profile_url: https://gavinmischler.github.io/
+  - name: Vishal Choudhari
+    current_affiliation: Hearvana.ai
+    profile_url: https://www.vishalchoudhari.com/
   - name: Yinghao Li
     current_affiliation: Meta Superintelligence Labs
     profile_url: https://www.linkedin.com/in/yinghao-li-08930a183
@@ -141,21 +147,16 @@ alumni:
     current_affiliation: Neuralink
     profile_url: https://www.linkedin.com/in/menoua
   - name: Zhuo Chen
-    current_affiliation: ByteDance
+    current_affiliation: ByteDance Seed
     profile_url: https://www.ee.columbia.edu/~zhuo/
   - name: Yi Luo
     current_affiliation: ByteDance Seed
     profile_url: https://cn.linkedin.com/in/yi-luo-yl3364
   - name: Laura Long
-    current_affiliation: "Most recently: National Institutes of Health"
+    current_affiliation: New Jersey Human Services
+    current_affiliation_url: https://www.linkedin.com/company/106538760/
     profile_url: https://www.linkedin.com/in/laura-long-6a3a7a54
   - name: Bahar Khalighinejad
     current_affiliation: Hudson River Trading
     profile_url: https://www.linkedin.com/in/bahar-khalighinejad-40212ba9
-  - name: Gavin Mischler
-    current_affiliation: Harvard Medical School
-    profile_url: https://gavinmischler.github.io/
-  - name: Vishal Choudhari
-    current_affiliation: Hearvana.ai
-    profile_url: https://www.vishalchoudhari.com/
 

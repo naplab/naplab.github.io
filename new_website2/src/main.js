@@ -261,10 +261,14 @@ const renderPerson = (person) => {
 const renderAlumnus = (alumnus) => {
   if (typeof alumnus === "string") return `<li>${escapeHtml(alumnus)}</li>`;
   const website = personWebsite(alumnus);
+  const affiliationWebsite = safeExternalUrl(alumnus.current_affiliation_url);
   const name = website
     ? `<a href="${escapeHtml(website)}" target="_blank" rel="noopener noreferrer">${escapeHtml(alumnus.name)}</a>`
     : escapeHtml(alumnus.name);
-  return `<li><strong>${name}</strong>${alumnus.current_affiliation ? `<span>${escapeHtml(alumnus.current_affiliation)}</span>` : ""}</li>`;
+  const affiliation = affiliationWebsite
+    ? `<a href="${escapeHtml(affiliationWebsite)}" target="_blank" rel="noopener noreferrer">${escapeHtml(alumnus.current_affiliation)}</a>`
+    : escapeHtml(alumnus.current_affiliation);
+  return `<li><strong>${name}</strong>${alumnus.current_affiliation ? `<span>${affiliation}</span>` : ""}</li>`;
 };
 
 const renderPeople = () => {

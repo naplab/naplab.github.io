@@ -248,7 +248,11 @@ layout: page
       </span>
       {% if person.current_affiliation %}
         <span style="font-size: 0.9rem; color: #777; display: block;">
-          {{ person.current_affiliation }}
+          {% if person.current_affiliation_url %}
+            <a href="{{ person.current_affiliation_url }}" target="_blank" rel="noopener noreferrer">{{ person.current_affiliation }}</a>
+          {% else %}
+            {{ person.current_affiliation }}
+          {% endif %}
         </span>
       {% endif %}
     </div>
