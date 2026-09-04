@@ -360,6 +360,12 @@ h2.section-heading {
   );
 }
 
+.home-intro--home {
+  display: grid;
+  min-height: clamp(32rem, 50vw, 50rem);
+  align-items: center;
+}
+
 .home-intro-art {
   position: absolute;
   inset: 0;
