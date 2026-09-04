@@ -1,4 +1,5 @@
 import "./styles.css";
+import homeHero from "./assets/choudhari-mesgarani-2026-hero.png";
 import { gallery, people, publications } from "./data.js";
 
 const baseUrl = import.meta.env.BASE_URL;
@@ -143,7 +144,10 @@ const publicationItem = (item, compact = false) => {
 const renderHome = () => {
   const recent = publications.slice(0, 4);
   return `
-    <section class="home-intro">
+    <section class="home-intro home-intro--home">
+      <div class="home-intro-art" aria-hidden="true">
+        <img src="${homeHero}" alt="" decoding="async" fetchpriority="high" />
+      </div>
       <div class="shell"><div class="reading-column">
         <h1>Understanding how the brain makes sense of sound.</h1>
         <p class="lead">Welcome to the Neural Acoustic Processing Lab (NAPLab), where we bring together auditory neuroscience, signal processing, and artificial intelligence to study human communication and develop better speech and hearing technologies.</p>
