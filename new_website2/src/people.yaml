@@ -97,6 +97,10 @@ lab_members:
       email: ""
 
 collaborators:
+  - name: Edward F. Chang
+    affiliation: Department of Neurological Surgery, University of California, San Francisco
+    contacts:
+      website: https://profiles.ucsf.edu/edward.chang
   - name: Ashesh Mehta
     affiliation: The Feinstein Institute for Medical Research, Northwell School of Medicine
     contacts:
