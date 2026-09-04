@@ -39,7 +39,7 @@ const routeUrl = (route = "") => `${baseUrl}${route}`;
 
 const assetUrl = (path = "") => {
   const value = String(path || "");
-  if (/^(https?:|data:)/i.test(value)) return value;
+  if (/^(https?:|data:)/i.test(value) || value.startsWith(baseUrl)) return value;
   return `${baseUrl}${value.replace(/^\/?assets\//, "").replace(/^\//, "")}`;
 };
 
@@ -312,7 +312,7 @@ const renderPeople = () => {
         </div>
         <div>
           <h2 class="section-heading">Alumni</h2>
-          <ul class="plain-list plain-list--compact">${people.alumni.map(renderAlumnus).join("")}</ul>
+          <ul class="plain-list plain-list--compact alumni-list">${people.alumni.map(renderAlumnus).join("")}</ul>
         </div>
       </section>
     </div>`;

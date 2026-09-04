@@ -673,6 +673,16 @@ body[data-page="people"] .directory-grid > * {
   line-height: 1.45;
 }
 
+.alumni-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem 1.5rem;
+}
+
+.alumni-list li + li {
+  margin-top: 0;
+}
+
 .publication-year {
   display: grid;
   grid-template-columns: 110px minmax(0, 1fr);
@@ -1096,6 +1106,10 @@ img.gallery-item {
   .gallery-grid,
   .course-item {
     grid-template-columns: 1fr;
+  }
+
+  .alumni-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .person {

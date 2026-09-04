@@ -1,5 +1,6 @@
 import { parse } from "yaml";
-import peopleSource from "../../_data/people.yaml?raw";
+import weiyuAvatar from "./assets/weiyu.jpg";
+import peopleSource from "./people.yaml?raw";
 import publicationsSource from "../../_data/pub.yaml?raw";
 import gallerySource from "../../_data/gallery.yaml?raw";
 
@@ -7,7 +8,11 @@ const parsedPeople = parse(peopleSource) ?? {};
 
 export const people = {
   faculty: Array.isArray(parsedPeople.faculty) ? parsedPeople.faculty : [],
-  labMembers: Array.isArray(parsedPeople.lab_members) ? parsedPeople.lab_members : [],
+  labMembers: Array.isArray(parsedPeople.lab_members)
+    ? parsedPeople.lab_members.map((person) =>
+        person.name === "Weiyu Chen" ? { ...person, avatar: weiyuAvatar } : person,
+      )
+    : [],
   collaborators: Array.isArray(parsedPeople.collaborators) ? parsedPeople.collaborators : [],
   alumni: Array.isArray(parsedPeople.alumni) ? parsedPeople.alumni : [],
 };

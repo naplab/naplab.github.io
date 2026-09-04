@@ -244,17 +244,8 @@ layout: page
   {% for person in site.data.people.alumni %}
     <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
       <span style="font-size: 1.1rem; font-weight: normal; color: #333; display: block;">
-        {% if person.name %}{{ person.name }}{% else %}{{ person }}{% endif %}
+        {{ person }}
       </span>
-      {% if person.current_affiliation %}
-        <span style="font-size: 0.9rem; color: #777; display: block;">
-          {% if person.current_affiliation_url %}
-            <a href="{{ person.current_affiliation_url }}" target="_blank" rel="noopener noreferrer">{{ person.current_affiliation }}</a>
-          {% else %}
-            {{ person.current_affiliation }}
-          {% endif %}
-        </span>
-      {% endif %}
     </div>
   {% endfor %}
 </div>
