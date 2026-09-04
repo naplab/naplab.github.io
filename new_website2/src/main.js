@@ -144,9 +144,6 @@ const renderHome = () => {
   const recent = publications.slice(0, 4);
   return `
     <section class="home-intro">
-      <div class="home-intro-art" aria-hidden="true">
-        <img src="${assetUrl("/assets/img/contact/manhattanville-building.jpg")}" alt="" decoding="async" fetchpriority="high" />
-      </div>
       <div class="shell"><div class="reading-column">
         <h1>Understanding how the brain makes sense of sound.</h1>
         <p class="lead">Welcome to the Neural Acoustic Processing Lab (NAPLab), where we bring together auditory neuroscience, signal processing, and artificial intelligence to study human communication and develop better speech and hearing technologies.</p>
@@ -430,8 +427,16 @@ const renderContact = () => {
   const faculty = people.faculty[0];
   const email = faculty?.contacts?.email || "nima@ee.columbia.edu";
   return `
+    <section class="home-intro">
+      <div class="home-intro-art" aria-hidden="true">
+        <img src="${assetUrl("/assets/img/contact/manhattanville-building.jpg")}" alt="" decoding="async" fetchpriority="high" />
+      </div>
+      <div class="shell"><div class="reading-column">
+        <h1>Contact</h1>
+        <p class="lead">NAPLab is located in Columbia University’s Jerome L. Greene Science Center in Manhattanville.</p>
+      </div></div>
+    </section>
     <div class="shell">
-      ${pageIntro("Contact", "NAPLab is located in Columbia University’s Jerome L. Greene Science Center in Manhattanville.")}
       <section class="section contact-grid">
         <div class="address-block">
           <h2 class="section-heading">Address</h2>
