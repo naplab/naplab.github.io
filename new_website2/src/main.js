@@ -356,9 +356,9 @@ const courseMaterials = [
   ["Neurofeedback", "labinstruction3.pdf"],
   ["Auditory oddball paradigm", "labinstruction4.pdf"],
   ["P300 speller", "labinstruction5.pdf"],
-  ["Auditory steady-state response", "labinstruction6.pdf"],
+  ["Auditory steady state response", "labinstruction6.pdf"],
   ["Attentional modulation of ASSR", "labinstruction7.pdf"],
-  ["Steady-state visually evoked responses", "labinstruction8.pdf"],
+  ["Steady state visually evoked responses", "labinstruction8.pdf"],
   ["Decoding imagined movement", "labinstruction9.pdf"],
   ["Project 1", "miniproject1.pdf"],
   ["Project 2", "miniproject2.pdf"],
@@ -369,6 +369,45 @@ const bciPhotos = [
   "photo-nov-24-11-13-00-am.jpg",
   "photo-nov-24-11-13-12-am.jpg",
   "photo-nov-24-12-15-27-pm.jpg",
+];
+
+const bciLearningObjectives = [
+  [
+    "Experimental design",
+    ["Experiment design and optimization", "Data collection and quality control", "Hypothesis testing"],
+  ],
+  [
+    "Neuroscience concepts",
+    [
+      "Neural mechanisms of EEG",
+      "Biological artifacts",
+      "Event related potentials (ERP), including mismatch negativity (MMN) and P300",
+      "Neurofeedback",
+      "Auditory steady state response (ASSR)",
+      "Steady state visually evoked potential (SSVEP)",
+      "Imagined movement",
+    ],
+  ],
+  [
+    "Data analysis",
+    [
+      "Preprocessing: epoching and noise reduction",
+      "Fast Fourier transform (FFT) and frequency domain processing",
+      "Finite impulse response (FIR) filtering",
+      "Common spatial pattern (CSP) filters",
+      "Linear discriminant analysis (LDA) classification methods",
+      "Cross session and cross subject modeling and evaluation",
+    ],
+  ],
+  [
+    "Technical skills",
+    [
+      "Hardware setup and debugging",
+      "MATLAB and Simulink",
+      "EEG recording and analysis software",
+      "Publicly available data analysis software including EEGLAB",
+    ],
+  ],
 ];
 
 const renderCourseItem = ([code, title, route]) => {
@@ -389,13 +428,35 @@ const renderTeaching = () => `
 
 const renderBciLab = () => `
   <div class="shell">
-    ${pageIntro("Brain–Computer Interfaces Laboratory", "ECBME 4090 · Hands-on experience with neural interface technologies.")}
+    ${pageIntro("Brain–Computer Interfaces Laboratory")}
     <section class="section" aria-label="Brain–Computer Interfaces Laboratory photos">
       <div class="course-photo-grid">
         ${bciPhotos
           .map(
             (file, index) =>
               `<img src="${assetUrl(`/assets/img/bci/${file}`)}" alt="Students working in the Brain–Computer Interfaces Laboratory${index ? `, view ${index + 1}` : ""}" loading="lazy" />`,
+          )
+          .join("")}
+      </div>
+    </section>
+    <section class="section reading-column">
+      <p><em>ECBME 4090</em></p>
+      <h2 class="section-heading">Course description</h2>
+      <p>The course, offered by the departments of Electrical Engineering, Computer Science, and Biomedical Engineering, provides hands on experience with basic neural interface technologies. Topics include recording EEG signals using data acquisition systems (noninvasive, scalp recordings), real time analysis and monitoring of brain responses, and analysis of intention and perception of external visual and audio signals.</p>
+      <p>For more information on this course, please contact the instructor.</p>
+      <p>Course materials may be used for educational purposes only. Please cite:</p>
+      <p>Khalighinejad, Bahar; Long, Laura; Mesgarani, Nima, <strong>Designing a Hands-On Brain Computer Interface Laboratory Course</strong>, <em>International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)</em>, Orlando, Florida, 2016. <a href="${assetUrl("/assets/files/finalbci.pdf")}" target="_blank" rel="noopener noreferrer">Download PDF</a></p>
+    </section>
+    <section class="section reading-column">
+      <h2 class="section-heading">Course learning objectives</h2>
+      <div class="course-objectives">
+        ${bciLearningObjectives
+          .map(
+            ([heading, items]) => `
+              <section class="course-objective">
+                <h3>${escapeHtml(heading)}</h3>
+                <ul>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+              </section>`,
           )
           .join("")}
       </div>

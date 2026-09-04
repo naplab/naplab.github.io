@@ -856,6 +856,23 @@ body[data-page="people"] .directory-grid > * {
   object-fit: cover;
 }
 
+.course-objective {
+  padding-block: 1.5rem;
+  border-top: 1px solid var(--rule);
+}
+
+.course-objective:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.course-objective h3 {
+  margin-top: 0;
+}
+
+.course-objective ul {
+  margin-bottom: 0;
+}
+
 .course-back-link {
   margin-top: 2rem;
 }
