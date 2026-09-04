@@ -363,8 +363,15 @@ h2.section-heading {
 .home-intro--home,
 .home-intro--contact {
   display: grid;
-  min-height: clamp(32rem, 50vw, 50rem);
   align-items: center;
+}
+
+.home-intro--home {
+  min-height: clamp(32rem, 50vw, 50rem);
+}
+
+.home-intro--contact {
+  min-height: clamp(26rem, 38vw, 38rem);
 }
 
 .home-intro-art {
