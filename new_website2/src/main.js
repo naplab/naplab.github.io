@@ -399,26 +399,17 @@ const renderOpportunities = () => {
 };
 
 const renderGallery = () => {
-  const years = [...new Set(gallery.map((item) => String(item.year || "Other")))];
   return `
     <div class="shell">
       ${pageIntro("Gallery", temporarilyHiddenPageLead("A record of conferences, courses, celebrations, awards, and everyday life in the lab."))}
       <section class="section">
-        <div class="gallery-toolbar">
-          <label for="gallery-year">Filter by year</label>
-          <select id="gallery-year">
-            <option value="all">All years</option>
-            ${years.map((year) => `<option value="${escapeHtml(year)}">${escapeHtml(year)}</option>`).join("")}
-          </select>
-        </div>
         <div class="gallery-grid">
           ${gallery
             .map((item) => {
-              const year = String(item.year || "Other");
-              const caption = item.highlight || `NAPLab, ${year}`;
-              return `<figure class="gallery-item" data-gallery-year="${escapeHtml(year)}">
+              const caption = item.highlight || "NAPLab gallery";
+              return `<figure class="gallery-item">
                 <img src="${assetUrl(item.file)}" alt="${escapeHtml(caption)}" loading="lazy" />
-                <figcaption><strong>${escapeHtml(year)}</strong>${item.highlight ? ` · ${escapeHtml(item.highlight)}` : ""}</figcaption>
+                ${item.highlight ? `<figcaption>${escapeHtml(item.highlight)}</figcaption>` : ""}
               </figure>`;
             })
             .join("")}
@@ -496,11 +487,4 @@ document.addEventListener("keydown", (event) => {
     siteNav?.classList.remove("is-open");
     menuToggle.focus();
   }
-});
-
-document.querySelector("#gallery-year")?.addEventListener("change", (event) => {
-  const selectedYear = event.currentTarget.value;
-  document.querySelectorAll("[data-gallery-year]").forEach((item) => {
-    item.hidden = selectedYear !== "all" && item.dataset.galleryYear !== selectedYear;
-  });
 });
