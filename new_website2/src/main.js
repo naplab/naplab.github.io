@@ -4,6 +4,7 @@ import { gallery, people, publications } from "./data.js";
 
 const baseUrl = import.meta.env.BASE_URL;
 const currentPage = document.body.dataset.page || "home";
+const currentSection = currentPage === "bci-lab" ? "teaching" : currentPage;
 const main = document.querySelector("#main-content");
 
 const navigation = [
@@ -23,6 +24,7 @@ const pageTitles = {
   people: "People | NAPLab",
   publications: "Publications | NAPLab",
   teaching: "Teaching | NAPLab",
+  "bci-lab": "Brain–Computer Interfaces Laboratory | NAPLab",
   opportunities: "Opportunities | NAPLab",
   gallery: "Gallery | NAPLab",
   contact: "Contact | NAPLab",
@@ -88,7 +90,7 @@ const renderHeader = () => `
           ${navigation
             .map(
               ([id, label, route]) =>
-                `<li><a href="${routeUrl(route)}"${id === currentPage ? ' class="active" aria-current="page"' : ""}>${label}</a></li>`,
+                `<li><a href="${routeUrl(route)}"${id === currentSection ? ' class="active" aria-current="page"' : ""}>${label}</a></li>`,
             )
             .join("")}
         </ul>
@@ -344,39 +346,98 @@ const renderPublications = () => {
 const courses = [
   ["EEBME 9070", "Advanced Topics: Bio-Inspired Computation"],
   ["ELEN 6820", "Speech and Audio Signal Processing"],
-  ["ECBME 4090", "Brain–Computer Interfaces Laboratory"],
+  ["ECBME 4090", "Brain–Computer Interfaces Laboratory", "teaching/bci-lab/"],
   ["EEBME 9070", "Advanced Topics: Neural Processing of Acoustic Signals"],
 ];
 
 const courseMaterials = [
-  ["Design and experimental considerations", "labinstruction1.pdf"],
-  ["Event-related potential basics", "labinstruction2.pdf"],
-  ["Frequency-domain analysis", "labinstruction3.pdf"],
-  ["Filtering and artifact removal", "labinstruction4.pdf"],
-  ["Spatial filtering", "labinstruction5.pdf"],
-  ["Classification", "labinstruction6.pdf"],
-  ["Steady-state auditory responses", "labinstruction7.pdf"],
+  ["Introduction to EEG", "labinstruction1.pdf"],
+  ["Biological artifacts in EEG", "labinstruction2.pdf"],
+  ["Neurofeedback", "labinstruction3.pdf"],
+  ["Auditory oddball paradigm", "labinstruction4.pdf"],
+  ["P300 speller", "labinstruction5.pdf"],
+  ["Auditory steady-state response", "labinstruction6.pdf"],
+  ["Attentional modulation of ASSR", "labinstruction7.pdf"],
   ["Steady-state visually evoked responses", "labinstruction8.pdf"],
   ["Decoding imagined movement", "labinstruction9.pdf"],
   ["Project 1", "miniproject1.pdf"],
   ["Project 2", "miniproject2.pdf"],
 ];
 
+const bciLearningObjectives = [
+  ["Experimental design", ["Experiment design and optimization", "Data collection and quality control", "Hypothesis testing"]],
+  ["Neuroscience concepts", ["Neural mechanisms of EEG", "Biological artifacts", "Event-related potentials, including MMN and P300", "Neurofeedback", "ASSR and SSVEP", "Imagined movement"]],
+  ["Data analysis", ["Epoching and noise reduction", "Frequency-domain processing and FIR filtering", "CSP spatial filters", "LDA classification", "Cross-session and cross-subject evaluation"]],
+  ["Technical skills", ["Hardware setup and debugging", "MATLAB and Simulink", "EEG recording and analysis software", "EEGLAB"]],
+];
+
+const bciPhotos = [
+  "photo-nov-24-11-11-16-am.jpg",
+  "photo-nov-24-11-13-00-am.jpg",
+  "photo-nov-24-11-13-12-am.jpg",
+  "photo-nov-24-12-15-27-pm.jpg",
+];
+
+const renderCourseItem = ([code, title, route]) => {
+  const titleMarkup = route
+    ? `<a href="${routeUrl(route)}">${escapeHtml(title)}</a>`
+    : escapeHtml(title);
+  return `<li class="course-item"><span>${escapeHtml(code)}</span><strong>${titleMarkup}</strong></li>`;
+};
+
 const renderTeaching = () => `
   <div class="shell">
     ${pageIntro("Teaching", temporarilyHiddenPageLead("Courses connect auditory neuroscience with signal processing, brain–computer interfaces, and modern machine learning."))}
     <section class="section reading-column">
       <h2 class="section-heading">Courses</h2>
-      <ul class="course-list">${courses.map(([code, title]) => `<li class="course-item"><span>${escapeHtml(code)}</span><strong>${escapeHtml(title)}</strong></li>`).join("")}</ul>
+      <ul class="course-list">${courses.map(renderCourseItem).join("")}</ul>
     </section>
     <section class="section reading-column">
-      <h2 class="section-heading">Brain–Computer Interfaces Laboratory</h2>
+      <h2 class="section-heading"><a href="${routeUrl("teaching/bci-lab/")}">Brain–Computer Interfaces Laboratory</a></h2>
       <p>ECBME 4090 provides hands-on experience with neural interface technologies, including scalp EEG recording, experimental design, real-time analysis of brain responses, and decoding perception and intention.</p>
+      <p><a class="text-link" href="${routeUrl("teaching/bci-lab/")}">View course details and materials</a></p>
+    </section>
+  </div>`;
+
+const renderBciLab = () => `
+  <div class="shell">
+    ${pageIntro("Brain–Computer Interfaces Laboratory", "ECBME 4090 · Hands-on experience with neural interface technologies.")}
+    <section class="section" aria-label="Brain–Computer Interfaces Laboratory photos">
+      <div class="course-photo-grid">
+        ${bciPhotos
+          .map(
+            (file, index) =>
+              `<img src="${assetUrl(`/assets/img/bci/${file}`)}" alt="Students working in the Brain–Computer Interfaces Laboratory${index ? `, view ${index + 1}` : ""}" loading="lazy" />`,
+          )
+          .join("")}
+      </div>
+    </section>
+    <section class="section reading-column">
+      <h2 class="section-heading">Course overview</h2>
+      <p>Offered by the Departments of Electrical Engineering, Computer Science, and Biomedical Engineering, this laboratory course provides hands-on experience with basic neural interface technologies. Students record scalp EEG, design experiments, monitor and analyze brain responses in real time, and decode intention and perception from responses to visual and auditory stimuli.</p>
+      <p>Course materials may be used for educational purposes. Please cite Bahar Khalighinejad, Laura Long, and Nima Mesgarani, “Designing a Hands-On Brain Computer Interface Laboratory Course,” <em>38th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)</em>, 2016.</p>
       <p>${resourceLink("Read the course paper", assetUrl("/assets/files/finalbci.pdf"))}</p>
-      <h3>Open course materials</h3>
+    </section>
+    <section class="section">
+      <h2 class="section-heading">Learning objectives</h2>
+      <div class="course-objectives-grid">
+        ${bciLearningObjectives
+          .map(
+            ([heading, items]) => `
+              <article>
+                <h3>${escapeHtml(heading)}</h3>
+                <ul>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+              </article>`,
+          )
+          .join("")}
+      </div>
+    </section>
+    <section class="section reading-column">
+      <h2 class="section-heading">Open course materials</h2>
       <ol class="materials-list">${courseMaterials
         .map(([title, file], index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><a href="${assetUrl(`/assets/files/${file}`)}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a><small>PDF</small></li>`)
         .join("")}</ol>
+      <p class="course-back-link"><a class="text-link" href="${routeUrl("teaching/")}">Back to Teaching</a></p>
     </section>
   </div>`;
 
@@ -465,6 +526,7 @@ const pageRenderers = {
   people: renderPeople,
   publications: renderPublications,
   teaching: renderTeaching,
+  "bci-lab": renderBciLab,
   opportunities: renderOpportunities,
   gallery: renderGallery,
   contact: renderContact,

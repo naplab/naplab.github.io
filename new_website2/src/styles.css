@@ -833,6 +833,55 @@ body[data-page="people"] .directory-grid > * {
   min-width: 0;
 }
 
+.course-item strong a,
+.section-heading a {
+  color: inherit;
+  text-decoration-color: var(--rule-strong);
+  text-underline-offset: 0.2em;
+}
+
+.course-item strong a:hover,
+.section-heading a:hover {
+  text-decoration-color: currentColor;
+}
+
+.course-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(0.75rem, 2vw, 1.25rem);
+}
+
+.course-photo-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 1px solid var(--rule);
+  object-fit: cover;
+}
+
+.course-objectives-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem clamp(2rem, 5vw, 4rem);
+}
+
+.course-objectives-grid article {
+  min-width: 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.course-objectives-grid h3 {
+  margin-top: 0;
+}
+
+.course-objectives-grid ul {
+  margin-bottom: 0;
+}
+
+.course-back-link {
+  margin-top: 2rem;
+}
+
 .materials-list {
   display: block;
   margin: 1.5rem 0 0;
@@ -1015,6 +1064,10 @@ img.gallery-item {
   .info-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .course-photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 820px) {
@@ -1147,6 +1200,7 @@ img.gallery-item {
   .people-grid,
   .directory-grid,
   .info-grid,
+  .course-objectives-grid,
   .gallery-grid,
   .course-item {
     grid-template-columns: 1fr;

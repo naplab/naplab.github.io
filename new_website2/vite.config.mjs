@@ -24,6 +24,7 @@ export default defineConfig({
         people: page("people"),
         publications: page("publications"),
         teaching: page("teaching"),
+        bciLab: page("teaching/bci-lab"),
         opportunities: page("opportunities"),
         gallery: page("gallery"),
         contact: page("contact"),
