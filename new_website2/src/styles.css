@@ -7,6 +7,7 @@
   --paper: #ffffff;
   --accent: #174f7d;
   --accent-dark: #103d62;
+  --columbia-blue: #b9d9eb;
   --shell: 1120px;
   --reading: 820px;
   --gutter: clamp(20px, 4vw, 48px);
@@ -448,20 +449,18 @@ h2.section-heading {
 }
 
 .home-research-pillars article {
-  position: relative;
   min-width: 0;
   min-height: 100%;
   padding: 1.25rem 1.15rem 1.4rem;
   border: 1px solid var(--rule);
-  border-top: 3px solid var(--accent);
-  background: linear-gradient(180deg, rgba(23, 79, 125, 0.07), rgba(23, 79, 125, 0.015) 42%, var(--paper) 100%);
-  box-shadow: 0 12px 28px rgba(16, 61, 98, 0.07);
+  border-top: 5px solid var(--columbia-blue);
+  background: var(--paper);
 }
 
 .home-research-index {
   display: block;
   margin-bottom: 1rem;
-  color: var(--accent);
+  color: var(--quiet);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.12em;
