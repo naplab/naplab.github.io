@@ -163,7 +163,21 @@ const renderHome = () => {
       <div class="home-columns">
         <div>
           <h2 class="section-heading">Research</h2>
-          <p>We study the neural representation of speech and language, auditory attention in complex scenes, brain–computer interfaces for hearing, and computational models of speech and audio.</p>
+          <p class="home-research-intro">Our research is dedicated to understanding and engineering the future of human auditory communication, and it is built on three core pillars:</p>
+          <div class="home-research-pillars">
+            <article>
+              <h3>Neural Basis of Auditory Cognition</h3>
+              <p>Discovering how the brain encodes speech, language, and music in complex, naturalistic listening environments.</p>
+            </article>
+            <article>
+              <h3>Auditory Brain-Computer Interfaces (BCI)</h3>
+              <p>Creating real-time systems that decode auditory attention from neural signals, enabling assistive hearing and communication devices.</p>
+            </article>
+            <article>
+              <h3>AI for Audio &amp; Brain Modeling</h3>
+              <p>Building generative AI for speech and audio while using deep learning models as in silico platforms to probe brain computation.</p>
+            </article>
+          </div>
           <p><a class="text-link" href="${routeUrl("research/")}">Learn about our research</a></p>
         </div>
         <div>
