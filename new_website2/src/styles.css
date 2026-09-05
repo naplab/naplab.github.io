@@ -441,18 +441,36 @@ h2.section-heading {
 }
 
 .home-research-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
   margin-block: 1.75rem;
-  border-bottom: 1px solid var(--rule);
 }
 
 .home-research-pillars article {
-  padding-block: 1.25rem;
-  border-top: 1px solid var(--rule);
+  position: relative;
+  min-width: 0;
+  min-height: 100%;
+  padding: 1.25rem 1.15rem 1.4rem;
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--accent);
+  background: linear-gradient(180deg, rgba(23, 79, 125, 0.07), rgba(23, 79, 125, 0.015) 42%, var(--paper) 100%);
+  box-shadow: 0 12px 28px rgba(16, 61, 98, 0.07);
+}
+
+.home-research-index {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1;
 }
 
 .home-research-pillars h3 {
-  margin: 0 0 0.45rem;
-  font-size: 1rem;
+  margin: 0 0 0.65rem;
+  font-size: 1.05rem;
 }
 
 .home-research-pillars p {
@@ -1087,6 +1105,10 @@ img.gallery-item {
 
   .course-photo-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-research-pillars {
+    grid-template-columns: 1fr;
   }
 }
 
