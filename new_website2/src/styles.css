@@ -457,16 +457,6 @@ h2.section-heading {
   background: var(--paper);
 }
 
-.home-research-index {
-  display: block;
-  margin-bottom: 1rem;
-  color: var(--quiet);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  line-height: 1;
-}
-
 .home-research-pillars h3 {
   margin: 0 0 0.65rem;
   font-size: 1.05rem;
