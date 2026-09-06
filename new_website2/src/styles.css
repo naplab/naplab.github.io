@@ -697,21 +697,11 @@ body[data-page="people"] .directory-grid > * {
 }
 
 .person-name a {
-  color: inherit;
-  text-decoration-color: transparent;
+  color: var(--accent);
+  text-decoration-color: currentColor;
 }
 
 .person-name a:hover {
-  color: var(--accent);
-  text-decoration-color: currentColor;
-}
-
-.person-name--student a {
-  color: var(--accent);
-  text-decoration-color: currentColor;
-}
-
-.person-name--student a:hover {
   color: var(--accent-dark);
 }
 

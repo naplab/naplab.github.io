@@ -271,10 +271,9 @@ const personWebsite = (person) => safeExternalUrl(person?.profile_url || person?
 
 const renderPerson = (person) => {
   const website = personWebsite(person);
-  const isStudent = /student/i.test(person?.title || "");
   return `<article class="person">
     <img class="person-photo" src="${assetUrl(person.avatar)}" alt="Portrait of ${escapeHtml(person.name)}" loading="lazy" />
-    <h3 class="person-name${isStudent ? " person-name--student" : ""}">${website ? `<a href="${escapeHtml(website)}" target="_blank" rel="noopener noreferrer">${escapeHtml(person.name)}</a>` : escapeHtml(person.name)}</h3>
+    <h3 class="person-name">${website ? `<a href="${escapeHtml(website)}" target="_blank" rel="noopener noreferrer">${escapeHtml(person.name)}</a>` : escapeHtml(person.name)}</h3>
     <p class="person-role">${escapeHtml(person.title || "Researcher")}</p>
   </article>`;
 };
