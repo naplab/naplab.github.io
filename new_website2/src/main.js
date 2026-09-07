@@ -155,7 +155,7 @@ const renderHome = () => {
       </div>
       <div class="shell"><div class="reading-column">
         <h1>Understanding how the brain makes sense of sound.</h1>
-        <p class="lead">Welcome to the Neural Acoustic Processing Lab (NAPLab), where we bring together auditory neuroscience, signal processing, and artificial intelligence to study human communication and develop better speech and hearing technologies.</p>
+        <p class="lead">Welcome to the Neural Acoustic Processing Lab (NAPLab), where we bring together auditory neuroscience, artificial intelligence, and signal processing to study human communication and develop better speech and audio technologies.</p>
       </div></div>
     </section>
 
