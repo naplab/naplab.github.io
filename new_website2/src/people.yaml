@@ -150,9 +150,6 @@ alumni:
   - name: Menoua Keshishian
     current_affiliation: Neuralink
     profile_url: https://www.linkedin.com/in/menoua
-  - name: Zhuo Chen
-    current_affiliation: ByteDance Seed
-    profile_url: https://www.linkedin.com/in/zhuo-chen-b679aa3b
   - name: Yi Luo
     current_affiliation: ByteDance Seed
     profile_url: https://cn.linkedin.com/in/yi-luo-yl3364
@@ -162,3 +159,6 @@ alumni:
   - name: Bahar Khalighinejad
     current_affiliation: Hudson River Trading
     profile_url: https://www.linkedin.com/in/bahar-khalighinejad-40212ba9
+  - name: Zhuo Chen
+    current_affiliation: ByteDance Seed
+    profile_url: https://www.linkedin.com/in/zhuo-chen-b679aa3b
