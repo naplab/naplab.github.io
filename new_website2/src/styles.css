@@ -712,6 +712,34 @@ body[data-page="people"] .directory-grid > * {
   line-height: 1.5;
 }
 
+.person-degrees {
+  display: grid;
+  gap: 0.3rem;
+  margin: 0.65rem 0 0;
+  padding: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  list-style: none;
+}
+
+.person-degrees li {
+  position: relative;
+  padding-left: 0.8rem;
+}
+
+.person-degrees li::before {
+  position: absolute;
+  top: 0.62em;
+  left: 0.1rem;
+  width: 0.22rem;
+  height: 0.22rem;
+  border-radius: 50%;
+  background: currentColor;
+  content: "";
+  opacity: 0.65;
+}
+
 .directory-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
