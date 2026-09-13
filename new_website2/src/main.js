@@ -146,6 +146,21 @@ const publicationItem = (item, compact = false) => {
   </li>`;
 };
 
+const researchPillars = [
+  {
+    title: "Neural Basis of Auditory Cognition",
+    copy: "Discovering how the brain encodes speech, language, and music in complex, naturalistic listening environments.",
+  },
+  {
+    title: "Auditory Brain-Computer Interfaces (BCI)",
+    copy: "Creating real-time systems that decode auditory attention from neural signals, enabling assistive hearing and communication devices.",
+  },
+  {
+    title: "AI for Audio & Brain Modeling",
+    copy: "Building generative AI for speech and audio while using deep learning models as in silico platforms to probe brain computation.",
+  },
+];
+
 const renderHome = () => {
   const recent = publications.slice(0, 4);
   return `
@@ -165,18 +180,14 @@ const renderHome = () => {
           <h2 class="section-heading">Research</h2>
           <p class="home-research-intro">Our research is dedicated to understanding and engineering the future of human auditory communication, and it is built on three core pillars:</p>
           <div class="home-research-pillars">
-            <article>
-              <h3>Neural Basis of Auditory Cognition</h3>
-              <p>Discovering how the brain encodes speech, language, and music in complex, naturalistic listening environments.</p>
-            </article>
-            <article>
-              <h3>Auditory Brain-Computer Interfaces (BCI)</h3>
-              <p>Creating real-time systems that decode auditory attention from neural signals, enabling assistive hearing and communication devices.</p>
-            </article>
-            <article>
-              <h3>AI for Audio &amp; Brain Modeling</h3>
-              <p>Building generative AI for speech and audio while using deep learning models as in silico platforms to probe brain computation.</p>
-            </article>
+            ${researchPillars
+              .map(
+                (pillar) => `<article>
+                  <h3>${escapeHtml(pillar.title)}</h3>
+                  <p>${escapeHtml(pillar.copy)}</p>
+                </article>`,
+              )
+              .join("")}
           </div>
           <p><a class="text-link" href="${routeUrl("research/")}">Learn about our research</a></p>
         </div>
@@ -209,8 +220,7 @@ const renderHome = () => {
 
 const researchAreas = [
   {
-    title: "Auditory cognition and cortical computation",
-    copy: "We investigate how the auditory cortex encodes speech, language, and music, and how these neural representations support robust perception in noisy and dynamic environments.",
+    ...researchPillars[0],
     topics: ["Speech and language encoding", "Naturalistic listening", "Music perception", "Temporal integration in cortex"],
     image: "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/8ff0/10417567/f4babd58d918/nihms-1919650-f0001.jpg",
     alt: "Electrode coverage and neural encoding analysis from an auditory cortex study",
@@ -218,8 +228,7 @@ const researchAreas = [
     link: "https://www.nature.com/articles/s41562-023-01520-0",
   },
   {
-    title: "Auditory brain–computer interfaces",
-    copy: "We develop systems that decode which speaker a listener is attending to and use neural signals to control selective amplification in real time, laying the groundwork for assistive listening technologies.",
+    ...researchPillars[1],
     topics: ["Auditory attention decoding", "Real-time neural signal processing", "Neuro-steered hearing devices", "Human-centered evaluation"],
     image: "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41593-026-02281-5/MediaObjects/41593_2026_2281_Fig1_HTML.png",
     alt: "Experimental paradigm for a real-time brain-controlled selective hearing system",
@@ -228,8 +237,7 @@ const researchAreas = [
     className: "research-figure--panel-a",
   },
   {
-    title: "Artificial intelligence for speech and audio",
-    copy: "We develop generative and source-separation models for speech and audio, and use deep neural networks as testable computational models of biological hearing.",
+    ...researchPillars[2],
     topics: ["Speech separation and enhancement", "Generative speech and audio", "Brain–model alignment", "Interpretable representations"],
     image: "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/98ea/11759097/ae19efc287c9/nihms-2009026-f0002.jpg",
     alt: "Training and inference architecture for a text-to-speech system",
