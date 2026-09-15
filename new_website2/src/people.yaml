@@ -97,6 +97,8 @@ lab_members:
     contacts:
       email: ""
       website: https://www.linkedin.com/in/weiyu-chen-76843b321/
+    degrees:
+      - B.Sc. Electrical Engineering, Southern University of Science and Technology
 
 collaborators:
   - name: Edward F. Chang
