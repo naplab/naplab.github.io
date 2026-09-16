@@ -1,0 +1,39 @@
+# Home background collage
+
+The homepage arranges four original images with CSS. The three scientific figures are displayed in full with `object-fit: contain`; the background overlay and responsive layout do not redraw, recolor, or mirror their content. The previously used illustration remains a separate original asset.
+
+## Existing illustration
+
+`choudhari-mesgarani-2026-hero.png` is the existing homepage background supplied with this website.
+
+## Science Figure 2A
+
+File: `home-science-2014-figure-2a.png` (2206 x 1200).
+
+Mesgarani, Cheung, Johnson & Chang, *Phonetic Feature Encoding in Human Superior Temporal Gyrus*, Science (2014), DOI: https://doi.org/10.1126/science.1245994
+
+Published PDF from the coauthor's institutional page: https://linguistics.berkeley.edu/~kjohnson/papers/Mesgarani_et_al_2014_Science.pdf
+
+Panel A extracted from physical PDF page 2 / journal page 1007 at 400 dpi with Poppler. Crop in rendered pixels: x=433, y=1183, width=2206, height=1200. Includes the complete heatmap, panel label, phoneme labels, and PSI scale. Caption cross-check: https://pmc.ncbi.nlm.nih.gov/articles/PMC4350233/#F2
+
+## IEEE Figure 1
+
+File: `home-conv-tasnet-2019-figure-1.png` (2080 x 1265).
+
+Luo & Mesgarani, *Conv-TasNet: Surpassing Ideal Time-Frequency Magnitude Masking for Speech Separation* (2019), DOI: https://doi.org/10.1109/TASLP.2019.2915167
+
+User's IEEE article: https://ieeexplore.ieee.org/document/8707065
+
+Unmodified `figures_v2/Figure1.png` from the author's arXiv v3 source archive: https://arxiv.org/src/1809.07454 . Article/DOI cross-check: https://arxiv.org/abs/1809.07454 . Contains all three panels A-C. This is the accepted-author figure; byte identity with IEEE's typeset export is not asserted.
+
+## Nature Figure 1
+
+File: `home-nature-2012-figure-1.png` (2875 x 2209).
+
+Mesgarani & Chang, *Selective cortical representation of attended speaker in multi-talker speech perception*, Nature (2012), DOI: https://doi.org/10.1038/nature11020
+
+Institutional publisher-layout PDF: https://www.cs.columbia.edu/igert/courses/EECS6898_Fall14/nature11020.pdf
+
+Complete Figure 1 (panels a-i) extracted from PDF page 2 at 600 dpi with Poppler. Crop in rendered pixels: x=283, y=450, width=2875, height=2209. Caption title: "Acoustic and neural reconstructed spectrograms for speech from a single speaker or a mixture of speakers."
+
+All three source figures were visually checked against their article captions. Downloads and PDF extraction were performed on 2026-09-16. Rights remain with the original rights holders; inclusion here does not change their licensing.
