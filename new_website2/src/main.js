@@ -117,11 +117,6 @@ const temporarilyHiddenPageLead = (copy) => {
   return "";
 };
 
-const temporarilyHiddenSection = (markup) => {
-  // return markup;
-  return "";
-};
-
 const publicationMeta = (item) => {
   const details = [];
   if (item.journal) details.push(String(item.journal));
@@ -206,15 +201,6 @@ const renderHome = () => {
           <p><a class="text-link" href="${routeUrl("publications/")}">View all selected publications</a></p>
         </div>
       </div>
-    </section>
-
-    <section class="section shell reading-column">
-      <h2 class="section-heading">About the lab</h2>
-      <p>Led by Professor Nima Mesgarani, NAPLab is affiliated with Columbia Engineering, the Zuckerman Mind Brain Behavior Institute, and the Center for Neural Engineering and Computation. Our work connects fundamental questions about hearing with practical systems for communication.</p>
-      <figure class="home-group-photo">
-        <img src="${assetUrl("/assets/img/gallery/group.jpg")}" alt="Members of the Neural Acoustic Processing Lab" />
-        <figcaption>Members of NAPLab at Columbia University.</figcaption>
-      </figure>
     </section>`;
 };
 
@@ -268,10 +254,6 @@ const renderResearch = () => `
           </article>`,
         )
         .join("")}
-    </section>
-    <section class="section reading-column">
-      <h2 class="section-heading">Methods</h2>
-      <p>Our research draws on intracranial and non-invasive neural recordings, behavioral experiments, machine learning, computational modeling, and real-time system design.</p>
     </section>
   </div>`;
 
@@ -494,26 +476,15 @@ const renderBciLab = () => `
     </section>
   </div>`;
 
-const renderOpportunities = () => {
-  const faculty = people.faculty[0];
-  const email = faculty?.contacts?.email || "nima@ee.columbia.edu";
-  const postdoctoralSection = `
-    <h2 class="section-heading">Postdoctoral and research positions</h2>
-    <p>Researchers with experience in auditory neuroscience, neural signal processing, speech and audio, or machine learning are encouraged to get in touch.</p>
-    <p>${mailLink(`Email ${faculty?.name || "Professor Mesgarani"}`, email)}</p>`;
-  return `
-    <div class="shell">
-      ${pageIntro("Opportunities", temporarilyHiddenPageLead("We welcome researchers who want to work across neuroscience, engineering, and artificial intelligence."))}
-      <section class="section reading-column">
-        <h2 class="section-heading">PhD study</h2>
-        <p>Prospective doctoral students should apply through Columbia University’s Electrical Engineering PhD program and mention Prof. Mesgarani in the application.</p>
-        <p>The application deadline is December 15.</p>
-        <p>${externalLink("Columbia Electrical Engineering graduate admissions", "https://www.ee.columbia.edu/graduate-admissions")}</p>
-
-        ${temporarilyHiddenSection(postdoctoralSection)}
-      </section>
-    </div>`;
-};
+const renderOpportunities = () => `
+  <div class="shell">
+    ${pageIntro("Opportunities")}
+    <section class="section reading-column">
+      <p>Our lab at Columbia University is part of the <a href="https://zuckermaninstitute.columbia.edu/" target="_blank" rel="noopener noreferrer">Zuckerman Mind Brain Behavior Institute</a>, <a href="https://www.ee.columbia.edu/" target="_blank" rel="noopener noreferrer">Electrical Engineering Department</a>, and the <a href="https://cnec.columbia.edu/" target="_blank" rel="noopener noreferrer">Center for Neural Engineering</a>.</p>
+      <p>Our group includes electrical and biomedical engineers and neuroscientists. Applicants interested in research opportunities can contact Prof. Mesgarani for more information on how to join.</p>
+      <p>For <strong>Ph.D. positions</strong>, please apply to the <a href="https://www.ee.columbia.edu/" target="_blank" rel="noopener noreferrer">Electrical Engineering Ph.D. program</a> (application deadline: December 15) and mention Prof. Mesgarani in your application.</p>
+    </section>
+  </div>`;
 
 const renderGallery = () => {
   return `
