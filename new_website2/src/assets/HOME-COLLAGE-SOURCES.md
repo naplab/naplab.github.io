@@ -4,7 +4,7 @@ The homepage uses the existing illustration as a full-bleed background, with two
 
 ## Existing illustration
 
-`choudhari-mesgarani-2026-hero.png` is the existing homepage background supplied with this website.
+`choudhari-mesgarani-2026-hero.png` is the existing homepage background supplied with this website. Only this large background is mirrored horizontally with CSS; the two scientific prints retain their original orientation.
 
 ## Science Figure 2A
 
