@@ -409,39 +409,62 @@ h2.section-heading {
   filter: none;
 }
 
-.home-intro-art.home-hero-collage {
-  inset: 0 0 0 auto;
-  display: grid;
-  width: 76%;
-  height: 100%;
-  grid-template-columns: 1.05fr 1fr;
-  grid-template-rows: minmax(0, 0.85fr) minmax(0, 1fr);
-  gap: clamp(0.75rem, 1.5vw, 1.5rem);
-  padding: clamp(1rem, 2.5vw, 2.5rem);
+.home-hero-collage .home-hero-backdrop {
+  position: absolute;
+  inset: 0;
+  object-position: center;
 }
 
 .home-hero-tile {
-  min-width: 0;
-  min-height: 0;
-  padding: clamp(0.4rem, 0.7vw, 0.75rem);
-  overflow: hidden;
-  border: 1px solid var(--rule);
-  background: var(--paper);
-  box-shadow: 0 6px 24px rgba(29, 31, 33, 0.06);
+  position: absolute;
+  padding: clamp(0.4rem, 0.7vw, 0.8rem);
+  border: 1px solid rgba(70, 46, 28, 0.14);
+  background: #fff;
+  box-shadow: 0 18px 36px rgba(46, 26, 15, 0.2), 0 3px 7px rgba(46, 26, 15, 0.12);
+  transform: rotate(var(--paper-angle));
+}
+
+.home-hero-tile::after {
+  position: absolute;
+  top: -0.55rem;
+  left: 38%;
+  width: 24%;
+  height: clamp(0.85rem, 1.4vw, 1.35rem);
+  background: rgba(244, 227, 187, 0.65);
+  box-shadow: 0 1px 2px rgba(46, 26, 15, 0.06);
+  transform: rotate(-4deg);
+  content: "";
 }
 
 .home-hero-tile img {
+  display: block;
+  height: auto;
   object-fit: contain;
   object-position: center;
 }
 
-.home-hero-tile--illustration {
-  padding: 0;
+.home-hero-tile--phonetics {
+  --paper-angle: -9deg;
+  top: 10%;
+  left: 55%;
+  z-index: 1;
+  width: min(30%, 34rem);
 }
 
-.home-hero-tile--illustration img {
-  object-fit: cover;
-  object-position: 30% center;
+.home-hero-tile--attention {
+  --paper-angle: 6deg;
+  bottom: 9%;
+  left: 46%;
+  z-index: 2;
+  width: min(25%, 28rem);
+}
+
+.home-hero-tile--tasnet {
+  --paper-angle: 11deg;
+  top: 39%;
+  right: 4%;
+  z-index: 3;
+  width: min(27%, 31rem);
 }
 
 .home-intro--home .reading-column {
@@ -1239,11 +1262,37 @@ img.gallery-item {
   }
 
   .home-intro--home::after {
-    background: rgba(255, 255, 255, 0.88);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.98) 0%,
+      rgba(255, 255, 255, 0.94) 46%,
+      rgba(255, 255, 255, 0.3) 68%,
+      rgba(255, 255, 255, 0.08) 100%
+    );
   }
 
-  .home-intro-art.home-hero-collage {
-    width: 100%;
+  .home-intro.home-intro--home {
+    padding-bottom: clamp(18rem, 48vw, 25rem);
+  }
+
+  .home-hero-tile--phonetics {
+    top: auto;
+    bottom: clamp(8rem, 22vw, 12rem);
+    left: 45%;
+    width: 43%;
+  }
+
+  .home-hero-tile--attention {
+    bottom: 5%;
+    left: 8%;
+    width: 39%;
+  }
+
+  .home-hero-tile--tasnet {
+    top: auto;
+    bottom: 9%;
+    right: 6%;
+    width: 42%;
   }
 
   .home-intro--home .reading-column {

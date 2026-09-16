@@ -1,6 +1,6 @@
 # Home background collage
 
-The homepage arranges four original images with CSS. The three scientific figures are displayed in full with `object-fit: contain`; the background overlay and responsive layout do not redraw, recolor, or mirror their content. The previously used illustration remains a separate original asset.
+The homepage uses the existing illustration as a full-bleed background, with three smaller scientific figures layered over it like paper prints at different rotation angles. CSS supplies the white paper edges, shadows, and translucent tape. Each scientific image retains its complete source content and aspect ratio; the prints overlap slightly, but are not redrawn, recolored, or mirrored. A white gradient preserves headline readability. On narrow screens, extra space below the text holds the smaller prints.
 
 ## Existing illustration
 

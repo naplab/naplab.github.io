@@ -164,9 +164,7 @@ const renderHome = () => {
   return `
     <section class="home-intro home-intro--home">
       <div class="home-intro-art home-hero-collage" aria-hidden="true">
-        <div class="home-hero-tile home-hero-tile--illustration">
-          <img src="${homeHero}" alt="" decoding="async" fetchpriority="high" />
-        </div>
+        <img class="home-hero-backdrop" src="${homeHero}" alt="" decoding="async" fetchpriority="high" />
         <div class="home-hero-tile home-hero-tile--phonetics">
           <img src="${homePhoneticFigure}" alt="" decoding="async" />
         </div>
