@@ -335,7 +335,7 @@ const renderPublications = () => {
   return `
     <div class="shell">
       ${pageIntro("Publications", temporarilyHiddenPageLead("Selected work in auditory neuroscience, neural computation, speech technology, and brain–computer interfaces."))}
-      <p class="reading-column">For a complete publication record, see ${externalLink("Nima Mesgarani’s Google Scholar profile", "https://scholar.google.com/citations?hl=en&user=DKhMx5gAAAAJ&view_op=list_works&sortby=pubdate")}.</p>
+      <p class="reading-column">For a complete publication record, see ${externalLink("Nima Mesgarani’s Google Scholar profile", "https://scholar.google.com/citations?hl=en&user=DKhMx5gAAAAJ&view_op=list_works&sortby=pubdate")}. Featured recent work is highlighted below.</p>
       <section class="section" aria-label="Selected publications">
         ${years
           .map(
