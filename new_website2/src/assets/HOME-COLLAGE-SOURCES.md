@@ -1,6 +1,6 @@
 # Home background collage
 
-The homepage uses the existing illustration as a full-bleed background, with three smaller scientific figures layered over it like paper prints at different rotation angles. CSS supplies the white paper edges, shadows, and translucent tape. Each scientific image retains its complete source content and aspect ratio; the prints overlap slightly, but are not redrawn, recolored, or mirrored. A white gradient preserves headline readability. On narrow screens, extra space below the text holds the smaller prints.
+The homepage uses the existing illustration as a full-bleed background, with two smaller scientific figures (Science Figure 2A and IEEE Figure 1) layered over it like paper prints at different rotation angles. CSS supplies the white paper edges, shadows, and translucent tape. Each scientific image retains its complete source content and aspect ratio; the prints overlap slightly, but are not redrawn, recolored, or mirrored. A white gradient preserves headline readability. On narrow screens, extra space below the text holds the smaller prints.
 
 ## Existing illustration
 
@@ -26,7 +26,9 @@ User's IEEE article: https://ieeexplore.ieee.org/document/8707065
 
 Unmodified `figures_v2/Figure1.png` from the author's arXiv v3 source archive: https://arxiv.org/src/1809.07454 . Article/DOI cross-check: https://arxiv.org/abs/1809.07454 . Contains all three panels A-C. This is the accepted-author figure; byte identity with IEEE's typeset export is not asserted.
 
-## Nature Figure 1
+## Nature Figure 1 (retained source; not displayed)
+
+Removed from the lower-left position in the homepage collage at the user's request. The original asset is retained for reference and is no longer imported by the homepage.
 
 File: `home-nature-2012-figure-1.png` (2875 x 2209).
 

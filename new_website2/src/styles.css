@@ -451,14 +451,6 @@ h2.section-heading {
   width: min(30%, 34rem);
 }
 
-.home-hero-tile--attention {
-  --paper-angle: 6deg;
-  bottom: 9%;
-  left: 46%;
-  z-index: 2;
-  width: min(25%, 28rem);
-}
-
 .home-hero-tile--tasnet {
   --paper-angle: 11deg;
   top: 39%;
@@ -1280,12 +1272,6 @@ img.gallery-item {
     bottom: clamp(8rem, 22vw, 12rem);
     left: 45%;
     width: 43%;
-  }
-
-  .home-hero-tile--attention {
-    bottom: 5%;
-    left: 8%;
-    width: 39%;
   }
 
   .home-hero-tile--tasnet {
