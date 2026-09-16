@@ -452,12 +452,12 @@ h2.section-heading {
   width: min(30%, 34rem);
 }
 
-.home-hero-tile--tasnet {
-  --paper-angle: 11deg;
-  top: 39%;
-  right: 4%;
-  z-index: 3;
-  width: min(27%, 31rem);
+.home-hero-tile--attention {
+  --paper-angle: 6deg;
+  bottom: 9%;
+  left: 46%;
+  z-index: 2;
+  width: min(25%, 28rem);
 }
 
 .home-intro--home .reading-column {
@@ -1275,11 +1275,10 @@ img.gallery-item {
     width: 43%;
   }
 
-  .home-hero-tile--tasnet {
-    top: auto;
-    bottom: 9%;
-    right: 6%;
-    width: 42%;
+  .home-hero-tile--attention {
+    bottom: 5%;
+    left: 8%;
+    width: 39%;
   }
 
   .home-intro--home .reading-column {

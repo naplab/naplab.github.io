@@ -1,7 +1,7 @@
 import "./styles.css";
 import homeHero from "./assets/choudhari-mesgarani-2026-hero.png";
 import homePhoneticFigure from "./assets/home-science-2014-figure-2a.png";
-import homeTasnetFigure from "./assets/home-conv-tasnet-2019-figure-1.png";
+import homeAttentionFigure from "./assets/home-nature-2012-figure-1.png";
 import { gallery, people, publications } from "./data.js";
 
 const baseUrl = import.meta.env.BASE_URL;
@@ -167,8 +167,8 @@ const renderHome = () => {
         <div class="home-hero-tile home-hero-tile--phonetics">
           <img src="${homePhoneticFigure}" alt="" decoding="async" />
         </div>
-        <div class="home-hero-tile home-hero-tile--tasnet">
-          <img src="${homeTasnetFigure}" alt="" decoding="async" />
+        <div class="home-hero-tile home-hero-tile--attention">
+          <img src="${homeAttentionFigure}" alt="" decoding="async" />
         </div>
       </div>
       <div class="shell"><div class="reading-column">
