@@ -1,12 +1,14 @@
 # Home background collage
 
-The homepage uses the existing illustration as a full-bleed background, with two smaller scientific figures (Science Figure 2A and Nature Figure 1) layered over it like paper prints at different rotation angles. CSS supplies the white paper edges, shadows, and translucent tape. Each scientific image retains its complete source content and aspect ratio, without being redrawn, recolored, or mirrored. A white gradient preserves headline readability. On narrow screens, extra space below the text holds the smaller prints.
+The homepage uses the existing illustration as a full-bleed background, with two smaller scientific figures (Conv-TasNet IEEE Figure 1 and Nature Figure 1) layered over it like paper prints at different rotation angles. CSS supplies the white paper edges, shadows, and translucent tape. Each scientific image retains its complete source content and aspect ratio, without being redrawn, recolored, or mirrored. A white gradient preserves headline readability. On narrow screens, extra space below the text holds the smaller prints.
 
 ## Existing illustration
 
 `choudhari-mesgarani-2026-hero.png` is the existing homepage background supplied with this website. Only this large background is mirrored horizontally with CSS; the two scientific prints retain their original orientation.
 
-## Science Figure 2A
+## Science Figure 2A (retained source; not displayed)
+
+Replaced in the upper position by the Conv-TasNet figure at the user's request. The original asset is retained for reference and is no longer imported by the homepage.
 
 File: `home-science-2014-figure-2a.png` (2206 x 1200).
 
@@ -16,9 +18,9 @@ Published PDF from the coauthor's institutional page: https://linguistics.berkel
 
 Panel A extracted from physical PDF page 2 / journal page 1007 at 400 dpi with Poppler. Crop in rendered pixels: x=433, y=1183, width=2206, height=1200. Includes the complete heatmap, panel label, phoneme labels, and PSI scale. Caption cross-check: https://pmc.ncbi.nlm.nih.gov/articles/PMC4350233/#F2
 
-## IEEE Figure 1 (retained source; not displayed)
+## IEEE Figure 1
 
-Removed from the lower-right position in the homepage collage at the user's request. The original asset is retained for reference and is no longer imported by the homepage.
+Displayed in the upper position at the user's request, replacing the Science figure while retaining that print's position, width, and rotation.
 
 File: `home-conv-tasnet-2019-figure-1.png` (2080 x 1265).
 

@@ -444,7 +444,7 @@ h2.section-heading {
   object-position: center;
 }
 
-.home-hero-tile--phonetics {
+.home-hero-tile--tasnet {
   --paper-angle: -9deg;
   top: 10%;
   left: 55%;
@@ -1268,7 +1268,7 @@ img.gallery-item {
     padding-bottom: clamp(18rem, 48vw, 25rem);
   }
 
-  .home-hero-tile--phonetics {
+  .home-hero-tile--tasnet {
     top: auto;
     bottom: clamp(8rem, 22vw, 12rem);
     left: 45%;
