@@ -1,5 +1,4 @@
 import "./styles.css";
-import homeHero from "./assets/choudhari-mesgarani-2026-hero.png";
 import homeTasnetFigure from "./assets/home-conv-tasnet-2019-figure-1.png";
 import homeAttentionFigure from "./assets/home-nature-2012-figure-1.png";
 import { gallery, people, publications } from "./data.js";
@@ -163,7 +162,6 @@ const renderHome = () => {
   return `
     <section class="home-intro home-intro--home">
       <div class="home-intro-art home-hero-collage" aria-hidden="true">
-        <img class="home-hero-backdrop" src="${homeHero}" alt="" decoding="async" fetchpriority="high" />
         <div class="home-hero-tile home-hero-tile--tasnet">
           <img src="${homeTasnetFigure}" alt="" decoding="async" />
         </div>

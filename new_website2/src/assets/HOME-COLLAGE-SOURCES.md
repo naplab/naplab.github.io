@@ -1,10 +1,10 @@
 # Home background collage
 
-The homepage uses the existing illustration as a full-bleed background, with two smaller scientific figures (Conv-TasNet IEEE Figure 1 and Nature Figure 1) layered over it like paper prints at different rotation angles. CSS supplies the white paper edges, shadows, and translucent tape. Each scientific image retains its complete source content and aspect ratio, without being redrawn, recolored, or mirrored. A white gradient preserves headline readability. On narrow screens, extra space below the text holds the smaller prints.
+The homepage displays two scientific figures (Conv-TasNet IEEE Figure 1 and Nature Figure 1) on a plain background like paper prints at different rotation angles. CSS supplies the white paper edges, shadows, and translucent tape. Each scientific image retains its complete source content and aspect ratio, without being redrawn, recolored, or mirrored. A white gradient preserves headline readability. On narrow screens, extra space below the text holds the smaller prints.
 
-## Existing illustration
+## Existing illustration (retained source; not displayed)
 
-`choudhari-mesgarani-2026-hero.png` is the existing homepage background supplied with this website. Only this large background is mirrored horizontally with CSS; the two scientific prints retain their original orientation.
+`choudhari-mesgarani-2026-hero.png` was the homepage background supplied with this website. The background image was removed at the user's request. The original asset is retained for reference and is no longer imported by the homepage.
 
 ## Science Figure 2A (retained source; not displayed)
 

@@ -409,13 +409,6 @@ h2.section-heading {
   filter: none;
 }
 
-.home-hero-collage .home-hero-backdrop {
-  position: absolute;
-  inset: 0;
-  object-position: center;
-  transform: scaleX(-1);
-}
-
 .home-hero-tile {
   position: absolute;
   padding: clamp(0.4rem, 0.7vw, 0.8rem);
