@@ -106,7 +106,7 @@ lab_members:
   - name: Jingting Zhang
     title: Visiting Undergrad Student
     affiliation: Biomedical Engineering, ShanghaiTech University
-    avatar: ""
+    avatar: /assets/img/people/jingting-zhang.jpg
 
 collaborators:
   - name: Ashesh Mehta
