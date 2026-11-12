@@ -367,11 +367,9 @@ h2.section-heading {
 .home-intro--home::after {
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.99) 0%,
-    rgba(255, 255, 255, 0.96) 30%,
-    rgba(255, 255, 255, 0.8) 44%,
-    rgba(255, 255, 255, 0.22) 66%,
-    rgba(255, 255, 255, 0.08) 100%
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(255, 255, 255, 0.84) 48%,
+    rgba(255, 255, 255, 0.2) 100%
   );
 }
 
@@ -409,52 +407,8 @@ h2.section-heading {
   filter: none;
 }
 
-.home-hero-tile {
-  position: absolute;
-  padding: clamp(0.4rem, 0.7vw, 0.8rem);
-  border: 1px solid rgba(70, 46, 28, 0.14);
-  background: #fff;
-  box-shadow: 0 18px 36px rgba(46, 26, 15, 0.2), 0 3px 7px rgba(46, 26, 15, 0.12);
-  transform: rotate(var(--paper-angle));
-}
-
-.home-hero-tile::after {
-  position: absolute;
-  top: -0.55rem;
-  left: 38%;
-  width: 24%;
-  height: clamp(0.85rem, 1.4vw, 1.35rem);
-  background: rgba(244, 227, 187, 0.65);
-  box-shadow: 0 1px 2px rgba(46, 26, 15, 0.06);
-  transform: rotate(-4deg);
-  content: "";
-}
-
-.home-hero-tile img {
-  display: block;
-  height: auto;
-  object-fit: contain;
-  object-position: center;
-}
-
-.home-hero-tile--tasnet {
-  --paper-angle: -9deg;
-  top: 10%;
-  left: 55%;
-  z-index: 1;
-  width: min(30%, 34rem);
-}
-
-.home-hero-tile--attention {
-  --paper-angle: 6deg;
-  bottom: 9%;
-  left: 46%;
-  z-index: 2;
-  width: min(25%, 28rem);
-}
-
-.home-intro--home .reading-column {
-  width: min(46%, 36rem);
+.home-intro--home .home-intro-art img {
+  transform: scaleX(-1);
 }
 
 .home-intro .shell {
@@ -751,7 +705,8 @@ body[data-page="people"] .directory-grid > * {
   color: var(--accent-dark);
 }
 
-.person-role {
+.person-role,
+.person-affiliation {
   margin-bottom: 0;
   color: var(--muted);
   font-size: 0.88rem;
@@ -1248,34 +1203,7 @@ img.gallery-item {
   }
 
   .home-intro--home::after {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.98) 0%,
-      rgba(255, 255, 255, 0.94) 46%,
-      rgba(255, 255, 255, 0.3) 68%,
-      rgba(255, 255, 255, 0.08) 100%
-    );
-  }
-
-  .home-intro.home-intro--home {
-    padding-bottom: clamp(18rem, 48vw, 25rem);
-  }
-
-  .home-hero-tile--tasnet {
-    top: auto;
-    bottom: clamp(8rem, 22vw, 12rem);
-    left: 45%;
-    width: 43%;
-  }
-
-  .home-hero-tile--attention {
-    bottom: 5%;
-    left: 8%;
-    width: 39%;
-  }
-
-  .home-intro--home .reading-column {
-    width: min(100%, 38rem);
+    background: rgba(255, 255, 255, 0.8);
   }
 
   .research-figure {

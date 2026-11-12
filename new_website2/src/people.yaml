@@ -15,6 +15,14 @@ faculty:
     profile_url: https://nima.ee.columbia.edu/
 
 lab_members:
+  - name: Kiki Anouk van der Heijden
+    title: Research Fellow
+    avatar: /assets/img/people/kiki.jpg
+    contacts:
+      email: ""
+      website: https://www.ru.nl/en/people/heijden-k-van-der
+    degrees:
+      - Ph.D. Maastricht University, Netherlands
   - name: RJ Antonello
     title: Postdoctoral Researcher
     avatar: /assets/img/people/rj.jpg
@@ -24,14 +32,6 @@ lab_members:
     degrees:
       - Ph.D. Computer Science, University of Texas, Austin
       - B.Sc. Computer Science, California Institute of Technology
-  - name: Kiki Anouk van der Heijden
-    title: Research Fellow
-    avatar: /assets/img/people/kiki.jpg
-    contacts:
-      email: ""
-      website: https://www.ru.nl/en/people/heijden-k-van-der
-    degrees:
-      - Ph.D. Maastricht University, Netherlands
   - name: Xiaomin He
     title: Ph.D. Student
     avatar: /assets/img/people/xiaomin.jpg
@@ -99,12 +99,16 @@ lab_members:
       website: https://www.linkedin.com/in/weiyu-chen-76843b321/
     degrees:
       - B.Sc. Electrical Engineering, Southern University of Science and Technology
+  - name: Bella Qian
+    title: Undergraduate Student
+    affiliation: Applied Mathematics, Columbia University
+    avatar: /assets/img/people/bella-qian.jpg
+  - name: Jingting Zhang
+    title: Visiting Undergrad Student
+    affiliation: Biomedical Engineering, ShanghaiTech University
+    avatar: ""
 
 collaborators:
-  - name: Edward F. Chang
-    affiliation: Department of Neurological Surgery, University of California, San Francisco
-    contacts:
-      website: https://profiles.ucsf.edu/edward.chang
   - name: Ashesh Mehta
     affiliation: The Feinstein Institute for Medical Research, Northwell School of Medicine
     contacts:
@@ -125,6 +129,10 @@ collaborators:
     affiliation: Department of Neurology, New York University
     contacts:
       website: https://med.nyu.edu/faculty/adeen-flinker
+  - name: Tylor Harlow
+    affiliation: Feinstein Institute for Medical Research
+    contacts:
+      website: https://tylorjharlow.github.io/
 
 alumni:
   - name: Sam Norman-Haignere

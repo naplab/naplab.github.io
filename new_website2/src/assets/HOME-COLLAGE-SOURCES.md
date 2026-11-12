@@ -1,10 +1,10 @@
 # Home background collage
 
-The homepage displays two scientific figures (Conv-TasNet IEEE Figure 1 and Nature Figure 1) on a plain background like paper prints at different rotation angles. CSS supplies the white paper edges, shadows, and translucent tape. Each scientific image retains its complete source content and aspect ratio, without being redrawn, recolored, or mirrored. A white gradient preserves headline readability. On narrow screens, extra space below the text holds the smaller prints.
+The homepage collage prints were removed at the user's request; the homepage intro shows only the background illustration, mirrored horizontally, under a white gradient that preserves headline readability. The scientific figures below are retained for reference and are no longer imported by the homepage.
 
-## Existing illustration (retained source; not displayed)
+## Existing illustration (displayed)
 
-`choudhari-mesgarani-2026-hero.png` was the homepage background supplied with this website. The background image was removed at the user's request. The original asset is retained for reference and is no longer imported by the homepage.
+`choudhari-mesgarani-2026-hero.png` is the homepage background supplied with this website. It was briefly removed and then restored at the user's request, without the collage prints.
 
 ## Science Figure 2A (retained source; not displayed)
 
@@ -18,9 +18,9 @@ Published PDF from the coauthor's institutional page: https://linguistics.berkel
 
 Panel A extracted from physical PDF page 2 / journal page 1007 at 400 dpi with Poppler. Crop in rendered pixels: x=433, y=1183, width=2206, height=1200. Includes the complete heatmap, panel label, phoneme labels, and PSI scale. Caption cross-check: https://pmc.ncbi.nlm.nih.gov/articles/PMC4350233/#F2
 
-## IEEE Figure 1
+## IEEE Figure 1 (retained source; not displayed)
 
-Displayed in the upper position at the user's request, replacing the Science figure while retaining that print's position, width, and rotation.
+Formerly displayed in the upper position of the homepage collage, replacing the Science figure. Removed with the collage at the user's request.
 
 File: `home-conv-tasnet-2019-figure-1.png` (2080 x 1265).
 
@@ -30,9 +30,9 @@ User's IEEE article: https://ieeexplore.ieee.org/document/8707065
 
 Unmodified `figures_v2/Figure1.png` from the author's arXiv v3 source archive: https://arxiv.org/src/1809.07454 . Article/DOI cross-check: https://arxiv.org/abs/1809.07454 . Contains all three panels A-C. This is the accepted-author figure; byte identity with IEEE's typeset export is not asserted.
 
-## Nature Figure 1
+## Nature Figure 1 (retained source; not displayed)
 
-Restored to its original lower-left position in the homepage collage at the user's request.
+Formerly displayed in the lower-left position of the homepage collage. Removed with the collage at the user's request.
 
 File: `home-nature-2012-figure-1.png` (2875 x 2209).
 

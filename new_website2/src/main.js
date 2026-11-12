@@ -1,6 +1,5 @@
 import "./styles.css";
-import homeTasnetFigure from "./assets/home-conv-tasnet-2019-figure-1.png";
-import homeAttentionFigure from "./assets/home-nature-2012-figure-1.png";
+import homeHero from "./assets/choudhari-mesgarani-2026-hero.png";
 import { gallery, people, publications } from "./data.js";
 
 const baseUrl = import.meta.env.BASE_URL;
@@ -161,13 +160,8 @@ const renderHome = () => {
   const recent = publications.slice(0, 4);
   return `
     <section class="home-intro home-intro--home">
-      <div class="home-intro-art home-hero-collage" aria-hidden="true">
-        <div class="home-hero-tile home-hero-tile--tasnet">
-          <img src="${homeTasnetFigure}" alt="" decoding="async" />
-        </div>
-        <div class="home-hero-tile home-hero-tile--attention">
-          <img src="${homeAttentionFigure}" alt="" decoding="async" />
-        </div>
+      <div class="home-intro-art" aria-hidden="true">
+        <img src="${homeHero}" alt="" decoding="async" fetchpriority="high" />
       </div>
       <div class="shell"><div class="reading-column">
         <h1>Understanding how the brain makes sense of sound.</h1>
@@ -269,9 +263,10 @@ const renderPerson = (person) => {
   const website = personWebsite(person);
   const degrees = Array.isArray(person.degrees) ? person.degrees.filter(Boolean) : [];
   return `<article class="person">
-    <img class="person-photo" src="${assetUrl(person.avatar)}" alt="Portrait of ${escapeHtml(person.name)}" loading="lazy" />
+    ${person.avatar ? `<img class="person-photo" src="${assetUrl(person.avatar)}" alt="Portrait of ${escapeHtml(person.name)}" loading="lazy" />` : '<div class="person-photo" aria-hidden="true"></div>'}
     <h3 class="person-name">${website ? `<a href="${escapeHtml(website)}" target="_blank" rel="noopener noreferrer">${escapeHtml(person.name)}</a>` : escapeHtml(person.name)}</h3>
     <p class="person-role">${escapeHtml(person.title || "Researcher")}</p>
+    ${person.affiliation ? `<p class="person-affiliation">${escapeHtml(person.affiliation)}</p>` : ""}
     ${degrees.length ? `<ul class="person-degrees" aria-label="Education">${degrees.map((degree) => `<li>${escapeHtml(degree)}</li>`).join("")}</ul>` : ""}
   </article>`;
 };
