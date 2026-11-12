@@ -64,8 +64,10 @@ jobs:
           test -f _site/archive/index.html
           for page in research people publications teaching teaching/bci-lab opportunities gallery contact; do
             test -f "_site/$page/index.html"
+            test -f "_site/$page.html"
             test -f "_site/new_website2/$page/index.html"
           done
+          grep -Fq 'content="0;url=/publications/"' _site/publications.html
           test -n "$(find _site/bundles -type f -name '*.js' -print -quit)"
           test -n "$(find _site/bundles -type f -name '*.css' -print -quit)"
           grep -q 'data-page="home"' _site/index.html

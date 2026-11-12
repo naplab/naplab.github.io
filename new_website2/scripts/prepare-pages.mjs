@@ -41,7 +41,10 @@ function redirect(file, target) {
 
 const pages = htmlFiles(dist).filter((file) => readFileSync(join(dist, file), "utf8").includes("data-page="));
 for (const file of pages) {
-  redirect(`new_website2/${file}`, `/${file.replace(/index\.html$/, "")}`);
+  const target = `/${file.replace(/index\.html$/, "")}`;
+  redirect(`new_website2/${file}`, target);
+  // External sites, including Nima's homepage, still link to .html URLs.
+  if (file !== "index.html") redirect(file.replace(/\/index\.html$/, ".html"), target);
 }
 
 const renamedRoutes = {
