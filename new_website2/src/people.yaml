@@ -37,6 +37,7 @@ lab_members:
     avatar: /assets/img/people/xiaomin.jpg
     contacts:
       email: ""
+      website: https://www.linkedin.com/in/xmhe/
     degrees:
       - M.Sc. Biomedical Engineering, Columbia University
       - B.Sc. Biomedical Engineering, Sun Yat-sen University
