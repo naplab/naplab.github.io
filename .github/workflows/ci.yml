@@ -70,7 +70,7 @@ jobs:
           test -n "$(find _site/bundles -type f -name '*.css' -print -quit)"
           grep -q 'data-page="home"' _site/index.html
           grep -q '/archive/assets/css/beautifuljekyll.css' _site/archive/index.html
-          grep -q '/archive/bci/' _site/archive/teaching.html
+          grep -q '/archive/bci/' _site/archive/teaching/index.html
           test -f _site/img/people/jingting-zhang.jpg
           test -f _site/archive/assets/img/naplab_logo_small.png
           test -f _site/assets/files/finalbci.pdf
