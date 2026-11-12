@@ -36,15 +36,10 @@ jobs:
         id: configure-pages
         uses: actions/configure-pages@v5
 
-      - name: Create CI configuration
-        run: |
-          echo "---" > _config_ci.yml
-          echo "baseurl: ${{ steps.configure-pages.outputs.base_path }}" >> _config_ci.yml
-
-      - name: Build existing Jekyll site
+      - name: Build archived Jekyll site
         env:
           JEKYLL_ENV: production
-        run: bundle exec appraisal jekyll build --future --config _config.yml,_config_ci.yml
+        run: bundle exec appraisal jekyll build --future --destination _site/archive
 
       - name: Set up Node.js
         uses: actions/setup-node@v6
@@ -59,27 +54,26 @@ jobs:
       - name: Build academic Vite website
         run: npm run build --prefix new_website2
 
-      - name: Add academic website to Pages artifact
-        run: |
-          set -euo pipefail
-          rm -rf _site/new_website2
-          mkdir -p _site/new_website2
-          cp -a new_website2/dist/. _site/new_website2/
-          if [ -f CNAME ]; then
-            cp CNAME _site/CNAME
-          fi
+      - name: Assemble homepage, archive, and redirects
+        run: node new_website2/scripts/prepare-pages.mjs
 
       - name: Verify Pages artifact
         run: |
           set -euo pipefail
           test -f _site/index.html
-          site=new_website2
-          test -f "_site/$site/index.html"
-          for page in research people publications teaching opportunities gallery contact; do
-            test -f "_site/$site/$page/index.html"
+          test -f _site/archive/index.html
+          for page in research people publications teaching teaching/bci-lab opportunities gallery contact; do
+            test -f "_site/$page/index.html"
+            test -f "_site/new_website2/$page/index.html"
           done
-          test -n "$(find "_site/$site/assets" -type f -name '*.js' -print -quit)"
-          test -n "$(find "_site/$site/assets" -type f -name '*.css' -print -quit)"
+          test -n "$(find _site/bundles -type f -name '*.js' -print -quit)"
+          test -n "$(find _site/bundles -type f -name '*.css' -print -quit)"
+          grep -q 'data-page="home"' _site/index.html
+          grep -q '/archive/assets/css/beautifuljekyll.css' _site/archive/index.html
+          grep -q '/archive/bci/' _site/archive/teaching.html
+          test -f _site/img/people/jingting-zhang.jpg
+          test -f _site/archive/assets/img/naplab_logo_small.png
+          test -f _site/assets/files/finalbci.pdf
 
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'

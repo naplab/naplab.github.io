@@ -148,7 +148,7 @@ gallery_mode: square
         <div class="gallery-card gallery-card-square">
           <div style="position: relative; width: 100%; padding-top: 100%; overflow: hidden;">
             <!-- Image fills the square and is cropped with object-fit -->
-            <img class="gallery-bg" src="{{ item.file }}" alt="{{ item.highlight }}" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;">
+            <img class="gallery-bg" src="{{ item.file | relative_url }}" alt="{{ item.highlight }}" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;">
 
             <!-- Overlay with highlight text only -->
             <div class="gallery-overlay">
@@ -169,7 +169,7 @@ gallery_mode: square
         <!-- Gallery card -->
         <div class="gallery-card">
           <!-- Image keeps original aspect ratio -->
-          <img class="gallery-bg" src="{{ item.file }}" alt="{{ item.highlight }}">
+          <img class="gallery-bg" src="{{ item.file | relative_url }}" alt="{{ item.highlight }}">
 
           <!-- Overlay with highlight text only -->
           <div class="gallery-overlay">

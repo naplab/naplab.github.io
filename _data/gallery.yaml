@@ -1,22 +1,23 @@
 - year: 2026
   file: /assets/img/gallery/2026-interspeech-best-student-paper.png
+  trim_border: true
   highlight: "Xiaomin and Vishal won the Interspeech 2026 Best Student Paper Award! 🏆"
 
 - year: 2026
   file: /assets/img/gallery/2026-lab-dinner.png
-  highlight: "Lab dinner, 2026."
+  highlight: "Lab dinner"
 
 - year: 2026
   file: /assets/img/gallery/2026-vishal-graduation.png
-  highlight: "Vishal graduated in 2026! 🎓"
+  highlight: "Vishal graduated! 🎓"
 
 - year: 2026
   file: /assets/img/gallery/2026-gavin-graduation.png
-  highlight: "Gavin graduated in 2026! 🎓"
+  highlight: "Gavin graduated! 🎓"
 
 - year: 2026
   file: /assets/img/gallery/2026-vishal-defense.png
-  highlight: "Vishal's dissertation defense, 2026."
+  highlight: "Vishal's dissertation defense"
 
 - year: 2021
   file: /assets/img/gallery/group_2.jpeg

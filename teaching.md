@@ -6,6 +6,6 @@ Courses:
 ​ 
 - ELEN 6820: Speech and Audio Signal Processing
 ​
-- ECBME 4090: [Brain Computer Interfaces Laboratory](/bci/)
+- ECBME 4090: [Brain Computer Interfaces Laboratory]({{ '/bci/' | relative_url }})
 ​
 - EEBME 9070: Advance Topics: Neural Processing of Acoustic Signals

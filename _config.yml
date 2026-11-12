@@ -8,8 +8,8 @@
 ############################
 # --- Required options --- #
 ############################
-url: "https://naplab.github.io"
-baseurl: ""   #
+url: "https://naplab.ee.columbia.edu"
+baseurl: "/archive"
 
 # Name of website
 title: NAPLab @ Columbia
@@ -330,6 +330,10 @@ defaults:
 
 # Exclude these files from production site
 exclude:
+  - new_website2/
+  - gemfiles/
+  - Appraisals
+  - beautiful-jekyll-theme.gemspec
   - CHANGELOG.md
   - CNAME
   - Gemfile

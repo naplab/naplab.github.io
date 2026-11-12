@@ -42,6 +42,8 @@ const routeUrl = (route = "") => `${baseUrl}${route}`;
 
 const assetUrl = (path = "") => {
   const value = String(path || "");
+  // Shared YAML uses /assets/ paths; Vite serves that directory at the site root.
+  if (/^\/?assets\//.test(value)) return `${baseUrl}${value.replace(/^\/?assets\//, "")}`;
   if (/^(https?:|data:)/i.test(value) || value.startsWith(baseUrl)) return value;
   return `${baseUrl}${value.replace(/^\/?assets\//, "").replace(/^\//, "")}`;
 };
@@ -102,7 +104,7 @@ const renderFooter = () => `
   <footer class="site-footer">
     <div class="shell footer-inner">
       <p>© ${new Date().getFullYear()} Neural Acoustic Processing Lab, Columbia University.</p>
-      <p><a href="https://zuckermaninstitute.columbia.edu/" target="_blank" rel="noopener noreferrer">Zuckerman Institute</a> · <a href="https://www.ee.columbia.edu/" target="_blank" rel="noopener noreferrer">Electrical Engineering</a></p>
+      <p><a href="https://zuckermaninstitute.columbia.edu/" target="_blank" rel="noopener noreferrer">Zuckerman Institute</a> · <a href="https://www.ee.columbia.edu/" target="_blank" rel="noopener noreferrer">Electrical Engineering</a> · <a href="${routeUrl("archive/")}">Archive</a></p>
     </div>
   </footer>`;
 
@@ -496,8 +498,9 @@ const renderGallery = () => {
           ${gallery
             .map((item) => {
               const caption = item.highlight || "NAPLab gallery";
+              const photo = `<img src="${assetUrl(item.file)}" alt="${escapeHtml(caption)}" loading="lazy" />`;
               return `<figure class="gallery-item">
-                <img src="${assetUrl(item.file)}" alt="${escapeHtml(caption)}" loading="lazy" />
+                ${item.trim_border ? `<div class="gallery-photo-trim">${photo}</div>` : photo}
                 ${item.highlight ? `<figcaption>${escapeHtml(item.highlight)}</figcaption>` : ""}
               </figure>`;
             })

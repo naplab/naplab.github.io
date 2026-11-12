@@ -155,7 +155,7 @@ layout: page
   
   <div class="col-12 col-md-6 col-lg-4 people-col">
     <a href="{{ link }}" class="member-card" target="_blank">
-      <div class="member-bg" style="background-image: url('{{ person.avatar }}');"></div>
+      <div class="member-bg" style="background-image: url('{{ person.avatar | relative_url }}');"></div>
       <div class="member-overlay">
         <div class="member-header">
           <span class="member-name">{{ person.name }}</span>
@@ -190,7 +190,7 @@ layout: page
 
   <div class="col-12 col-md-6 col-lg-4 people-col">
     <a href="{{ link }}" class="member-card">
-      <div class="member-bg" style="background-image: url('{{ person.avatar }}');"></div>
+      <div class="member-bg" style="background-image: url('{{ person.avatar | relative_url }}');"></div>
       <div class="member-overlay">
         <div class="member-header">
           <span class="member-name">{{ person.name }}</span>

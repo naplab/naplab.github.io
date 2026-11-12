@@ -134,7 +134,7 @@ permalink: /publication/
         <div class="pub-card-inner">
           <div class="pub-card-thumb">
             {% if pub.img and pub.img != "" %}
-              <img src="{{ pub.img }}" alt="Thumbnail for {{ pub.title }}">
+              <img src="{{ pub.img | relative_url }}" alt="Thumbnail for {{ pub.title }}">
             {% else %}
               📄
             {% endif %}

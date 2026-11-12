@@ -28,7 +28,7 @@ For more information on this course, please contact the instructor.
 
 Course materials may be used for educational purposes only. Please cite:
 
-Khalighinejad, Bahar; Long, Laura; Mesgarani, Nima, **Designing a Hands-On Brain Computer Interface Laboratory Course**, _International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)_, Orlando, Florida, 2016. [Download PDF](/assets/files/finalbci.pdf)
+Khalighinejad, Bahar; Long, Laura; Mesgarani, Nima, **Designing a Hands-On Brain Computer Interface Laboratory Course**, _International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)_, Orlando, Florida, 2016. [Download PDF]({{ '/assets/files/finalbci.pdf' | relative_url }})
 
 ## Course learning objectives
 
@@ -70,53 +70,53 @@ Khalighinejad, Bahar; Long, Laura; Mesgarani, Nima, **Designing a Hands-On Brain
 
 1. **Introduction to EEG**  
    <!-- [labinstruction1.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction1.pdf) -->
-   [labinstruction1.pdf](/assets/files/labinstruction1.pdf)
+   [labinstruction1.pdf]({{ '/assets/files/labinstruction1.pdf' | relative_url }})
 
 2. **Biological artifacts in EEG**  
    <!-- [labinstruction2.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction2.pdf) -->
-   [labinstruction2.pdf](/assets/files/labinstruction2.pdf)
+   [labinstruction2.pdf]({{ '/assets/files/labinstruction2.pdf' | relative_url }})
    
 3. **Neurofeedback**  
    <!-- [labinstruction3.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction3.pdf) -->
-   [labinstruction3.pdf](/assets/files/labinstruction3.pdf)
+   [labinstruction3.pdf]({{ '/assets/files/labinstruction3.pdf' | relative_url }})
 
 
 4. **Auditory oddball paradigm**  
    <!-- [labinstruction4.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction4.pdf) -->
-   [labinstruction4.pdf](/assets/files/labinstruction4.pdf)
+   [labinstruction4.pdf]({{ '/assets/files/labinstruction4.pdf' | relative_url }})
 
 
 5. **P300 speller**  
    <!-- [labinstruction5.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction5.pdf) -->
-   [labinstruction5.pdf](/assets/files/labinstruction5.pdf)
+   [labinstruction5.pdf]({{ '/assets/files/labinstruction5.pdf' | relative_url }})
 
 
 6. **Auditory steady state response**  
    <!-- [labinstruction6.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction6.pdf) -->
-   [labinstruction6.pdf](/assets/files/labinstruction6.pdf)
+   [labinstruction6.pdf]({{ '/assets/files/labinstruction6.pdf' | relative_url }})
 
 
 7. **Attentional modulation of ASSR**  
    <!-- [labinstruction7.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction7.pdf) -->
-   [labinstruction7.pdf](/assets/files/labinstruction7.pdf)
+   [labinstruction7.pdf]({{ '/assets/files/labinstruction7.pdf' | relative_url }})
 
 
 8. **Steady state visually evoked responses**  
    <!-- [labinstruction8.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction8.pdf) -->
-   [labinstruction8.pdf](/assets/files/labinstruction8.pdf)
+   [labinstruction8.pdf]({{ '/assets/files/labinstruction8.pdf' | relative_url }})
 
 
 9. **Decoding imagined movement**  
    <!-- [labinstruction9.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/labinstruction9.pdf) -->
-   [labinstruction9.pdf](/assets/files/labinstruction9.pdf)
+   [labinstruction9.pdf]({{ '/assets/files/labinstruction9.pdf' | relative_url }})
 
 
 10. **Project 1**  
     <!-- [miniproject1.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/miniproject1.pdf) -->
-    [miniproject1.pdf](/assets/files/miniproject1.pdf)
+    [miniproject1.pdf]({{ '/assets/files/miniproject1.pdf' | relative_url }})
 
 
 11. **Project 2**  
     <!-- [miniproject2.pdf](https://naplab.ee.columbia.edu/uploads/6/4/8/4/64845489/miniproject2.pdf) -->
-    [miniproject2.pdf](/assets/files/miniproject2.pdf)
+    [miniproject2.pdf]({{ '/assets/files/miniproject2.pdf' | relative_url }})
 

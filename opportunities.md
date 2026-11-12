@@ -23,14 +23,14 @@ For **Ph.D. positions**, please apply to the [Electrical Engineering Ph.D. progr
 <div class="row">
   <div class="col-md-6 col-12 mb-4 text-center">
     <a href="https://zuckermaninstitute.columbia.edu/jerome-l-greene-science-center" target="_blank">
-      <img src="/assets/img/opportunities/science-center.jpg" class="opportunity-img" alt="Jerome L. Greene Science Center">
+      <img src="{{ '/assets/img/opportunities/science-center.jpg' | relative_url }}" class="opportunity-img" alt="Jerome L. Greene Science Center">
       <p class="mt-2"><strong>The Jerome L. Greene Science Center</strong></p>
     </a>
   </div>
 
   <div class="col-md-6 col-12 mb-4 text-center">
     <a href="https://www.engineering.columbia.edu/" target="_blank">
-      <img src="/assets/img/opportunities/images.jpg" class="opportunity-img" alt="Columbia Engineering">
+      <img src="{{ '/assets/img/opportunities/images.jpg' | relative_url }}" class="opportunity-img" alt="Columbia Engineering">
       <p class="mt-2"><strong>Columbia Engineering 150th Anniversary</strong></p>
     </a>
   </div>

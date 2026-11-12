@@ -7,7 +7,7 @@ const repositoryDir = resolve(projectDir, "..");
 const page = (path) => resolve(projectDir, path, "index.html");
 
 export default defineConfig({
-  base: "/new_website2/",
+  base: "/",
   publicDir: resolve(repositoryDir, "assets"),
   server: {
     fs: {
@@ -16,6 +16,8 @@ export default defineConfig({
   },
   build: {
     outDir: "dist",
+    // Keep compiled assets separate from the legacy /assets/ URLs.
+    assetsDir: "bundles",
     emptyOutDir: true,
     rollupOptions: {
       input: {

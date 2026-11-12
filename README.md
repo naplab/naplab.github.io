@@ -237,3 +237,16 @@ This template was not made *entirely* from scratch. I'd like to give special tha
 
 I'd also like to thank [Dr. Jekyll's Themes](https://drjekyllthemes.github.io/), [Jekyll Themes](http://jekyllthemes.org/), and another [Jekyll Themes](http://jekyllrc.github.io/jekyllthemes/) for featuring Beautiful Jekyll in their Jekyll theme directories.
 
+## NAPLab website deployment
+
+The public website at `https://naplab.ee.columbia.edu/` is built from
+`new_website2/`. The original Jekyll website remains in the repository root and
+is published under `/archive/`.
+
+GitHub Actions builds Jekyll into `_site/archive`, builds Vite, then runs
+`node new_website2/scripts/prepare-pages.mjs` to assemble `_site` for GitHub Pages.
+The assembly step also preserves legacy asset URLs and redirects
+`/new_website2/` pages and renamed routes to their current locations.
+
+To preview the current website locally, run `npm run dev --prefix new_website2`.
+
