@@ -101,11 +101,13 @@ lab_members:
       - B.Sc. Electrical Engineering, Southern University of Science and Technology
   - name: Bella Qian
     title: Undergraduate Student
-    affiliation: Applied Mathematics, Columbia University
+    degrees:
+      - Applied Mathematics, Columbia University
     avatar: /assets/img/people/bella-qian.jpg
   - name: Jingting Zhang
     title: Visiting Undergrad Student
-    affiliation: Biomedical Engineering, ShanghaiTech University
+    degrees:
+      - Biomedical Engineering, ShanghaiTech University
     avatar: /assets/img/people/jingting-zhang.jpg
 
 collaborators:
