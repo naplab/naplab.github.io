@@ -104,7 +104,7 @@ const renderFooter = () => `
   <footer class="site-footer">
     <div class="shell footer-inner">
       <p>© ${new Date().getFullYear()} Neural Acoustic Processing Lab, Columbia University.</p>
-      <p><a href="https://zuckermaninstitute.columbia.edu/" target="_blank" rel="noopener noreferrer">Zuckerman Institute</a> · <a href="https://www.ee.columbia.edu/" target="_blank" rel="noopener noreferrer">Electrical Engineering</a> · <a href="${routeUrl("archive/")}">Archive</a></p>
+      <p><a href="https://zuckermaninstitute.columbia.edu/" target="_blank" rel="noopener noreferrer">Zuckerman Institute</a> · <a href="https://www.ee.columbia.edu/" target="_blank" rel="noopener noreferrer">Electrical Engineering</a></p>
     </div>
   </footer>`;
 
